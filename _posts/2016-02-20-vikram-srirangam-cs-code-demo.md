@@ -6,7 +6,8 @@ date: 2016-02-20
 
 testing sample c# code.
 
-```c#
+```csharp
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
