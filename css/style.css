@@ -164,7 +164,7 @@ a.hs-totop-link{
 	height: 40px;
 	line-height: 40px;
 	font-size: 14px;
-	color: #aaa;
+	color: #001F3F;
 	text-shadow: 1px 1px 1px #fff;
 	font-weight: 700;
 	cursor: pointer;
@@ -178,6 +178,20 @@ a.hs-totop-link{
 	background: -ms-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* IE10+ */
 	background: linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C */
 	border-top: 1px solid #cacaca;
+}
+footer{
+   bottom:10px;
+   position: absolute;
+}
+footer ul li{
+   float:left;
+   padding-right:10px;
+}
+footer ul li, .posts li{
+   list-style: none;
+}
+.posts{
+   font-size:16px;
 }
 
 /* Media Queries */
@@ -239,17 +253,34 @@ a.hs-totop-link{
 		overflow-y: auto;
 	}
 }
-footer{
-   bottom:10px;
-   position: absolute;
+@media only screen and (max-width: 640px) {
+   .hs-headline, footer{
+      display:none;
+   }
+   .hs-menu nav{
+      position:relative;
+      top:0px;
+   }
+   .hs-menu{
+      position:relative;
+      height:auto;
+   }   
+   .hs-content-scroller{
+      position:relative;
+      left:0px;
+      float:none;      
+      clear:both;
+      display:block;
+   } 
+   .hs-content-wrapper{
+      position:relative;
+      left:0px;
+      float:none;      
+      clear:both;
+      display:block;
+   } 
 }
-footer ul li{
-   float:left;
-   padding-right:10px;
-}
-footer ul li, .posts li{
-   list-style: none;
-}
-.posts{
-   font-size:16px;
-}
+/*
+@media only screen and (max-width: 480px) {
+   this css is same as with max-width 640px so commenting...
+}*/
