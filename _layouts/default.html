@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div id="hs-container" class="hs-container">
+      <aside class="hs-menu" id="hs-menu">
+				<div class="hs-headline">
+					<h1>Hi there, I'm Vikram!</h1>
+					<span>Happy coding!</span>
+				</div>
+				<nav>
+					<a href="/index.html"<span>Home</span></a>
+					<a href="/about/index.html"><span>About</span></a>
+					<a href="/blog/index.html"><span>Blog</span></a>
+				</nav>
+        <footer>
+      		<ul>
+          <li><a href="https://in.linkedin.com/in/vikramsrirangam">linkedin</a></li>
+        	 <li><a href="https://github.com/vwtt">github</a></li>
+  			 </ul>
+	   	 </footer>
+			</aside>
+			<a href="#hs-menu" class="hs-totop-link">Go to the top</a>
+
+      <div class="hs-content-scroller">
+  				<div class="hs-content-wrapper">
+  					<article class="hs-content" id="introduction">
+              <div class="hs-inner">
+    						{{ content }}
+              </div>
+  					</article>
+          </div><!-- hs-content-wrapper -->
+  			</div><!-- hs-content-scroller -->
+    </div>		
+	</body>
+</html>
+
