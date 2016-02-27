@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vikram Srirangam, Launches Site"
+title: "Vikram, Launches Site"
 date: 2016-02-20
 ---
 
