@@ -1,3 +1,25 @@
-name: Vikram Srirangam
-markdown: markdown
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+#permalink:        pretty
 permalink: /blog/:year/:month/:day/:title
+relative_permalinks: true
+
+# Setup
+title:            Vikram Srirangam
+url:              http://vwtt.github.io
+baseurl:          /
+
+author:
+  name:           'Vikram Srirangam'
+  url:            https://twitter.com/vwtt
+
+paginate:         5
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/vwtt/vwtt.github.io
