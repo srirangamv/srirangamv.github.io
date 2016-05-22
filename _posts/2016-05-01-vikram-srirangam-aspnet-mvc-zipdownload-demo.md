@@ -6,7 +6,7 @@ date: 2016-05-01
 
 <p>Using .Net's compression library, we can now create Zip file and sent over netwok entirely from memory without the need of saving files temporarily on file system. See below code for sending Zip file as an action result for an ASP.Net MVC  action.</p>
 
-``` csharp
+~~~ csharp
         using System.IO;
         using System.IO.Compression;
 
@@ -35,4 +35,4 @@ date: 2016-05-01
             }   
         }
 
-```
+~~~
