@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Permalinks
-permalink:        date
+permalink:        /blog/:year/:month/:day/:title
 
 # Setup
 title:            Vikram Srirangam
