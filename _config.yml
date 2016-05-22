@@ -1,6 +1,6 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown:        markdown
+highlighter:      pigments
 
 # Permalinks
 permalink:        /blog/:year/:month/:day/:title
