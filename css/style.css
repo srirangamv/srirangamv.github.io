@@ -128,7 +128,7 @@ a {
     right: 0px;
     overflow: hidden;
     height: 100%;
-    background-color: yellowGreen;
+    background-color: #ffffff;
 }
 
 .hs-content-wrapper {
@@ -155,7 +155,7 @@ a {
 }
 
     .hs-content:hover, .hs-content-active {
-        background: yellowGreen;
+        background: #ffffff;
     }
 
         .hs-content:hover .jspVerticalBar,
