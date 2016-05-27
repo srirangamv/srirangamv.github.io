@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "C#, Generate Zip file entirely from memory."
+title: "Asp.Net MVC, Generate Zip file entirely from memory."
 date: 2016-05-01
 ---
 
-<p>Using .Net's compression library, we can now create Zip file and sent over netwok entirely from memory without the need of saving files temporarily on file system. See below code for sending Zip file as an action result for an ASP.Net MVC  action.</p>
+<p>Using .Net's new IO compression library, we can now create Zip file and sent over netwok entirely from memory without the need of saving files temporarily on file system. See below code for sending Zip file as a result for an  Asp.Net MVC action.</p>
 
 
 {% highlight csharp %}
