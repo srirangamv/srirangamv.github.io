@@ -68,7 +68,7 @@ console.log(filter(a, even));
 console.log(reduce(map(filter(a, even), square), 0, add));
 {% endhighlight %}
 
-<p>
+</br>
 <b>output:</b>
 </br>
 </br>
@@ -85,4 +85,4 @@ console.log(reduce(map(filter(a, even), square), 0, add));
 [ 2, 4 ]
 </br>
 20
-</p>
+

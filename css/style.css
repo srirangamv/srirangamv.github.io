@@ -132,7 +132,7 @@ a {
 }
 
 .hs-content-wrapper {
-    width: auto;
+    width: 100%;
     position: absolute;
     height: 100%;
     overflow: hidden;
