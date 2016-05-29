@@ -67,18 +67,22 @@ console.log(filter(a, even));
 //sum of all squares of even numbers
 console.log(reduce(map(filter(a, even), square), 0, add));
 {% endhighlight %}
+
 <p>
 <b>output:</b>
+</br>
+</br>
 [ 2, 4, 6, 8, 10 ]
-
+</br>
 [ 1, 4, 9, 16, 25 ]
-
+</br>
 15
-
+</br>
 120
-
+</br>
 [ 1, 3, 5 ]
-
+</br>
 [ 2, 4 ]
+</br>
 20
 </p>
