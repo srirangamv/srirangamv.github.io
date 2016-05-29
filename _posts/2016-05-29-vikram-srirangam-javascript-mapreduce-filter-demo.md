@@ -4,7 +4,7 @@ title: "Map, Reduce and Filter in Javascript"
 date: 2016-05-29
 ---
 
-<p>Here is the Javascipt code mimicking simple map, reduce and filter functions. PS for the purpose of understanding only. Please find the usage of the built-in functions <a href="http://elijahmanor.com/reducing-filter-and-map-down-to-reduce/">here</a></p>
+<p>Here is the Javascipt code mimicking simple map, reduce and filter functions. PS for the purpose of understanding only. Please find the usage of the built-in functions <a href="http://elijahmanor.com/reducing-filter-and-map-down-to-reduce/" target="_blank">here</a></p>
 
 {% highlight javascript %}
 
