@@ -19,7 +19,7 @@ namespace ParallelPrimeFinder
     {
         static void Main()
         {
-        		long n=48541266581;
+            long n=48541266581;
             int[] nums = Enumerable.Range(2, Convert.ToInt32(Math.Sqrt(n)) + 1).ToArray();
             
             CancellationTokenSource cts = new CancellationTokenSource();
