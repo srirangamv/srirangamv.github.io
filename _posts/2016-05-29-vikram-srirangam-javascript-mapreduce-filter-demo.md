@@ -68,21 +68,21 @@ console.log(filter(a, even));
 console.log(reduce(map(filter(a, even), square), 0, add));
 {% endhighlight %}
 
-\s\s
+<p>
 <b>output:</b>
-\s\s
-\s\s
+<br>
+<br>
 [ 2, 4, 6, 8, 10 ]
-\s\s
+<br>
 [ 1, 4, 9, 16, 25 ]
-\s\s
+<br>
 15
-\s\s
+<br>
 120
-\s\s
+<br>
 [ 1, 3, 5 ]
-\s\s
+<br>
 [ 2, 4 ]
-\s\s
+<br>
 20
-
+</p>
