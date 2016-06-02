@@ -234,7 +234,8 @@ footer {
 /* Media Queries */
 @media screen and (max-width: 1024px) {
    .hs-outer {
-        overflow-x: scroll;
+      width:auto;
+        overflow-y: scroll;
     }
     .about{
       display:none;
@@ -247,13 +248,9 @@ footer {
    }
    
    .about{
-      display:inline-block;
+      display:block;
     }
-   
-    body {
-        overflow-x: auto;
-        overflow-y: auto;
-    }
+
 
     a.hs-totop-link {
         display: block;
@@ -272,6 +269,8 @@ footer {
 
     .hs-outer {
         border: none;
+        width:auto;
+        overflow-y: scroll;
     }
 
         .hs-outer, .hs-outer:first-child {
@@ -289,6 +288,12 @@ footer {
     .hs-menu nav {
         position: relative;
         top: 0px;
+    }
+    
+    .hs-outer {
+        border: none;
+        width:auto;
+        overflow-y: scroll;
     }
 
     .hs-menu {
