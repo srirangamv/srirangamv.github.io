@@ -59,7 +59,7 @@ a {
 }
 
     a:hover {
-        color: #FFF;
+        color: #4875B4;
     }
 
 .hs-headline {
@@ -122,50 +122,47 @@ a {
                 padding-top: 3px;
             }
 
-.hs-content-scroller {
-    position: absolute;
-    left: 240px;
-    right: 0px;
-    overflow: hidden;
-    height: 100%;
-    background-color: #ffffff;
+.hs-top{      
+   padding: 30px 20px 10px 30px;
+   height:50px;
+   /*box-shadow: 1px 3px 1px #888888;*/
 }
 
-.hs-content-wrapper {
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    overflow: hidden;
+.linkedin{
+   font-weight: bold;
+   font-size:150%;
+   font-family: Myriad Pro;
+   background-color:#4875B4;
+   color:white;
+   text-decoration:none;
+   padding: 0px 3px;
+   border-radius: 2px;
+   margin:5px;
 }
 
-.hs-content {
-    width: auto;
-    overflow-y: auto;
-    height: 100%;
-    /*border-right: 1px dashed #A9BECD;*/
-    border-left: 1px dashed #A9BECD;
-    /*border-right: 1px dashed rgba(126, 126, 126, 0.2);*/
-    border-left: 1px dashed rgba(255, 255, 255, 0.5);
-    background: transparent;
-    -webkit-transition: background 0.3s linear;
-    -moz-transition: background 0.3s linear;
-    -o-transition: background 0.3s linear;
-    -ms-transition: background 0.3s linear;
-    transition: background 0.3s linear;
+.left{
+  float:left;
 }
 
-    .hs-content:hover, .hs-content-active {
-        background: #ffffff;
-    }
-
-        .hs-content:hover .jspVerticalBar,
-        .hs-menu nav:hover .jspVerticalBar {
-            opacity: 1;
-        }
+.right{
+  float:right;
+}
+.hs-outer{
+   top:60px;
+   position:fixed;
+   padding: 30px 20px 10px 30px;
+   overflow-x:hidden;
+   overflow-y:auto;
+   height:90%;
+}
 
 .hs-inner {
-    padding: 30px 20px 10px 30px;
+    
 }
+   /*
+   .hs-inner:nth-child(odd) {
+       background: #e0e0e0;
+   }*/
 
     .hs-inner p, .hs-inner ul {
         font-size: 16px;
@@ -177,9 +174,9 @@ a {
         letter-spacing: 1px;
     }
 
-        .hs-inner p:first-letter {
-            font-size: 28px;
-        }
+   .hs-inner p:first-letter {
+       font-size: 28px;
+   }
 
 a.hs-totop-link {
     display: none;
@@ -227,21 +224,7 @@ footer {
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
-    .jspVerticalBar {
-        opacity: 1;
-    }
 
-    .hs-content-scroller {
-        overflow-x: scroll;
-    }
-
-    .hs-content:hover {
-        background: transparent;
-    }
-
-    .hs-content-active:hover {
-        background: #f1f5f8;
-    }
 }
 
 @media screen and (max-width: 715px) {
@@ -249,16 +232,6 @@ footer {
         overflow-x: auto;
         overflow-y: auto;
     }
-
-    .codrops-top a {
-        background: #000;
-        color: #fff;
-        text-shadow: none;
-    }
-
-        .codrops-top a:nth-child(1) {
-            left: 10px;
-        }
 
     a.hs-totop-link {
         display: block;
@@ -274,18 +247,6 @@ footer {
             top: 230px;
             bottom: 20px;
         }
-
-    .hs-content-scroller {
-        position: relative;
-        height: auto;
-        left: 0;
-    }
-
-    .hs-content-wrapper {
-        height: auto;
-        width: auto;
-        margin-left: 0px;
-    }
 
     .hs-content {
         border: none;
@@ -311,22 +272,6 @@ footer {
     .hs-menu {
         position: relative;
         height: auto;
-    }
-
-    .hs-content-scroller {
-        position: relative;
-        left: 0px;
-        float: none;
-        clear: both;
-        display: block;
-    }
-
-    .hs-content-wrapper {
-        position: relative;
-        left: 0px;
-        float: none;
-        clear: both;
-        display: block;
     }
 }
 /*
