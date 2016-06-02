@@ -139,9 +139,14 @@ a {
    border-radius: 2px;
    margin:5px;
 }
+   .linkedin:hover{
+      color: #308fd9;
+   }
 
 .top-link{
-   margin:5px;
+   margin-right: 8px;
+   font-weight: bold;
+   font-size: 150%;
  }
     
 .left{
