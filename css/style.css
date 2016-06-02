@@ -135,12 +135,12 @@ a {
    background-color:#4875B4;
    color:white;
    text-decoration:none;
-   padding: 0px 3px;
+   padding: 0px 2px;
    border-radius: 2px;
    margin:5px;
 }
    .linkedin:hover{
-      color: #308fd9;
+      color: white;
    }
 
 .top-link{
