@@ -233,10 +233,23 @@ footer {
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
-
+   .hs-outer {
+        overflow-x: scroll;
+    }
+    .about{
+      display:none;
+    }
 }
 
 @media screen and (max-width: 715px) {
+   .linkedin{
+      display:none;
+   }
+   
+   .about{
+      display:inline-block;
+    }
+   
     body {
         overflow-x: auto;
         overflow-y: auto;
@@ -257,11 +270,11 @@ footer {
             bottom: 20px;
         }
 
-    .hs-content {
+    .hs-outer {
         border: none;
     }
 
-        .hs-content, .hs-content:first-child {
+        .hs-outer, .hs-outer:first-child {
             width: auto;
             float: none;
             overflow-y: auto;
@@ -281,6 +294,14 @@ footer {
     .hs-menu {
         position: relative;
         height: auto;
+    }
+    
+    .linkedin{
+      display:none;
+   }
+   
+   .about{
+      display:inline-block;
     }
 }
 /*
