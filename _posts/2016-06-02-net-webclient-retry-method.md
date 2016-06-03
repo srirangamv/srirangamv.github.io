@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Retry functions for .Net' weblcient."
+title: "Retry functions for .Net's weblcient."
 date: 2016-06-02
 ---
 
