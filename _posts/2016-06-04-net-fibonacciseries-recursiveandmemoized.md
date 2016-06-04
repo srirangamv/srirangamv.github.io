@@ -58,7 +58,7 @@ namespace FibonacciDemo{
 {% endhighlight %}
 
 
-<p>Code below will not work as store is private hence, we cannot modify/alter it.</p>
+<p>Code below will not work as store is private. Hence we cannot modify it from outside class.</p>
 {% highlight csharp %}
 			Console.WriteLine(fibonacciSeries.store);
 {% endhighlight %}
