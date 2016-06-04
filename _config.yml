@@ -10,12 +10,12 @@ syntax-highlighting:
 permalink:        /blog/:year/:month/:day/:title
 
 # Setup
-title:            Vikram Srirangam
+title:            Vikram Kumar Srirangam
 url:              http://vwtt.github.io
 baseurl:          /
 
 author:
-  name:           'Vikram Srirangam'
+  name:           'Vikram Kumar Srirangam'
   url:            https://twitter.com/vwtt
 
 paginate:         5

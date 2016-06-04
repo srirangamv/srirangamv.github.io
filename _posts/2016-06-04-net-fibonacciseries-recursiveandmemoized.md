@@ -11,7 +11,6 @@ date: 2016-06-04
 using System;
 using System.Collections.Generic;
 
-/* Recursive and memoized Fibonacci series */
 namespace FibonacciDemo{
 	class Program{
 		public static void Main(string[] args){
@@ -29,6 +28,7 @@ namespace FibonacciDemo{
 		}
 	}
 	
+            /* this should be a singleton*/
 	class Fibonacci{
 		private Dictionary<int, int> store 
 			= new Dictionary<int, int>()

@@ -46,7 +46,7 @@ namespace ConsoleApplication3
                         if (retryCount < MAX_RETRY_CALLS)
                         {
                             Console.WriteLine("waiting for a sec...");
-                            Thread.Sleep(ex.Status != WebExceptionStatus.Timeout ?
+                            Thread.Sleep(ex.Status == WebExceptionStatus.Timeout ?
                                                                     longWait : shortWait);
                         }
                         else
@@ -85,7 +85,7 @@ namespace ConsoleApplication3
                         if (retryCount < MAX_RETRY_CALLS && ex.Status == WebExceptionStatus.Timeout)
                         {
                             Console.WriteLine("waiting for a sec...");
-                            Thread.Sleep(ex.Status != WebExceptionStatus.Timeout ?
+                            Thread.Sleep(ex.Status == WebExceptionStatus.Timeout ?
                                                                     longWait : shortWait);
                         }
                         else
