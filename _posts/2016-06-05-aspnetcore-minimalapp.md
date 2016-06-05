@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Asp.Net Core MVC minimal app setup step by step."
-date: 2016-06-04
+title: "Asp.Net Core MVC minimal app setup, step by step."
+date: 2016-06-05
 ---
 
-<p>Install .NET Core</p>
+<p>Install .NET Core from <a href="https://microsoft.com/net/core" title=".Net Core installer">here</a>.</p>
 
-    Create a new .NET Core project: https://microsoft.com/net/core
+    Create a new .NET Core project by opening command prompt. "dotnet new" will create Program.cs and project.json file for you.
 
     mkdir aspnetcoreapp
     cd aspnetcoreapp
     dotnet new
 
 
-    Update the project.json file to add the Kestrel HTTP server package as a dependency:
+    Update the <b><i>project.json</i></b> file to add the Kestrel HTTP server package as a dependency:
 {% highlight javascript %}
 
     {
@@ -41,7 +41,7 @@ date: 2016-06-04
     dotnet restore
 
 
-    Update the code in Program.cs to setup and start the Web host:
+    Update the code in <b><i>Program.cs</i></b> to setup and start the Web host:
 
 {% highlight csharp %}
 
@@ -66,7 +66,7 @@ date: 2016-06-04
 
 {% endhighlight %}
 
-Add startup.cs 
+Add new <b><i>startup.cs</i></b> file in the app directory.
 
 {% highlight csharp %}
 
@@ -95,7 +95,7 @@ namespace aspnetcoreapp
 
 {% endhighlight %}
 
-add below dependency
+As we have added MVC service to the applicatoin which needs below dependency.
 
 {% highlight javascript %}
 
@@ -104,14 +104,14 @@ add below dependency
 {% endhighlight %}
 
 dotnet restore        
-dotnet build
 dotnet run
 
-http://localhost:5000
+Launch the browser with http://localhost:5000
 
+Output:
 404 error
 
-let's add developer error page by adding code below
+ Let's add developer error page by adding code below
 
 {% highlight csharp %}
 
@@ -139,9 +139,9 @@ http://localhost:5000
 
 404 error
 
-Create directory "Controllers"
+As we don't have any default mvc controller and action, we get a 404 not found error. So let's add a controller.
 
-add ProductsController.cs in Controllers folder.
+Create a new directory "Controllers" in app directory. And add new <b><i>ProductsController.cs</i></b> in Controllers folder.
 
 {% highlight csharp %}
 
@@ -184,7 +184,7 @@ namespace aspnetcoreapp.controllers
 
 {% endhighlight %}
 
-also add Product.cs in the new folder Models
+also create a new directory "Models" and add new <b><i>Product.cs</i></b> in the new folder "Models".
 
 {% highlight csharp %}
 
@@ -199,20 +199,21 @@ namespace aspnetcoreapp.models
         
 {% endhighlight %}
         
-        dotnet build
+
 dotnet run
 
-http://localhost:5000/api/products
+Launch the browser with  http://localhost:5000/api/products
 
 Output:
 products.json
+
 {% highlight javascript %}
 
 [{"id":1221,"name":"aaa","price":120.0},{"id":1222,"name":"vvv","price":122.0},{"id":1223,"name":"nnn","price":123.0}]
 
 {% endhighlight %}
 
-http://localhost:5000/api/products/1100
+Launch the browser with http://localhost:5000/api/products/1100
 
 Output:
 1100.json
@@ -223,7 +224,7 @@ Output:
 
 {% endhighlight %}
 
-Now add HomeController.cs to Controller folder.
+We have successfully created a Web API controller. Now let's add <b><i>HomeController.cs</i></b> to Controller folder.
 
 {% highlight csharp %}
 
@@ -243,14 +244,14 @@ namespace aspnetcoreapp.controllers
 
 {% endhighlight %}
 
-dotnet build
 dotnet run
 
-http://localhost:5000/home
+Launch the browser with http://localhost:5000/home (OR) http://localhost:5000/home/hello
 
 404 error
 
-Let's add route.
+Let's add route definition to <b><i>StartUp.cs</i></b>. 
+
 {% highlight csharp %}
 
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -267,19 +268,16 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
        
 {% endhighlight %} 
         
-dotnet build
 dotnet run
 
-http://localhost:5000/home
+Launch the browser with http://localhost:5000/home
 
 Output:
 
 Hello from aspnetcore...
 
 
-Let's a view to our app.
-
-update HomeController.cs as shown below.
+Let's add another action with a view to <b><i>HomeController.cs</i></b> as shown below.
 
 {% highlight csharp %}
 
@@ -303,18 +301,15 @@ namespace aspnetcoreapp.controllers
 
 {% endhighlight %}
 
-dotnet build
 dotnet run
 
-http://localhost:5000/home/index
+Now launch the browser with http://localhost:5000/home/index
 
 Output:
 
 Internal Server Error...
 
-
-
-let's add developer error page by adding code below
+Add developer error page to <b><i>StartUp.cs</i></b> as below.
 
 {% highlight csharp %}
 
@@ -332,18 +327,18 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         
 {% endhighlight %}
 
-add below dependency
+also add below dependency to <b><i>project.json</i></b> file.
 
 {% highlight javascript %}
-"Microsoft.AspNetCore.Diagnostics": "1.0.0-rc2-final",
+    
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0-rc2-final"
 
 {% endhighlight %}
 
 dotnet restore
-dotnet build
 dotnet run
 
-http://localhost:5000/home/index
+Launch the browser with http://localhost:5000/home/index
 
 Output:
 
@@ -356,11 +351,9 @@ InvalidOperationException: The view 'Index' was not found. The following locatio
 Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
 
 
-Now add view for HomeController's Index action.
+Now add the view for HomeController's Index action.
 
-Create a folder Views
-
-add new _ViewStart.cshtml
+Create folder Views in the app directory. And add new <b><i>_ViewStart.cshtml</i></b> file.
 
 {% highlight html %}
 
@@ -369,7 +362,7 @@ add new _ViewStart.cshtml
 }
 {% endhighlight %}
 
-Create new folder Shared and add new file _Layout.cshtml
+Create new folder Shared inside Views folder and add new file <b><i>_Layout.cshtml</i></b>.
 
 {% highlight html %}
 
@@ -387,7 +380,7 @@ Create new folder Shared and add new file _Layout.cshtml
 
 {% endhighlight %}
 
-Create another folder Home and add Index.cshtml file.
+Create another folder Home inside Views folder and add <b><i>Index.cshtml</i></b> file.
 
 {% highlight html %}
 
@@ -401,10 +394,10 @@ Create another folder Home and add Index.cshtml file.
 
 {% endhighlight %}
 
-dotnet build
+
 dotnet run
 
-http://localhost:5000/home/index
+Launch the browser with http://localhost:5000/home/index
 
 Output:
 An unhandled exception occurred while processing the request.
@@ -417,7 +410,7 @@ Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerab
 
 
 
-Update Progra.cs
+Update <b><i>Program.cs</i></b> to setup Root directory for the app.
 
 {% highlight csharp %}
 
@@ -445,13 +438,10 @@ namespace aspnetcoreapp
 
 {% endhighlight %}
 
-We had setup the root directory for our aspnetcore app.
 
-
-dotnet build
 dotnet run
 
-http://localhost:5000/home/index
+Launch the browser with http://localhost:5000/home/index
 
 Output:
 
@@ -463,7 +453,7 @@ Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(
 
 
 
-Update project.json file to add above property.
+Update <b><i>project.json</i></b> file to add above property.
 
 {% highlight javascript %}
 
@@ -480,7 +470,7 @@ Update project.json file to add above property.
     },
     "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-final",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0-rc2-final",
-        "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final"
+     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final"
   },
   "frameworks": {
     "netcoreapp1.0": {
@@ -488,12 +478,12 @@ Update project.json file to add above property.
     }
   }
 }
+
 {% endhighlight %}
 
-dotnet build
 dotnet run
 
-http://localhost:5000/home/index
+Launch the browser with http://localhost:5000/home/index
 
 Output:
 
@@ -504,4 +494,4 @@ Hello from our View Template!
 
 Now we have setup webapi and basic mvc controller with a view for ASp.Net Core application.
 
-Please find the code at github.
+Please find the complete code at <a href="https://github.com/vwtt/aspnetcoreminapp" title="code download path">here<a>.
