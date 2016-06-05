@@ -244,10 +244,12 @@ footer {
 .cmd{
    background-color:black;
    color:white;
+   display:inline;
 }
+/*
 .cmd:before {
     content: "c:\>";
-}
+}*/
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
