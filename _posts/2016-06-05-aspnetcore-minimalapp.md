@@ -117,7 +117,7 @@ Launch the browser with http://localhost:5000
 
 <p>As we don't have any default mvc controller and action, we get a 404 not found error. So let's add a controller.
 
-Create a new directory "Controllers" in app directory. And add new <b><i>ProductsController.cs</i></b> in Controllers folder.</p>
+Create a new directory <b><i>Controllers</i></b> in app directory. And add new <b><i>ProductsController.cs</i></b> in Controllers folder.</p>
 
 {% highlight csharp %}
 
@@ -160,7 +160,7 @@ namespace aspnetcoreapp.controllers
 
 {% endhighlight %}
 
-<p>also create a new directory "Models" and add new <b><i>Product.cs</i></b> in the new folder "Models".</p>
+<p>also create a new directory <b><i>Models</i></b> and add new <b><i>Product.cs</i></b> in the new folder "Models".</p>
 
 {% highlight csharp %}
 
@@ -327,18 +327,18 @@ Launch the browser with http://localhost:5000/home/index
 
 <b>Output:</b>
 <p class="error">
-An unhandled exception occurred while processing the request.
-
-InvalidOperationException: The view 'Index' was not found. The following locations were searched:
- /Views/Home/Index.cshtml
- /Views/Shared/Index.cshtml
-
+An unhandled exception occurred while processing the request.</br>
+</br>
+InvalidOperationException: The view 'Index' was not found. The following locations were searched:</br>
+ /Views/Home/Index.cshtml</br>
+ /Views/Shared/Index.cshtml</br>
+</br>
 Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
 </p>
 
 <p>Now add the view for HomeController's Index action.</p>
 
-Create folder Views in the app directory. And add new <b><i>_ViewStart.cshtml</i></b> file.
+Create folder <b><i>Views</i></b> in the app directory. And add new <b><i>_ViewStart.cshtml</i></b> file.
 
 {% highlight html %}
 
@@ -386,12 +386,12 @@ Launch the browser with http://localhost:5000/home/index
 
 <b>Output:</b>
 <p class="error">
-An unhandled exception occurred while processing the request.
-
-InvalidOperationException: The view 'Index' was not found. The following locations were searched:
- /Views/Home/Index.cshtml
- /Views/Shared/Index.cshtml
-
+An unhandled exception occurred while processing the request.</br>
+</br>
+InvalidOperationException: The view 'Index' was not found. The following locations were searched:</br>
+ /Views/Home/Index.cshtml</br>
+ /Views/Shared/Index.cshtml</br>
+</br>
 Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
 </p>
 
@@ -430,11 +430,11 @@ Launch the browser with http://localhost:5000/home/index
 
 <b>Output:</b>
 <p class="error">
-An unhandled exception occurred while processing the request.
-
-InvalidOperationException: The Razor page '/Views/Home/Index.cshtml' failed to compile. Ensure that your application's project.json sets the 'preserveCompilationContext' compilation property.
-
-Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(RelativeFileInfo fileInfo, String compilationContent)
+An unhandled exception occurred while processing the request.</br>
+</br>
+InvalidOperationException: The Razor page '/Views/Home/Index.cshtml' failed to compile. Ensure that your application's project.json sets the 'preserveCompilationContext' compilation property.</br>
+</br>
+Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(RelativeFileInfo fileInfo, String compilationContent)</br>
 </p>
 
 
