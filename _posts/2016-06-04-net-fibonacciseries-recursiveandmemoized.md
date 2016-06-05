@@ -60,10 +60,10 @@ namespace FibonacciDemo{
 
 <p>Code below will not work as store is private. Hence we cannot modify it from outside class.</p>
 {% highlight csharp %}
-			Console.WriteLine(fibonacciSeries.store);
+			Console.WriteLine(fibonacciSeries.store);    //won't compile.
 {% endhighlight %}
 
 <p>also we cannot set the fibonacci value from outside explicitely as the indexer property is of private set.</p>
 {% highlight csharp %}
-			fibonacciSeries[11] = 144;
+			fibonacciSeries[11] = 144;   //won't compile.
 {% endhighlight %}
