@@ -8,9 +8,9 @@ date: 2016-06-05
 
 <p>Create a new .NET Core project by opening command prompt. "dotnet new" will create Program.cs and project.json file for you.</p>
 
-    mkdir aspnetcoreapp
-    cd aspnetcoreapp
-    dotnet new
+<p class="cmd">mkdir aspnetcoreapp</p>
+<p class="cmd">cd aspnetcoreapp</p>
+<p class="cmd">dotnet new</p>
 
 
 <p>Update the <b><i>project.json</i></b> file to add the Kestrel HTTP server package as a dependency:</p>
@@ -37,9 +37,9 @@ date: 2016-06-05
     }
 {% endhighlight %}
 
-    Restore the packages:
+Restore the packages:
 
-    dotnet restore
+<p class="cmd">dotnet restore </p>
 
 
 <p>Update the code in <b><i>Program.cs</i></b> to setup and start the Web host:</p>
@@ -104,8 +104,8 @@ namespace aspnetcoreapp
         
 {% endhighlight %}
 
-dotnet restore        
-dotnet run
+<p class="cmd">dotnet restore </p>       
+<p class="cmd">dotnet run</p>
 
 Launch the browser with http://localhost:5000
 
@@ -176,7 +176,7 @@ namespace aspnetcoreapp.models
 {% endhighlight %}
         
 
-dotnet run
+<p class="cmd">dotnet run</p>
 
 Launch the browser with  http://localhost:5000/api/products
 
@@ -224,7 +224,7 @@ namespace aspnetcoreapp.controllers
 
 {% endhighlight %}
 
-dotnet run
+<p class="cmd">dotnet run</p>
 
 Launch the browser with http://localhost:5000/home (OR) http://localhost:5000/home/hello
 
@@ -252,7 +252,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
        
 {% endhighlight %} 
         
-dotnet run
+<p class="cmd">dotnet run</p>
 
 Launch the browser with http://localhost:5000/home
 
@@ -285,7 +285,7 @@ namespace aspnetcoreapp.controllers
 
 {% endhighlight %}
 
-dotnet run
+<p class="cmd">dotnet run</p>
 
 Now launch the browser with http://localhost:5000/home/index
 
@@ -320,19 +320,19 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 {% endhighlight %}
 
-dotnet restore
-dotnet run
+<p class="cmd">dotnet restore</p>
+<p class="cmd">dotnet run</p>
 
 Launch the browser with http://localhost:5000/home/index
 
 <b>Output:</b>
 <p class="error">
-An unhandled exception occurred while processing the request.</br>
-</br>
-InvalidOperationException: The view 'Index' was not found. The following locations were searched:</br>
- /Views/Home/Index.cshtml</br>
- /Views/Shared/Index.cshtml</br>
-</br>
+An unhandled exception occurred while processing the request.<br></br>
+<br></br>
+InvalidOperationException: The view 'Index' was not found. The following locations were searched:<br></br>
+ /Views/Home/Index.cshtml<br></br>
+ /Views/Shared/Index.cshtml<br></br>
+<br></br>
 Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
 </p>
 
@@ -380,18 +380,18 @@ Create folder <b><i>Views</i></b> in the app directory. And add new <b><i>_ViewS
 {% endhighlight %}
 
 
-dotnet run
+<p class="cmd">dotnet run</p>
 
 Launch the browser with http://localhost:5000/home/index
 
 <b>Output:</b>
 <p class="error">
-An unhandled exception occurred while processing the request.</br>
-</br>
-InvalidOperationException: The view 'Index' was not found. The following locations were searched:</br>
- /Views/Home/Index.cshtml</br>
- /Views/Shared/Index.cshtml</br>
-</br>
+An unhandled exception occurred while processing the request.<br></br>
+<br></br>
+InvalidOperationException: The view 'Index' was not found. The following locations were searched:<br></br>
+ /Views/Home/Index.cshtml<br></br>
+ /Views/Shared/Index.cshtml<br></br>
+<br></br>
 Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
 </p>
 
@@ -424,17 +424,17 @@ namespace aspnetcoreapp
 {% endhighlight %}
 
 
-dotnet run
+<p class="cmd">dotnet run</p>
 
 Launch the browser with http://localhost:5000/home/index
 
 <b>Output:</b>
 <p class="error">
-An unhandled exception occurred while processing the request.</br>
-</br>
-InvalidOperationException: The Razor page '/Views/Home/Index.cshtml' failed to compile. Ensure that your application's project.json sets the 'preserveCompilationContext' compilation property.</br>
-</br>
-Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(RelativeFileInfo fileInfo, String compilationContent)</br>
+An unhandled exception occurred while processing the request.<br></br>
+<br></br>
+InvalidOperationException: The Razor page '/Views/Home/Index.cshtml' failed to compile. Ensure that your application's project.json sets the 'preserveCompilationContext' compilation property.<br></br>
+<br></br>
+Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(RelativeFileInfo fileInfo, String compilationContent)<br></br>
 </p>
 
 
@@ -466,7 +466,7 @@ Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(
 
 {% endhighlight %}
 
-dotnet run
+<p class="cmd">dotnet run</p>
 
 Launch the browser with http://localhost:5000/home/index
 

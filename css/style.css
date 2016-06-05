@@ -241,6 +241,13 @@ footer {
    font-size:10px;
    border:solid 1px #ccc;
 }
+.cmd{
+   background-color:black;
+   color:white;
+}
+.cmd:before {
+    content: "c:\>";
+}
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
