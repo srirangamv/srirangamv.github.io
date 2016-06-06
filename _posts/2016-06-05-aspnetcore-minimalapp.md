@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Asp.Net Core MVC minimal app setup, step by step."
+title: "Asp.Net Core minimal app setup, step by step."
 date: 2016-06-05
 ---
 
@@ -472,8 +472,8 @@ Launch the browser with http://localhost:5000/home/index
 
 <b>Output:</b>
 <p class="output">
-Index
-
+<h2>Index</h2>
+<br>
 Hello from our View Template!
 </p>
 

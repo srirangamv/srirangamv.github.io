@@ -68,10 +68,9 @@ console.log(filter(a, even));
 console.log(reduce(map(filter(a, even), square), 0, add));
 {% endhighlight %}
 
-<p>
+
 <b>output:</b>
-<br>
-<br>
+<p class="output">
 [ 2, 4, 6, 8, 10 ]
 <br>
 [ 1, 4, 9, 16, 25 ]
