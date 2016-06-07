@@ -183,26 +183,26 @@ Launch the browser with  http://localhost:5000/api/products
 <b>Output:</b>
 <p class="output">
 products.json
-
+</p>
 {% highlight javascript %}
 
 [{"id":1221,"name":"aaa","price":120.0},{"id":1222,"name":"vvv","price":122.0},{"id":1223,"name":"nnn","price":123.0}]
 
 {% endhighlight %}
-</p>
+
 
 Launch the browser with http://localhost:5000/api/products/1100
 
 <b>Output:</b>
 <p class="output">
 1100.json
+</p>
 
 {% highlight javascript %}
 
 {"id":1100,"name":"zzz","price":124.0}
 
 {% endhighlight %}
-</p>
 
 <p>We have successfully created a Web API controller. Now let's add <b><i>HomeController.cs</i></b> to Controller folder.</p>
 
@@ -430,11 +430,11 @@ Launch the browser with http://localhost:5000/home/index
 
 <b>Output:</b>
 <p class="error">
-An unhandled exception occurred while processing the request.<br></br>
-<br></br>
-InvalidOperationException: The Razor page '/Views/Home/Index.cshtml' failed to compile. Ensure that your application's project.json sets the 'preserveCompilationContext' compilation property.<br></br>
-<br></br>
-Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(RelativeFileInfo fileInfo, String compilationContent)<br></br>
+An unhandled exception occurred while processing the request.<br>
+<br>
+InvalidOperationException: The Razor page '/Views/Home/Index.cshtml' failed to compile. Ensure that your application's project.json sets the 'preserveCompilationContext' compilation property.<br>
+<br>
+Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(RelativeFileInfo fileInfo, String compilationContent)<br>
 </p>
 
 
