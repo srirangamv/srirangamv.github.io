@@ -10,7 +10,7 @@ date: 2016-06-05
 
 <p class="cmd">c:\&gt;mkdir aspnetcoreapp</p><br>
 <p class="cmd">c:\&gt;cd aspnetcoreapp</p><br>
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet new</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet new</p>
 
 
 <p>Update the <b><i>project.json</i></b> file to add the Kestrel HTTP server package as a dependency:</p>
@@ -39,7 +39,7 @@ date: 2016-06-05
 
 Restore the packages:
 
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet restore </p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet restore </p>
 
 
 <p>Update the code in <b><i>Program.cs</i></b> to setup and start the Web host:</p>
@@ -104,8 +104,8 @@ namespace aspnetcoreapp
         
 {% endhighlight %}
 
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet restore </p> <br>  
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet restore </p> <br>  
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000
 
@@ -176,7 +176,7 @@ namespace aspnetcoreapp.models
 {% endhighlight %}
         
 
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with  http://localhost:5000/api/products
 
@@ -224,7 +224,7 @@ namespace aspnetcoreapp.controllers
 
 {% endhighlight %}
 
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000/home (OR) http://localhost:5000/home/hello
 
@@ -252,7 +252,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
        
 {% endhighlight %} 
         
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000/home
 
@@ -285,7 +285,7 @@ namespace aspnetcoreapp.controllers
 
 {% endhighlight %}
 
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Now launch the browser with http://localhost:5000/home/index
 
@@ -320,8 +320,8 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 {% endhighlight %}
 
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet restore</p><br>
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet restore</p><br>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000/home/index
 
@@ -380,7 +380,7 @@ Create folder <b><i>Views</i></b> in the app directory. And add new <b><i>_ViewS
 {% endhighlight %}
 
 
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000/home/index
 
@@ -424,7 +424,7 @@ namespace aspnetcoreapp
 {% endhighlight %}
 
 
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000/home/index
 
@@ -466,7 +466,7 @@ Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(
 
 {% endhighlight %}
 
-<p class="cmd">c:\aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000/home/index
 
