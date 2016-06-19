@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Asp.Net Core minimal app setup, step by step."
+title: "Asp.Net Core app setup, step by step."
 date: 2016-06-05
 ---
 
