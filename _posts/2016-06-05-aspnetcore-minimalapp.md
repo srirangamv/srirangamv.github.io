@@ -466,13 +466,14 @@ Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService.Compile(
 
 {% endhighlight %}
 
-<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run
 
 Launch the browser with http://localhost:5000/home/index
+</p>
 
 <b>Output:</b>
 <p class="output">
-<h2>Index</h2>
+Index
 <br>
 Hello from our View Template!
 </p>
