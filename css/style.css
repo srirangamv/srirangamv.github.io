@@ -121,6 +121,7 @@ a {
 .hs-top{      
    padding: 30px 20px 10px 30px;
    height:50px;
+   background-color: gold;
    /*box-shadow: 1px 3px 1px #888888;*/
 }
 
@@ -157,7 +158,7 @@ a {
   float:right;
 }
 .hs-outer{
-   top:60px;
+   top:98px;
    position:fixed;
    padding: 30px 20px 10px 30px;
    overflow-x:hidden;
