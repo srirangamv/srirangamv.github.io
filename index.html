@@ -8,9 +8,7 @@ title: Vikram's Blog
     <p class="meta">{{ post.date | date_to_string }}</p>
 
     <div class="post">
-      {{ post.description }}
-    </div>
-    <br>
-    <a href="{{ post.url }}" title="{{ post.title }}">Read more...</a>
+      {{ post.content }}
+    </div>    
   </div>    
 {% endfor %} 
