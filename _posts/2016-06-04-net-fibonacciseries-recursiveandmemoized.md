@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Recursive and memoized Fibonacci series"
+name: "2016-06-04-net-fibonacciseries-recursiveandmemoized"
+description: "Recursive and memoized version of fibonacci series."
 date: 2016-06-04
 ---
 

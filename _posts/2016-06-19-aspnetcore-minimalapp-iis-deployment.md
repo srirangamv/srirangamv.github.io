@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Asp.Net Core app, IIS deployment."
+name: "2016-06-19-aspnetcore-minimalapp-iis-deployment"
+description: "Deploying AspNet Core application to IIS."
 date: 2016-06-19
 ---
 

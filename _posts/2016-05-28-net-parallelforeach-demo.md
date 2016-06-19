@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Parallel.ForEach demo for finding if a number is prime."
+name: "2016-05-28-net-parallelforeach-demo"
+description: "Finding if a number is prime parallelly."
 date: 2016-05-28
 ---
 

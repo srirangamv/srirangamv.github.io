@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Asp.Net MVC, Generate Zip file entirely from memory."
+name: "2016-05-01-vikram-srirangam-aspnet-mvc-zipdownload-demo"
+description: "Generate Zip file from memory."
 date: 2016-05-01
 ---
 
