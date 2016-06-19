@@ -50,7 +50,7 @@ h4 {
 }
 
 a {
-    color: #308fd9;
+    color: slategray;
     text-decoration: none;
     /*text-transform: uppercase;*/
     letter-spacing: 2px;
@@ -129,7 +129,7 @@ a {
    font-weight: bold;
    font-size:150%;
    font-family: Myriad Pro;
-   background-color:#4875B4;
+   background-color:slategray;
    color:white;
    text-decoration:none;
    padding: 0px 2px;
@@ -163,7 +163,7 @@ a {
    padding: 30px 20px 10px 30px;
    overflow-x:hidden;
    overflow-y:auto;
-   height:90%;
+   height:85%;
 }
 
 .hs-inner {
