@@ -8,7 +8,7 @@ date: 2016-06-19
 So far we have run aspnet core application using the new Kestel web server. Let's deploy the application to IIS. 
 You need to prepare your IIS for AspNet core application deployment. Firstly,  install AspNet Core module  from <a href="https://go.microsoft.com/fwlink/?LinkId=798480" title="AspNet Core Windows Hosting" target="_blank">here</a>.
 Make sure ASpNetCoreModule is listed in the IIS modules after the installation. In order to run aspnet core application on IIS we need to do some changes to the application.
-Below are the changes:
+<br>Below are the changes:
 </p>
 
 <p>Update the <b><i>project.json</i></b> file to add the AspNet Core IIS integration package as a dependency:</p>
@@ -75,9 +75,9 @@ Add a new web.config file in the roor directory of the application.
 
 <p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet publish -c release -o c:\aspnetcoreapp</p>
 
-<p>Your application is now published to c:\aspnetcoreapp folder. Copy your Views folder and web.config file to this published folder. 
-Now goto IIS manger and create a new site pointing to this folder. Change your apppool's .Net Framework Version to "No Managed Code". 
-AspNet core application donot run inside IIS and will be run as a separate process  so we have changed apppool not to use .Net Framework for executing the application and aspNetCoreModule is responsible for bridging IIS and Kesterl web server where actually your aspnetcore app is running.
+<p>Your application is now published to <b><i>c:\aspnetcoreapp folder</i></b>. Copy your <b><i>Views</i> folder and <b><i>web.config</i></b> file to this published folder. 
+<br>Now goto IIS mangement console and create a new site pointing to this folder. Change your apppool's <b>.Net Framework Version</b> to "<b>No Managed Code</b>". 
+<br>AspNet core application donot run inside IIS and will be run as a separate process  so we have changed apppool not to use .Net Framework for executing the application and aspNetCoreModule is responsible for bridging IIS and Kesterl web server where actually your aspnetcore app is running.
 </p>
 
 Launch the browser with http://localhost
