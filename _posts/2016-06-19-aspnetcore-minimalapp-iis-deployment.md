@@ -5,7 +5,7 @@ date: 2016-06-19
 ---
 
 <p>
-So far we have run aspnet core application using the new Kestel web server. Let's deploy the application to IIS. 
+So far we have run aspnet core application using the new Kestel web server. Please find the previous article <a href="http://vwtt.github.io/blog/2016/06/05/aspnetcore-minimalapp">here</a> and code <a href="https://github.com/vwtt/aspnetcoreminapp">here</a>. Let's deploy this application to IIS. 
 You need to prepare your IIS for AspNet core application deployment. Firstly,  install AspNet Core module  from <a href="https://go.microsoft.com/fwlink/?LinkId=798480" title="AspNet Core Windows Hosting" target="_blank">here</a>.
 Make sure ASpNetCoreModule is listed in the IIS modules after the installation. In order to run aspnet core application on IIS we need to do some changes to the application.
 <br>Below are the changes:
@@ -77,7 +77,7 @@ Add a new web.config file in the roor directory of the application.
 
 <p>Your application is now published to <b><i>c:\aspnetcoreapp folder</i></b>. Copy your <b><i>Views</i></b> folder and <b><i>web.config</i></b> file to this published folder. 
 <br>Now goto IIS mangement console and create a new site pointing to this folder. Change your apppool's <b>.Net Framework Version</b> to "<b>No Managed Code</b>". 
-<br>AspNet core application donot run inside IIS and will be run as a separate process  so we have changed apppool not to use .Net Framework for executing the application and aspNetCoreModule is responsible for bridging IIS and Kesterl web server where actually your aspnetcore app is running.
+<br>AspNet core applications donot run inside IIS and will be run as a separate process  so we have changed apppool not to use .Net Framework for executing the application and aspNetCoreModule is responsible for bridging IIS and Kesterl web server where actually your aspnetcore app is running.
 </p>
 
 Launch the browser with http://localhost
