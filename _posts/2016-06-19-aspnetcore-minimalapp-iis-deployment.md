@@ -6,14 +6,12 @@ date: 2016-06-19
 
 <p>
 So far we have run aspnet core application using the new Kestel web server. Please find the previous article <a href="http://vwtt.github.io/blog/2016/06/05/aspnetcore-minimalapp">here</a> and code <a href="https://github.com/vwtt/aspnetcoreminapp">here</a>. Let's deploy this application to IIS. 
-You need to prepare your IIS for AspNet core application deployment. Firstly,  install AspNet Core module  from <a href="https://go.microsoft.com/fwlink/?LinkId=798480" title="AspNet Core Windows Hosting" target="_blank">here</a>.
+You need to prepare your IIS for AspNet core application deployment. <br>Firstly,  install AspNet Core module  from <a href="https://go.microsoft.com/fwlink/?LinkId=798480" title="AspNet Core Windows Hosting" target="_blank">here</a>.
 Make sure ASpNetCoreModule is listed in the IIS modules after the installation. In order to run aspnet core application on IIS we need to do some changes to the application.
 <br>Below are the changes:
 </p>
 
 <p>Update the <b><i>project.json</i></b> file to add the AspNet Core IIS integration package as a dependency:</p>
-
-Your project.json file looks like this now.
 
 {% highlight javascript %}
 
