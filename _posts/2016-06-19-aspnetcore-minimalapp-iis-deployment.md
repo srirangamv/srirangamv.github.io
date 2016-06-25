@@ -71,11 +71,24 @@ Add a new web.config file in the roor directory of the application.
     
 {% endhighlight %}    
 
+<p>Update the <b><i>project.json</i></b> file so that <b><i>Views</i></b> folder and <b><i>web.config</i></b> files are published.</p>
+
+{% highlight javascript %}
+
+    "publishOptions": {
+    "include": [
+      "Views",
+      "web.config"
+    ]
+   }
+    
+{% endhighlight %}
+
 <p>Now publish the aspnet core application with below command. </p>
 
 <p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet publish -c release -o c:\aspnetcoreapp</p>
 
-<p>Your application is now published to <b><i>c:\aspnetcoreapp folder</i></b>. Copy your <b><i>Views</i></b> folder and <b><i>web.config</i></b> file to this published folder. 
+<p>Your application is now published to <b><i>c:\aspnetcoreapp folder</i></b>. 
 <br>Now goto IIS mangement console and create a new site pointing to this folder. Change your apppool's <b>.Net Framework Version</b> to "<b>No Managed Code</b>". 
 <br>AspNet core applications donot run inside IIS and will be run as a separate process  so we have changed apppool not to use .Net Framework for executing the application and aspNetCoreModule is responsible for bridging IIS and Kesterl web server where actually your aspnetcore app is running.
 </p>

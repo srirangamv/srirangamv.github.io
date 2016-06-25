@@ -6,8 +6,8 @@ body {
     font-size: 12px;
     color: #333;
     background-color: #ffffff;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    /*overflow-y: hidden;
+    overflow-x: hidden;*/
 }
 
 h1, h3, h4 {
@@ -119,10 +119,12 @@ a {
             }
 
 .hs-top{      
-   padding: 30px 20px 10px 30px;
+   padding: 30px 30px 10px 30px;
    height:50px;
-   background-color: gold;
+   background-color: #f6b92a;
    /*box-shadow: 1px 3px 1px #888888;*/
+   overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .linkedin{
@@ -161,14 +163,14 @@ a {
 .hs-outer{
    top:98px;
    position:fixed;
-   padding: 30px 20px 10px 30px;
+   padding: 30px 30px 10px 30px;
    overflow-x:hidden;
    overflow-y:auto;
    height:85%;
 }
 
 .hs-inner {
-    
+
 }
    /*
    .hs-inner:nth-child(odd) {
