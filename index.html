@@ -4,8 +4,8 @@ title: Vikram's Blog
 ---      
 {% for post in site.posts %}
   <div class="hs-inner">
-    <h4>{{ page.date | date_to_string }}</h4>   
+    <h4>{{ post.date | date_to_string }}</h4>   
 
-    <a href="{{ post.url }}" title="{{ post.title }}"><h2>{{ page.title }}</h2></a>    
+    <a href="{{ post.url }}" title="{{ post.title }}"><h2>{{ post.title }}</h2></a>    
   </div>    
 {% endfor %} 
