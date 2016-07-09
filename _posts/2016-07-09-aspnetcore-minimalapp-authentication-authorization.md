@@ -8,7 +8,7 @@ date: 2016-07-09
 
 <p>
 In this article we will create a simple aspnet core application and add authentication and authoorization to it.
-We use cookie authentication middleware to persist the identity information once user is authenticated. Subsequent call to server this cookie middleware will create the identity from the cookie. To create the identity we use a simple username and password and we assume this user is validated and we will create identity. For authentication we are not using Asp.Net identity for the purpose of simplification.
+We use cookie authentication middleware to persist the identity information once user is authenticated. Subsequent calls to server are authenticated by this cookie middleware by creating identity from authetication cookie. To create the identity we use a dummy username and password form and we assume this user is validated against a data store. For authentication we are not using Asp.Net identity for the purpose of simplification.
 </p>
 
 <p>This sample will have anonymous home action "Index" and an "Update" action which requires authorization.</p>
@@ -121,7 +121,72 @@ Add a new <i><b>HomeController.cs</b></i> file in the <i><b>Controllers</b></i> 
         }
     }
     
-{% endhighlight %}   
+{% endhighlight %}  
+
+Also add a new <i><b>AccountController.cs</b></i> file in the <i><b>Controllers</b></i> directory of the application.
+
+{% highlight csharp %}
+
+    using System;
+    using System.Linq;
+    using System.Collections.Generic;
+    using System.Security.Claims;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Authorization;
+
+    using aspnetcoreauth.Core.Security;
+    using aspnetcoreauth.ViewModel;
+
+    namespace aspnetcoreauth.Controllers
+    {
+        public class AccountController : Controller
+        {
+            private readonly IIdentityHelper _identityHelper;
+
+            public AccountController(IIdentityHelper identityHelper)
+            {
+                _identityHelper = identityHelper;
+            }
+
+            public IActionResult Login()
+            {
+                var loginInfo = new LoginInfo();
+
+                return View(loginInfo);
+            }
+
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> Login(LoginInfo loginInfo)
+            {
+                if(ModelState.IsValid){
+                    //assuming user name and password is validated. Now create identity.
+                    var Claims = new Dictionary<string, string>();
+
+                    var principal = _identityHelper.CreateIdentity(loginInfo.UserName, "", Claims);
+
+                    await HttpContext.Authentication.SignInAsync("aspnetcoreauth", principal);
+                }
+
+                return RedirectToAction("Update", "Home");
+            }
+
+            public async Task<IActionResult> LogOff()
+            {
+                await HttpContext.Authentication.SignOutAsync("aspnetcoreauth");
+
+                return RedirectToAction("Index", "Home");
+            }
+
+            public IActionResult Forbidden()
+            {
+                return View();
+            }
+        }
+    }
+    
+{% endhighlight %} 
 
 <p>Add respective <i><b>Index.cshtml</b></i> and <i><b>Update.cshtml</b></i> views as show below under "Views/Home" folder.</p>
 
@@ -202,6 +267,7 @@ Add a new <i><b>HomeController.cs</b></i> file in the <i><b>Controllers</b></i> 
 
 {% endhighlight %}
 
+Now run the application using command below
 <p class="cmd">c:\&gt;aspnetcoreauth&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000
@@ -210,7 +276,7 @@ Launch the browser with http://localhost:5000
 <p class="output">
 Index
 <br>
-<a href="#">This needs authorization. </a>
+<u>This needs authorization. </u>
 </p>
 
 <p>Click the link which invokes action "Update" on HomeController. As this action is decorated with [Authorize] attribute, cookie middleware now tries to redirect the user to "Login" page which is configured in the <i><b>StartUp.cs</b></i></p>
@@ -220,45 +286,15 @@ Index
 <h2>Please login...</h2>
 
 <form>
-                <label class="col-md-2 control-label" for="UserName">User Name</label>
-                    <input class="form-control" type="text" data-val="true" data-val-required="The User Name field is required." id="UserName" name="UserName" value="" />
-                <br/>    
-            <label class="col-md-2 control-label" for="Pwd">Password</label>
-                <input class="form-control" type="password" data-val="true" data-val-required="The Password field is required." id="Pwd" name="Pwd" />
-                <br/>
-                <input type="submit" value="Login" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
+    <label class="col-md-2 control-label" for="UserName">User Name</label>
+        <input class="form-control" type="text" data-val="true" data-val-required="The User Name field is required." id="UserName" name="UserName" value="" />
+    <br/>    
+    <label class="col-md-2 control-label" for="Pwd">Password</label>
+        <input class="form-control" type="password" data-val="true" data-val-required="The Password field is required." id="Pwd" name="Pwd" />
+        <br/>
+        <input type="submit" value="Login" class="btn btn-default" />
     </form>
-</p>
-
-{% highlight csharp %}
-
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Login(LoginInfo loginInfo)
-    {
-        if(ModelState.IsValid){
-            //assuming user name and password is validated. Now create identity.
-            var Claims = new Dictionary<string, string>();
-
-            var principal = _identityHelper.CreateIdentity(loginInfo.UserName, "", Claims);
-
-            await HttpContext.Authentication.SignInAsync("aspnetcoreauth", principal);
-        }
-
-        return RedirectToAction("Update", "Home");
-    }
-    
-    public async Task<IActionResult> LogOff()
-    {
-        await HttpContext.Authentication.SignOutAsync("aspnetcoreauth");
-
-        return RedirectToAction("Index", "Home");
-    }
-    
-{% endhighlight %}  
+</p> 
 
 <p>User is now authenticated as the identity is created and persisted with cookie middleware. So you will be able to see Home/Update page.</p>
 
@@ -288,15 +324,23 @@ Index
 
 <p class="cmd">c:\&gt;aspnetcoreauth&gt;dotnet run</p>
 
-Launch the browser with http://localhost:5000/Home/Update
+Launch the browser with http://localhost:5000
+
+<b>Output:</b>
+<p class="output">
+Index
+<br>
+<u>This needs authorization. </u>
+</p>
+
+<p>Click the link which invokes action "Update" on HomeController. You willbe rediredcted to Login page. Enter the credentials. You are shown <i><b>Forbidden page</b></i> as required "EmployeeNumber" is missing on the user identity. So let's add required claims to the dummy identity. Please update the Login action as shown below.</p>
 
 <b>Output:</b>
 <p class="output">
 You are not authorized.
 </p>
 
-<p>You are shown <i><b>Forbidden page</b></i> as required "EmployeeNumber" is missing on the user identity. So let's add required claims to the dummy identity. Please update the Login action as shown below.</p>
-
+<p>So let's add some claims to the identity as shown below.</p>
 {% highlight csharp %}
 
     [HttpPost]
@@ -327,15 +371,6 @@ Launch the browser with http://localhost:5000 and click on the link so that Logi
 <p class="output">
 You are authorized.
 </p>
-
-<p>Add a LogOff action to the Action controller as shown below.</p>
-
-{% highlight csharp %}
-
-    
-    
-{% endhighlight %} 
-
 
 Navigate the browser to http://localhost:5000/Account/LogOff
 
