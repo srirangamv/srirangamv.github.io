@@ -96,6 +96,69 @@ Restore the packages:
 
 {% endhighlight %}
 
+<p>Add below helper class and interface used for creating identity.</p>
+
+{% highlight csharp %}
+
+    using System;
+    using System.Collections.Generic;
+    using System.Security.Claims;
+    using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Authorization;
+
+    namespace aspnetcoreauth.Core.Security
+    {
+        public interface IIdentityHelper
+        {
+            ClaimsPrincipal CreateIdentity(string Name, string Role, Dictionary<string, string> Claims = null);
+            ClaimsPrincipal GetCurrentIdenity();
+        }
+    }
+
+{% endhighlight %}
+
+{% highlight csharp %}
+
+    using System;
+    using System.Collections.Generic;
+    using System.Security.Claims;
+    using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Authentication.Cookies;
+
+    namespace aspnetcoreauth.Core.Security
+    {
+        public class IdentityHelper : IIdentityHelper
+        {
+            private readonly IHttpContextAccessor _httpContextAccessor;
+
+            public IdentityHelper(IHttpContextAccessor httpContextAccessor)
+            {
+                _httpContextAccessor = httpContextAccessor;
+            }
+
+            public ClaimsPrincipal CreateIdentity(string Name, string Role, Dictionary<string, string> Claims = null)
+            {
+                var identity = new ClaimsIdentity("aspnetcoreauth", Name, Role);
+
+                identity.AddClaim(new Claim("UserName", Name));
+                if(Claims != null){
+                    foreach(var key in Claims.Keys){
+                        identity.AddClaim(new Claim(key, Claims[key]));
+                    }
+                }
+
+                return new ClaimsPrincipal(identity);
+            }
+
+            public ClaimsPrincipal GetCurrentIdenity(){
+                return _httpContextAccessor.HttpContext.User as ClaimsPrincipal;
+            }
+        }
+    }
+
+{% endhighlight %}
+
 Add a new <i><b>HomeController.cs</b></i> file in the <i><b>Controllers</b></i> directory of the application.
 
 {% highlight csharp %}
@@ -303,7 +366,7 @@ Index
 <h2>You are authorized.</h2>
 </p>
 
-<p>Let's change the [Authorize] attribute to [Authorize(Policy = "EmployeeOnly")]</p> and <i><b>StartUp.cs</b></i> to add an authorize policy to be used.
+<p>Let's change the [Authorize] attribute to [Authorize(Policy = "EmployeeOnly")] and <i><b>StartUp.cs</b></i> to add an authorize policy to be used.</p>
 
 {% highlight csharp %}
 
