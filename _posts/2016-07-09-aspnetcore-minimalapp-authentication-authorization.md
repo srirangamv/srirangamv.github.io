@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Asp.Net Core app, simple Authentication & Authorization."
-name: "2016-06-19-aspnetcore-minimalapp-authentication-authorization"
+name: "2016-07-09-aspnetcore-minimalapp-authentication-authorization"
 description: "AspNet Core application security."
 date: 2016-07-09
 ---
 
 <p>
-In this article we will create a simple aspnet core application and add authentication and authoorization to it.
+In this article, we will create a simple aspnet core application and add authentication and authoorization to it.
 We use cookie authentication middleware to persist the identity information once user is authenticated. Subsequent calls to server are authenticated by this cookie middleware by creating identity from authetication cookie. To create the identity we use a dummy username and password form and we assume this user is validated against a data store. For authentication we are not using Asp.Net identity for the purpose of simplification.
 </p>
 
@@ -330,15 +330,13 @@ Also add a new <i><b>AccountController.cs</b></i> file in the <i><b>Controllers<
 
 {% endhighlight %}
 
-Now run the application using command below
+<p>Now run the application using command below. Launch the browser with http://localhost:5000</p>
 <p class="cmd">c:\&gt;aspnetcoreauth&gt;dotnet run</p>
-
-Launch the browser with http://localhost:5000
 
 <b>Output:</b>
 <p class="output">
 Index
-<br>
+<br/>
 <u>This needs authorization. </u>
 </p>
 
@@ -404,6 +402,7 @@ You are not authorized.
 </p>
 
 <p>So let's add some claims to the identity as shown below.</p>
+
 {% highlight csharp %}
 
     [HttpPost]
@@ -428,7 +427,7 @@ You are not authorized.
 
 <p class="cmd">c:\&gt;aspnetcoreauth&gt;dotnet run</p>
 
-Launch the browser with http://localhost:5000 and click on the link so that Login page is shown enter credentials. You will be successfully redirected to "Home/Update" action.
+<p>Launch the browser with http://localhost:5000 and click on the link so that Login page is shown enter credentials. You will be successfully redirected to "Home/Update" action.</p>
 
 <b>Output:</b>
 <p class="output">
