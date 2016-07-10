@@ -14,13 +14,12 @@ In this article, we will create a simple aspnet core MVC tag helper to display c
     <h4 currency>1221.00</h4>
     (OR)
     <h4 currency>@Html.DiplayFor(item=>item.Price)</h4>
-</code>
 
 {% endhighlight %}
 
-Output of the tag lloks like this.
+Output of the tag looks like this.
 <p class="output">
-<h4><span>Rs. </span>1221.00</h4>
+Rs. 1221.00
 </p>
 
 <p>Below is the code for the currency tag helper. Here we are appending &lt;span>&gt; to the output.</p>
