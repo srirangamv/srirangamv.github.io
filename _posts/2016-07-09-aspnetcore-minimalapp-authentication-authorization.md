@@ -344,16 +344,16 @@ Index
 
 <b>Output:</b>
 <p class="output">
-<h2>Please login...</h2>
+    Please login...
 
-<form>
-    <label class="col-md-2 control-label" for="UserName">User Name</label>
-        <input class="form-control" type="text" data-val="true" data-val-required="The User Name field is required." id="UserName" name="UserName" value="" />
-    <br/>    
-    <label class="col-md-2 control-label" for="Pwd">Password</label>
-        <input class="form-control" type="password" data-val="true" data-val-required="The Password field is required." id="Pwd" name="Pwd" />
-        <br/>
-        <input type="submit" value="Login" class="btn btn-default" />
+    <form>
+        <label for="UserName">User Name</label>
+        <input type="text" value="" />
+        <br>    
+        <label for="Pwd">Password</label>
+        <input id="Pwd" name="Pwd" />
+        <br>
+        <input type="submit" value="Login" />
     </form>
 </p> 
 
@@ -361,7 +361,7 @@ Index
 
 <b>Output:</b>
 <p class="output">
-<h2>You are authorized.</h2>
+You are authorized.
 </p>
 
 <p>Let's change the [Authorize] attribute to [Authorize(Policy = "EmployeeOnly")] and <i><b>StartUp.cs</b></i> to add an authorize policy to be used.</p>
