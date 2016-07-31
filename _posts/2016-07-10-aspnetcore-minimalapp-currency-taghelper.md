@@ -22,7 +22,7 @@ Output of the tag looks like this.
 Rs. 1221.00
 </p>
 
-<p>Below is the code for the currency tag helper. Here we are appending &lt;span>&gt; to the output.</p>
+<p>Below is the code for the currency tag helper. Here we are appending &lt;span&gt; to the output.</p>
 
 {% highlight csharp %}
 
