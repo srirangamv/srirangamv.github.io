@@ -7,4 +7,4 @@ date: 2016-07-31
 ---
 
 <p>My GitHub static site launched today :)</p>
-<img src="/css/BlipkartArchitecture.png" alt="Blipkart Architecture Diagram" />
+<img src="/images/BlipkartArchitecture.png" alt="Blipkart Architecture Diagram" />
