@@ -18,8 +18,7 @@ date: 2016-07-31
 <h3><a name="section1">Introduction</a></h3>
 <p>
     <p>
-        In this article, we will create an aspnet core application and add authentication and authoorization to it.
-        We use cookie authentication middleware to persist the identity information once user is authenticated. Subsequent calls to server are authenticated by this cookie middleware by creating identity from authetication cookie. To create the identity we use a dummy username and password form and we assume this user is validated against a data store. For authentication we are not using Asp.Net identity for the purpose of simplification.
+        In this article, we will see an aspnet core shopping cart minimal application which uses entity framework core as backend, simple authentication and authoorization. Also data access layer is accessed by repositories and co-ordinated by a unit of work. See below block diagram for the interaction between the layers and components.
     </p>
     <figure>
       <img src="/images/BlipkartArchitecture.png" alt="Blipkart Architecture Diagram" width="450" height="600" />
@@ -43,6 +42,7 @@ Services translate this viewmodels to domain entities and persists/reads the dom
 <p>MSTest framework is used as a unit test runner for all the unit tests and Moq is the mocking framework for stubbing and mocking the objects when unit tesed.</p>
 
 {% highlight javascript %}
+//file: project.json
 
 {
   "version": "1.0.0-*",
@@ -77,8 +77,7 @@ Services translate this viewmodels to domain entities and persists/reads the dom
 <p>Microsoft.AspNetCore.TestHost is used for integration tests.</p>
 
 How to run tests:
-<p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet build</p> <br>  
-<p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet test</p> <br>  
-
+<p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet build</p>  
+<p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet test</p>
 <p>
 Please find the complete code at <a href="https://github.com/vwtt/aspnetcorecompleteapp" title="code download path">here</a>.</p>
