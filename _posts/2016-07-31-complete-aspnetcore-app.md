@@ -78,9 +78,7 @@ A Unit Of Work coordinates multiple repository changes on a single DbContext. We
 How to run application:
 <p class="cmd">c:\&gt;Blipkart&gt;Blipkart&gt;dotnet restore</p><br>  
 <p class="cmd">c:\&gt;Blipkart&gt;Blipkart&gt;dotnet ef update database</p><br>
-<p class="cmd">c:\&gt;Blipkart&gt;Blipkart&gt;dotnet build</p><br>  
 <p class="cmd">c:\&gt;Blipkart&gt;Blipkart&gt;dotnet run</p>
 
 How to run tests:
-<p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet build</p><br>  
 <p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet test</p>
