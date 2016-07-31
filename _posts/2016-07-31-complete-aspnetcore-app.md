@@ -18,7 +18,7 @@ date: 2016-07-31
 <h3><a name="section1">Introduction</a></h3>
 <p>
     <p>
-        In this article, we will see an aspnet core shopping cart minimal application which uses entity framework core as backend, simple authentication and authoorization. Also data access layer is accessed by repositories and co-ordinated by a unit of work. See below block diagram for the interaction between the layers and components.
+        In this article, we will see an aspnet core shopping cart minimal application which uses entity framework core as backend, simple authentication and authoorization. Also data access layer is accessed by repositories and co-ordinated by a unit of work. See below block diagram for the interaction between the layers and components. Please find the complete code at <a href="https://github.com/vwtt/aspnetcorecompleteapp" title="code download path">here</a>.
     </p>
     <figure>
       <img src="/images/BlipkartArchitecture.png" alt="Blipkart Architecture Diagram" width="450" height="600" />
@@ -27,19 +27,18 @@ date: 2016-07-31
 </p>    
 <h3><a name="section2">Repository</a></h3>
 <p>
-A repository is the place we can keep all the data access logic. This helps in code resuse and eleminate duplication of data access logic. Each repository will be independent and can be tested with a in-memory DbContext.
+A repository is the place we can keep all the data access logic. This helps us in resusing the code and eleminate duplication of data access logic. Each repository will be independent and can be tested with a in-memory DbContext.
 </p>
 <h3><a name="section3">Unit Of Work</a></h3>
 <p>
-A Unit Of Work is coordinates multiple repository changes on a single DbContext. We ensure DbContext is scoped and only one DBContext is avialable for both repositoties and unit of work object. A service which make changes to two or more repositories can be committed co-ordinately with the help of Unit Of Work.
+A Unit Of Work coordinates multiple repository changes on a single DbContext. We ensure DbContext is scoped and only one DBContext is avialable for both repositoties and unit of work object. A service which make changes to two or more repositories can be committed co-ordinately with the help of Unit Of Work.
 </p>
 <h3><a name="section4">ViewModels</a></h3>
-<p>ViewModels are mapped entities to domain enties with required additional properies or merged domain enties that controllers and views use for rendering pages. Creating view models will make data access de coupled from actual domain classes.</p>
+<p>ViewModels are mapped entities to domain enties with required additional properies or merged domain enties that controllers and views use. Creating view models will make data access de coupled from actual domain classes and data access.</p>
 <h3><a name="section5">Services</a></h3>
-<p>Services are the bridge between UI layer of the application and data access layer. Thus keeping the controllers and views separate from data access layer with the help of viewmodels. Controllers and views passes data using view models to services.
-Services translate this viewmodels to domain entities and persists/reads the domain data.</p>
+<p>Services are the bridge between UI layer of the application and data access layer. Thus keeping the controllers and views separate and independent from data access layer with the help of viewmodels. Controllers and views passes data using view models to services. Services translate this viewmodels to domain model entities and persists the domain data.</p>
 <h3><a name="section6">Unit Testing</a></h3>
-<p>MSTest framework is used as a unit test runner for all the unit tests and Moq is the mocking framework for stubbing and mocking the objects when unit tesed.</p>
+<p>MSTest framework is used as a unit test runner for all the unit tests and Moq is the mocking framework for stubs and mocks.</p>
 
 {% highlight javascript %}
 //file: project.json
@@ -77,7 +76,5 @@ Services translate this viewmodels to domain entities and persists/reads the dom
 <p>Microsoft.AspNetCore.TestHost is used for integration tests.</p>
 
 How to run tests:
-<p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet build</p>  
+<p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet build</p><br>  
 <p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet test</p>
-<p>
-Please find the complete code at <a href="https://github.com/vwtt/aspnetcorecompleteapp" title="code download path">here</a>.</p>
