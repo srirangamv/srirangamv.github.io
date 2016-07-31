@@ -35,14 +35,50 @@ A repository is the place we can keep all the data access logic. This helps in c
 A Unit Of Work is coordinates multiple repository changes on a single DbContext. We ensure DbContext is scoped and only one DBContext is avialable for both repositoties and unit of work object. A service which make changes to two or more repositories can be committed co-ordinately with the help of Unit Of Work.
 </p>
 <h3><a name="section4">ViewModels</a></h3>
-ViewModels are mapped entities to domain enties with required additional properies or merged domain enties that controllers and views use for rendering pages. Creating view models will make data access de coupled from actual domain classes.
+<p>ViewModels are mapped entities to domain enties with required additional properies or merged domain enties that controllers and views use for rendering pages. Creating view models will make data access de coupled from actual domain classes.</p>
 <h3><a name="section5">Services</a></h3>
-Services are the bridge between UI layer of the application and data access layer. Thus keeping the controllers and views separate from data access layer with the help of viewmodels. Controllers and views passes data using view models to services.
-Services translate this viewmodels to domain entities and persists/reads the domain data.
+<p>Services are the bridge between UI layer of the application and data access layer. Thus keeping the controllers and views separate from data access layer with the help of viewmodels. Controllers and views passes data using view models to services.
+Services translate this viewmodels to domain entities and persists/reads the domain data.</p>
 <h3><a name="section6">Unit Testing</a></h3>
-...unit testing...
+<p>MSTest framework is used as a unit test runner for all the unit tests and Moq is the mocking framework for stubbing and mocking the objects when unit tesed.</p>
+
+{% highlight javascript %}
+
+{
+  "version": "1.0.0-*",
+  "testRunner": "mstest",
+  "buildOptions": {
+    "emitEntryPoint": false
+  },
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0"
+    },
+    "Blipkart": "1.0.0-*",
+    "dotnet-test-mstest": "1.0.1-preview",
+    "MSTest.TestFramework": "1.0.0-preview",
+    "moq.netcore": "4.4.0-beta8",
+    "Microsoft.AspNetCore.TestHost": "1.0.0"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "dotnet5.6",
+        "dnxcore50",
+        "portable-net45+win8"
+        ]
+    }
+  }
+}
+{% endhighlight %}
+
 <h3><a name="section7">Integration Testing</a></h3>
-...integration testing...
+<p>Microsoft.AspNetCore.TestHost is used for integration tests.</p>
+
+How to run tests:
+<p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet build</p> <br>  
+<p class="cmd">c:\&gt;Blipkart&gt;Blipkart.tests&gt;dotnet test</p> <br>  
 
 <p>
 Please find the complete code at <a href="https://github.com/vwtt/aspnetcorecompleteapp" title="code download path">here</a>.</p>
