@@ -65,7 +65,7 @@ namespace netcoreapp
             }
         }
         
-        //mapper function
+        //mapper
         public static IEnumerable<string[]> GetLines()
         {
             foreach(var line in File.ReadLines("inputtext.txt"))
@@ -81,6 +81,7 @@ namespace netcoreapp
 <b>Output:</b>
 <p class="output">
 Word    :Count
+<br>
 The             :5
 ...
 </p>
