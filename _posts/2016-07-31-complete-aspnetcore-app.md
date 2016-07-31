@@ -7,7 +7,7 @@ date: 2016-07-31
 ---
 
 <p>
-In this article, we will create a simple aspnet core application and add authentication and authoorization to it.
+In this article, we will create a complete aspnet core application and add authentication and authoorization to it.
 We use cookie authentication middleware to persist the identity information once user is authenticated. Subsequent calls to server are authenticated by this cookie middleware by creating identity from authetication cookie. To create the identity we use a dummy username and password form and we assume this user is validated against a data store. For authentication we are not using Asp.Net identity for the purpose of simplification.
 </p>
 
@@ -24,9 +24,9 @@ We use cookie authentication middleware to persist the identity information once
 </p>    
 <h2><a name="section2">Repository</a></h2>
 ...section 2...
-<h2><a name="section3">Unit Of Work</a</h2>
+<h2><a name="section3">Unit Of Work</a></h2>
 ...section 3...
-<h2><a name="section4">Unit Of Work</a</h2>
+<h2><a name="section4">Unit Of Work</a></h2>
 ...section 4...
 
 <p>
