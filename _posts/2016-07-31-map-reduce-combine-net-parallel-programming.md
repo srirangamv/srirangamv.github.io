@@ -12,6 +12,7 @@ date: 2016-07-31
 {% highlight csharp %}
 
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
@@ -24,7 +25,7 @@ namespace netcoreapp
     {
         public static void Main(string[] args)
         {
-            Dictionary<string, int> globalResult = new Dictionary<string, int>();
+            ConcurrentDictionary<string, int> globalResult = new ConcurrentDictionary<string, int>();
             
             Parallel.ForEach<string[], Dictionary<string, int>>(
                 GetLines(), 
