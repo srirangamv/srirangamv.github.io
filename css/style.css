@@ -271,3 +271,31 @@
   opacity:0.2;
 }
 
+.cmd{
+    background-color: #000;
+    color: white;
+}
+
+.output{
+    border: 1px solid #ccc;
+    color: #000;
+    border-radius: 4px;
+}
+
+.error{
+    border: 1px solid #f00;
+    color: #000;
+    border-radius: 4px;
+}
+
+.posts{
+    list-style-type: decimal;
+}
+
+.posts > span{
+    font-weight: bold;
+}
+
+.posts > a{
+    font-size: 1.1em;
+}
