@@ -7,7 +7,7 @@ date: 2016-07-31
 ---
 
 <p>Here is a simpe word count program using .Net parallel programming which maps a subset of lines to each thread for processing and this thread reduces lines to a dictionary to keep the word count. And a combiner function merges this local dictionaries with global result. Essentially, reducing phase executed on different cores of processor parallelly.</p>
-
+<!--more-->
 
 {% highlight csharp %}
 
