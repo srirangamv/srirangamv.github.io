@@ -278,13 +278,13 @@
 
 .output{
     border: 1px solid #ccc;
-    color: #000;
+    color: #555;
     border-radius: 4px;
 }
 
 .error{
     border: 1px solid #f00;
-    color: #000;
+    color: #f00;
     border-radius: 4px;
 }
 
@@ -292,10 +292,10 @@
     list-style-type: decimal;
 }
 
-.posts > span{
+.posts > li > span{
     font-weight: bold;
 }
 
-.posts > a{
+.posts > li > a{
     font-size: 1.1em;
 }
