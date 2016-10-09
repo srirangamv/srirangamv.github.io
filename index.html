@@ -3,6 +3,7 @@ layout: default
 title: Vikram's Blog
 ---      
 
+<!--
 <ul class="posts">
   {% for post in site.posts %}
     <li>
@@ -11,4 +12,11 @@ title: Vikram's Blog
       {{ post.excerpt }}
     </li>
   {% endfor %}
-</ul>
+</ul>-->
+
+<h4>{{ site.posts.last.date | date_to_string }}</h4>
+<h2>{{ site.posts.last.title }}</h2>
+
+<div class="post">
+{{ site.posts.last }}
+</div>
