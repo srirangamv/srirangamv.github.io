@@ -3,9 +3,11 @@ layout: default
 title: Vikram's Blog
 ---      
 
-<span>{{ site.posts.first.date | date_to_string }}</span>
-<h2>{{ site.posts.first.title }}</h2>
+{% assign latestpost = site.posts.first %}
+
+<span>{{ latestpost.date | date_to_string }}</span>
+<h2>{{ latestpost.title }}</h2>
 
 <div class="post">
-{{ site.posts.first.content }}
+{{ latestpost.content }}
 </div>
