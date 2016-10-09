@@ -20,6 +20,7 @@ date: 2016-07-31
     <p>
         In this article, we will see an aspnet core shopping cart minimal application which uses entity framework core as backend, simple authentication and authoorization. Also data access layer is accessed by repositories and co-ordinated by a unit of work. See below block diagram for the interaction between the layers and components. Please find the complete code at <a href="https://github.com/vwtt/aspnetcorecompleteapp" title="code download path">here</a>.
     </p>
+    <!--more-->
     <figure>
       <img src="/images/BlipkartArchitecture.png" alt="Blipkart Architecture Diagram" width="450" height="600" />
       <figcaption>Blipkart Architecture Diagram</figcaption>
