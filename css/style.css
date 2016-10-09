@@ -1,7 +1,7 @@
 .header-blue{
   background:linear-gradient(135deg, #172a74, #21a9af);
   background-color:#184e8e;
-  padding-bottom:30px;
+  /*padding-bottom:30px;*/
   font-family:'Source Sans Pro', sans-serif;
 }
 
@@ -272,7 +272,7 @@
 }
 
 .cmd{
-    background-color: #000;
+    background-color: #555;
     color: white;
 }
 
