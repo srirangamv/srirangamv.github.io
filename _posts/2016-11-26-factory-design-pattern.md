@@ -10,7 +10,7 @@ date: 2016-11-26
 
 <p>
     <figure>
-      <img src="/images/FactoryPattern.png" alt="Factory Pattern UML Diagram" width="450" height="600" />
+      <img src="/images/FactoryPattern.png" alt="Factory Pattern UML Diagram" width="600" height="450" />
       <figcaption>Factory Pattern UML Diagram</figcaption>
     </figure>    
 </p>
