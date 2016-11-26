@@ -6,7 +6,7 @@ description: "Introduction to Design Patterns"
 date: 2016-11-20
 ---
 
-<p>A design pattern is a templated solution created and well documented earlier for a generic and a recurring problem in software design. This documented solution can readily be used to solve the recurring problem.</p>
+<p>A design pattern is a templated solution created and well documented earlier for a common and a recurring problem in software design. This documented solution can readily be used to solve the recurring problem.</p>
 
 <p>
 There are three categories of design patterns based on the type of problem it addresses.
@@ -21,7 +21,7 @@ These patterns are based on how the objects are created and constructed to solve
 2. Builder
 3. Factory
 4. Prototype
-5.Singleton
+5. Singleton
 
 #### **Structural Patterns**
 <p>
