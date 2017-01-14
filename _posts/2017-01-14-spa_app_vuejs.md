@@ -10,7 +10,7 @@ date: 2017-01-14
 
 <p>
     <figure>
-      <img src="/images/VueJsDemo.png" alt="VueJs Single Page App Screens" width="600" height="450" />
+      <img src="/images/VueJsDemo.png" alt="VueJs Single Page App Screens" width="600" height="350" />
       <figcaption>VueJs Single Page App Screens</figcaption>
     </figure>    
 </p>
@@ -144,11 +144,11 @@ date: 2017-01-14
 
 <b>Output:</b>
 <p class="output">
-Here is the browser's console log for aoo home page.
-
-router entered
-data function called
-created
-mounted
-updated
+Here is the browser's console log for aoo home page.<br>
+<br>
+router entered<br>
+data function called<br>
+created<br>
+mounted<br>
+updated<br>
 </p>
