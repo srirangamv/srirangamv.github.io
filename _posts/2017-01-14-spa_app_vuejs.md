@@ -6,12 +6,16 @@ description: "Single Page App with Vue.Js."
 date: 2017-01-14
 ---
 
-<p>...</p>
+<p>Here we create a simple singple page app(SPA) with Vue.Js to demonstrate templates, components and router. This app containes three components which are movies component, actors component and actor's profile component.</p>
+
+<p>We define three routes, first one is movies route which navigates to movies component which in turn list the movies. this is also be a default router and when app loads this route is loaded. Second one is actors route which navigates actors component whcih show the list of the actors. There is another route which is sub route in actors route. when actor link is clicked it will the actor profile.</p>
+
+<p>Below screenshots showing this sample application in action.</p>
 
 <p>
     <figure>
       <img src="/images/VueJsDemo.png" alt="VueJs Single Page App Screens" width="600" height="300" />
-      <figcaption>VueJs Single Page App Screens</figcaption>
+      <figcaption>VueJs SPA</figcaption>
     </figure>    
 </p>
 
@@ -146,7 +150,7 @@ date: 2017-01-14
 
 <b>Output:</b>
 <p class="output">
-Here is the browser's console log for aoo home page.<br>
+Here is the browser's console log for when app loaded at first.<br>
 <br>
 router entered<br>
 data function called<br>
