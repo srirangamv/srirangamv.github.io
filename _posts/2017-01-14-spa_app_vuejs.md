@@ -8,7 +8,7 @@ date: 2017-01-14
 
 <p>Here we create a simple singple page app(SPA) with Vue.Js to demonstrate templates, components and router. This app containes three components which are movies component, actors component and actor's profile component.</p>
 
-<p>We define three routes, first one is movies route which navigates to movies component which in turn list the movies. This is also be the default router loaded when app loads. Second one is actors route which navigates actors component which show the list of the actors. There is another route which is sub route in actors route. when actor link is clicked it will the actor profile.</p>
+<p>We define three routes, first one is movies route which navigates to movies component which in turn list the movies. This is also be the default route loaded when app loads initially. Second one is actors route which navigates actors component which lists of the actors. There is an another route which is a sub route in actors route. When an actor link is clicked, it will show the actor profile.</p>
 
 <p>Below screenshots showing this sample application in action.</p>
 
@@ -58,7 +58,7 @@ date: 2017-01-14
     const imdb = [
                     { text: 'Behind Eneny Lines' },
                     { text: 'Eneny At The Gates' },
-                    { text: 'World In Not Enough' },
+                    { text: 'World Is Not Enough' },
                     { text: 'Tomorrow Never Dies' }
                 ];
     
