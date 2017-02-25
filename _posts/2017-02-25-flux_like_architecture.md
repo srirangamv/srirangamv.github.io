@@ -12,11 +12,9 @@ date: 2017-02-25
 The first view uses four types of action which are registered with dispatcher and if any store registered to it against those actions can fulfil the action via a promise. Also this store emits an event to the dispatcher. Dispatcher in turn invoke the event handler any registered to it. The second view listens to this event here.
 </p>
 
-<p>Below screenshots showing communication diagram.</p>
-
 <p>
     <figure>
-      <img src="/images/FluxDemo.png" alt="Flux like architecture communication diagram" width="600" height="300" />
+      <img src="/images/FluxDemo.png" alt="Flux like architecture communication diagram" width="800" height="200" />
       <figcaption>Flux Communication Diagram</figcaption>
     </figure>    
 </p>
