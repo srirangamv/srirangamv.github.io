@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Flux like architecture in plain Javascript"
+title: "Flux-like architecture in plain Javascript"
 name: "2017-02-25-flux_like_architecture"
 description: "flux like architecture sample."
 date: 2017-02-25
 ---
 
-<p>Here is plain javascript code to explain flux like architecture.</p>
+<p>Here is plain javascript code to explain flux architecture.</p>
 
 <p>We define two views and a store, dispatcher and promise are the utilities. 
 The first view uses four types of action which are registered with dispatcher and if any store registered to it against those actions can fulfil the action via a promise. Also this store emits an event to the dispatcher. Dispatcher in turn invoke the event handler any registered to it. The second view listens to this event here.
