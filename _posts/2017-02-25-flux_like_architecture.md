@@ -17,7 +17,7 @@ The first view uses four types of action which are registered with dispatcher an
 <p>
     <figure>
       <img src="/images/FluxDemo.png" alt="Flux like architecture communication diagram" width="600" height="300" />
-      <figcaption>Flux Communication</figcaption>
+      <figcaption>Flux Communication Diagram</figcaption>
     </figure>    
 </p>
 
@@ -106,7 +106,7 @@ The first view uses four types of action which are registered with dispatcher an
         }
 
         /*
-        1. query store via action and dispatcher or listen to event
+        1. views can query store via action or listen to an event
         */
         function CalcView(dispatcher) {
             this.callbackfunc = function (result, err) {
@@ -150,7 +150,7 @@ The first view uses four types of action which are registered with dispatcher an
         }
 
         /*
-        1. return/emit readoly data
+        1. return/emit readonly data
         2. only action can change the state of store
         */
         function CalcStore(dispatcher) {
