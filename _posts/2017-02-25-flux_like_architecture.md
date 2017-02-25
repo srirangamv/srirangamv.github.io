@@ -122,14 +122,14 @@ The first view uses four types of action which are registered with dispatcher an
                 "name": "getadd",
                 "params": [1, 2]
             });
-            dispatcher.dispatch({
+            /*dispatcher.dispatch({
                 "name": "getsub",
                 "params": [1, 2]
             });
             dispatcher.dispatch({
                 "name": "getmul",
                 "params": [1, 2]
-            });
+            });*/
             dispatcher.dispatch({
                 "name": "getdiv",
                 "params": [6, 2] 
