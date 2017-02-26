@@ -6,7 +6,7 @@ description: "Factory Method vs Factory Design Pattern"
 date: 2017-02-26
 ---
 <p>Though these two patterns are about creating objects, Here are differences between factory and factory method pattern.</p>
-<table style="border:solid 1px #999">
+<table class="datatable">
 <tr>
 <th>Factory Method</th>
 <th>Factory</th>
@@ -29,3 +29,17 @@ date: 2017-02-26
 </ol></td>
 </tr>
 </table>
+<style>
+.datatable, .datatable td, .datatable th {
+    border: 1px solid #ccc;
+}
+
+.datatable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable th {
+    height: 50px;
+}
+</style>
