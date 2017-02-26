@@ -299,3 +299,16 @@
 .posts > li > a{
     font-size: 1.1em;
 }
+
+.datatable, .datatable td, .datatable th {
+    border: 1px solid #ccc;
+}
+
+.datatable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable th {
+    height: 50px;
+}

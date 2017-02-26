@@ -29,17 +29,3 @@ date: 2017-02-26
 </ol></td>
 </tr>
 </table>
-<style>
-.datatable, .datatable td, .datatable th {
-    border: 1px solid #ccc;
-}
-
-.datatable {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.datatable th {
-    height: 50px;
-}
-</style>
