@@ -80,7 +80,7 @@ The first view uses four types of action which are registered with dispatcher an
             this.dispatch = function (actionpayload) { //actionpayload={name, paramsarray}
                 //find actiontype and call store.
                 var callbacks = callbackstore[actionpayload.name];
-                var promise = stores[actionpayload.name].dispatch(actionpayload.name, actionpayload.params);
+                var promise = stores[actionpayload.name].reduce(actionpayload.name, actionpayload.params);
                 promise.done(function (data) {
                     callbacks.forEach(function (item, index) {
                         item(data);
@@ -158,7 +158,7 @@ The first view uses four types of action which are registered with dispatcher an
                 "getsub",
                 "getdiv"
             ], this);
-            this.dispatch = function (actiontype, params) {
+            this.reduce = function (actiontype, params) {
                 //based on actiontype return a promise
                 switch (actiontype) {
                     case "getadd":
