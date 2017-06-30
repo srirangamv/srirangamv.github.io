@@ -12,7 +12,7 @@ date: 2016-07-31
 </p>
 <p>
     <figure>
-      <img src="/images/BlipkartArchitecture.png" alt="Blipkart Architecture Diagram" width="450" height="600" />
+      <img src="/images/BlipkartArchitecture.png" alt="Blipkart Architecture Diagram" width="100%" height="130%" />
       <figcaption>Blipkart Architecture Diagram</figcaption>
     </figure>    
 </p>    
