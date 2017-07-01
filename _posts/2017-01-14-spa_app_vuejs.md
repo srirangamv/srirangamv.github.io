@@ -14,7 +14,7 @@ date: 2017-01-14
 
 <p>
     <figure>
-      <img src="/images/VueJsDemo.png" alt="VueJs Single Page App Screens" width="100%" height="50%" />
+      <img src="/images/VueJsDemo.png" alt="VueJs Single Page App Screens" width="489px" height="188px" />
       <figcaption>VueJs SPA</figcaption>
     </figure>    
 </p>

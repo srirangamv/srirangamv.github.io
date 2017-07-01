@@ -14,7 +14,7 @@ The first view uses four types of action which are registered with dispatcher an
 
 <p>
     <figure>
-      <img src="/images/FluxDemo.png" alt="Flux like architecture communication diagram" width="100%" height="25%" />
+      <img src="/images/FluxDemo.png" alt="Flux like architecture communication diagram" width="833px" height="207px" />
       <figcaption>Flux Communication Diagram</figcaption>
     </figure>    
 </p>
