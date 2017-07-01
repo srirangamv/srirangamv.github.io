@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url> 
+    <loc>http://vwtt.github.io/</loc> 
+    <loc>http://vwtt.github.io/blog/</loc> 
+    <loc>http://vwtt.github.io/blog/factory-factory_method_design-pattern</loc>
+    <loc>http://vwtt.github.io/blog/flux_like_architecture</loc>
+    <loc>http://vwtt.github.io/blog/spa_app_vuejs</loc>
+    <loc>http://vwtt.github.io/blog/factory-design-pattern</loc>
+    <loc>http://vwtt.github.io/blog/design-patterns-overview</loc>
+    <loc>http://vwtt.github.io/blog/map-reduce-combine-net-parallel-programming</loc>
+    <loc>http://vwtt.github.io/blog/complete-aspnetcore-app</loc>
+    <loc>http://vwtt.github.io/blog/aspnetcore-minimalapp-currency-taghelper</loc>
+    <loc>http://vwtt.github.io/blog/aspnetcore-minimalapp-authentication-authorization</loc>
+    <loc>http://vwtt.github.io/blog/aspnetcore-minimalapp-iis-deployment</loc>
+    <loc>http://vwtt.github.io/blog/csharp6.0-new-features</loc>
+    <loc>http://vwtt.github.io/blog/aspnetcore-minimalapp</loc>
+    <loc>http://vwtt.github.io/blog/net-fibonacciseries-recursiveandmemoized</loc>
+    <loc>http://vwtt.github.io/blog/net-webclient-retry-method</loc>
+    <loc>http://vwtt.github.io/blog/javascript-mapreduce-filter-demo</loc>
+    <loc>http://vwtt.github.io/blog/net-parallelforeach-demo</loc>
+    <loc>http://vwtt.github.io/blog/vikram-srirangam-aspnet-mvc-zipdownload-demo</loc>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/FluxDemo.png</image:loc>
+       <image:caption>Flux like architecture communication diagram</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/VueJsDemo.png</image:loc>
+       <image:caption>VueJs Single Page App Demo</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/BlipkartArchitecture.png</image:loc>
+       <image:caption>Architecture Diagram</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/FactoryPattern.png</image:loc>
+       <image:caption>Factory Pattern UML Diagram</image:caption>
+    </image:image>
+  </url>
+</urlset>

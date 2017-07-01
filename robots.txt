@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /images/
+Disallow: /css/
+Disallow: /_layouts/
+Disallow: /_posts/
+Sitemap: /sitemap.xml

@@ -2,7 +2,7 @@
 layout: post
 title: "Factory Design Pattern"
 name: "2016-11-26-factory-design-pattern"
-description: "Factory design pattern sample."
+description: "Simple example of Factory design pattern."
 date: 2016-11-26
 ---
 

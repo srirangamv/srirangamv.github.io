@@ -2,7 +2,7 @@
 layout: post
 title: "Map, Reduce and Filter in Javascript"
 name: "2016-05-29-javascript-mapreduce-filter-demo"
-description: "Javascipt code mimicking simple map, reduce and filter functions"
+description: "Javascipt code mimicking simple map, reduce and filter functions."
 date: 2016-05-29
 ---
 
