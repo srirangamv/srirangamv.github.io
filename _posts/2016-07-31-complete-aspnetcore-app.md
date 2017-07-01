@@ -2,7 +2,7 @@
 layout: post
 title: "An aspnet core application with Entity Framework Core, Repository, UoW and Unit Testing."
 name: "2016-07-31-complete-aspnetcore-app"
-description: "AspNet Core Application"
+description: "AspNet Core Application with Unit Of Work and Repositiry patterns."
 date: 2016-07-31
 ---
 
@@ -12,7 +12,7 @@ date: 2016-07-31
 </p>
 <p>
     <figure>
-      <img src="/images/BlipkartArchitecture.png" alt="Blipkart Architecture Diagram" width="75%" height="75%" />
+      <img src="/images/BlipkartArchitecture.png" alt="Blipkart Architecture Diagram" width="50%" height="50%" />
       <figcaption>Blipkart Architecture Diagram</figcaption>
     </figure>    
 </p>    

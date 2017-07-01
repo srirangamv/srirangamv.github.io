@@ -2,7 +2,7 @@
 layout: post
 title: "Parallel.ForEach demo for finding if a number is prime."
 name: "2016-05-28-net-parallelforeach-demo"
-description: "Finding if a number is prime parallelly."
+description: "Finding if a number is prime parallelly using .Net task parallel library."
 date: 2016-05-28
 ---
 

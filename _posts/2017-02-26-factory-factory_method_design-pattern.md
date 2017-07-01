@@ -2,7 +2,7 @@
 layout: post
 title: "Factory Method vs Factory Design Pattern"
 name: "2017-02-26-factory-factory_method_design-pattern"
-description: "Factory Method vs Factory Design Pattern"
+description: "Factory Method vs Factory Design Patterns."
 date: 2017-02-26
 ---
 <p>Though these two patterns are about creating objects, Here are differences between factory and factory method pattern.</p>

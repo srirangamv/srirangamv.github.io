@@ -2,7 +2,7 @@
 layout: post
 title: "Flux-like architecture in plain Javascript"
 name: "2017-02-25-flux_like_architecture"
-description: "flux like architecture sample."
+description: "flux like architecture sample in plain Javascript."
 date: 2017-02-25
 ---
 
