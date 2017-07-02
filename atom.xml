@@ -5,8 +5,8 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>Vikram Srirangam's Blog</title>
-  <link href="http://vwtt.github.io/blog/atom.xml" rel="self"/>
-  <link href="http://vwtt.github.io/blog"/>
+  <link href="http://vwtt.github.io/atom.xml" rel="self"/>
+  <link href="http://vwtt.github.io"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://vwtt.github.io/blog</id>
   <author>
@@ -17,10 +17,10 @@ layout: feed
   {% for post in site.posts %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://vwtt.github.io{{ post.url }}"/>
+    <link href="http://vwtt.github.io/{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://vwtt.github.io/{{ post.id }}</id>
-    <content type="html">{{ post.content | xml_escape }}</content>
+    <id>http://vwtt.github.io/{{ post.url }}</id>
+    <content type="html">{{ post.content | strip_html | truncatewords: 15 | xml_escape }}</content>
   </entry>
   {% endfor %}
 
