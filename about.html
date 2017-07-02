@@ -11,6 +11,13 @@ description: About Vikram.
         border-radius: 3px;
         padding: 0px 2px;
     }
+
+    .social-link :hover{
+        text-decoration: none;
+        color: white;
+        background-color: #337ab7;
+    }
+
     @font-face {
         font-family: 'FontAwesome';
         src: local('FontAwesome'), url('./css/fontawesome-webfont.woff') format('woff');
@@ -28,8 +35,18 @@ description: About Vikram.
     }
 
     .fa-instagram:before {
+     
         content: "\f16d";
     }
+
+    .fa-twitter:before {
+        content: "\f099";
+    }
+
+    .fa-linkedin:before {
+      content: "\f0e1";
+    }
+
 </style>
 <h1>about me</h1>
 </br>
@@ -42,8 +59,12 @@ I'm a full-stack .Net Web Application Developer from Hyderabad, India. I write a
 I love nature, an amateur photographer, also love to read books, interested in studying history and like to travel.
 </h4>
 
-<a href="https://in.linkedin.com/in/vikramsrirangam?trk=profile-badge" class="social-link">LinkedIn</a>
-<a href="https://twitter.com/vwtt" class="social-link">Twiiter</a>
+<a href="https://in.linkedin.com/in/vikramsrirangam?trk=profile-badge" class="social-link">
+    <i class="fa fa-linkedin"></i>LinkedIn
+</a>
+<a href="https://twitter.com/vwtt" class="social-link">
+    <i class="fa fa-twitter"></i>Twiiter
+</a>
 <a href="https://www.instagram.com/vsrirangam/" class="social-link">
-    <i class="fa fa-instagram">Instagram</i>
+    <i class="fa fa-instagram"></i>Instagram
 </a>
