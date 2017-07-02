@@ -3,8 +3,34 @@ layout: default
 title: About Vikram
 description: About Vikram.
 ---      
-<!--<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>-->
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<style>
+     .social-link{
+        text-decoration: none;
+        color: white;
+        background-color: #337ab7;
+        border-radius: 3px;
+        padding: 0px 2px;
+    }
+    @font-face {
+        font-family: 'FontAwesome';
+        src: local('FontAwesome'), url('./css/fontawesome-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .fa-instagram:before {
+        content: "\f16d";
+    }
+</style>
 <h1>about me</h1>
 </br>
 
@@ -16,8 +42,8 @@ I'm a full-stack .Net Web Application Developer from Hyderabad, India. I write a
 I love nature, an amateur photographer, also love to read books, interested in studying history and like to travel.
 </h4>
 
-<!--<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="vikramsrirangam"><a class="LI-simple-link" href='https://in.linkedin.com/in/vikramsrirangam?trk=profile-badge'>Vikram Kumar Srirangam</a></div>-->
-
-<a href="https://in.linkedin.com/in/vikramsrirangam" class="twitter-follow-button" data-show-count="false">View LinkedIn</a>
-<a href="https://twitter.com/vwtt" class="twitter-follow-button" data-show-count="false">Twiiter</a>
-<a href="https://www.instagram.com/vsrirangam/" class="twitter-follow-button" data-show-count="false">Instagram</a>
+<a href="https://in.linkedin.com/in/vikramsrirangam?trk=profile-badge" class="social-link">LinkedIn</a>
+<a href="https://twitter.com/vwtt" class="social-link">Twiiter</a>
+<a href="https://www.instagram.com/vsrirangam/" class="social-link">
+    <i class="fa fa-instagram">Instagram</i>
+</a>
