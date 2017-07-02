@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Asp.Net Core app, simple Authentication & Authorization."
+title: "Asp.Net Core app, simple Authentication and Authorization."
 name: "2016-07-09-aspnetcore-minimalapp-authentication-authorization"
 description: "AspNet Core application implementing simple security."
 date: 2016-07-09
