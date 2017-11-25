@@ -6,11 +6,11 @@ description: "Simple example of Factory Method design pattern."
 date: 2017-11-25
 ---
 
-<p>Factory design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://vwtt.github.io/blog/2016/11/20/design-patterns-overview" target="_blank">here</a>. The intent of Factory pattern is hiding creation of objects from the client by using a common interface. Client awares of all subclasses of family and instead client creating objects for these family of types it depends on common interface and requests for objects.</p>
+<p>Factory Method design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://vwtt.github.io/blog/2016/11/20/design-patterns-overview" target="_blank">here</a>. The intent of Factory pattern is hiding creation of objects from the client by using a common interface. Client awares of all subclasses of family and instead client creating objects for these family of types it depends on common interface and requests for objects. The difference between Factory and Factory Method pattern is here we can have creation logic defer to the sub class. Thus allowing us to initialize the object via a common interface.</p>
 
 <p>
     <figure>
-      <img src="/images/FactoryMethodPattern.png" alt="Factory Method Pattern UML Diagram" width="606px" height="545px" />
+      <img src="/images/FactoryMethodPattern.png" alt="Factory Method Pattern UML Diagram" width="700px" height="630px" />
       <figcaption>Factory Method Pattern UML Diagram</figcaption>
     </figure>    
 </p>
