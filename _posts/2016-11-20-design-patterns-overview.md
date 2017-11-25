@@ -19,9 +19,10 @@ These patterns are based on how the objects are created and constructed to solve
 
 1. Abstract Factory
 2. Builder
-3. Factory
-4. Prototype
-5. Singleton
+3. [Factory](http://vwtt.github.io/blog/factory-design-pattern)
+4. [Factory Method](http://vwtt.github.io/blog/factory-method-design-pattern)
+5. Prototype
+6. Singleton
 
 #### **Structural Patterns**
 <p>
