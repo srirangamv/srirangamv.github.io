@@ -2,3 +2,4 @@ _site/
 /.vs/vwtt.github.io/v15/.suo
 /.vs/VSWorkspaceState.json
 /.vs/slnx.sqlite
+/.vs/config/applicationhost.config
