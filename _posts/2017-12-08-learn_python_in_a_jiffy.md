@@ -142,7 +142,7 @@ greeterwithsalutation("Foo")
 greeterwithsalutation("Bar", "Mrs")
 
 def greetall(*names):
-    """This method takes arbitary names as parameter and greets with a Hello"""
+    """This method takes arbitrary number of names as parameter and greets all with a Hello"""
     print("Hello\n")
     for name in names:
         print("\t%s" % name)
