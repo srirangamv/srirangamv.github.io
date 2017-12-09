@@ -11,7 +11,7 @@ date: 2017-12-08
       <img src="/images/PythonBanner.jpg" alt="Learn Python In a Jiffy" width="100%" height="200px" />      
     </figure>    
 </p>
-<p>Here is a python language reference sheet. Find code <a href="https://github.com/vwtt/PythonCheatSheet" target="_blank" title="python cheatsheet repository">here</a>.</p>
+<p>Here is the python language reference sheet. Find code <a href="https://github.com/vwtt/PythonCheatSheet" target="_blank" title="python cheatsheet repository">here</a>.</p>
 
 {% highlight python %}
 
