@@ -1,5 +1,6 @@
 body{
   font-family:'Source Sans Pro', sans-serif;
+  font-size:18px;
 }
 
 .header-blue{
@@ -126,7 +127,6 @@ body{
 
 .header-blue .navbar .dropdown-menu > li > a:focus, .header-blue .navbar .dropdown-menu > li > a{
   line-height:2;
-  font-size:14px;
   color:#37434d;
 }
 
