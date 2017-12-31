@@ -4,9 +4,10 @@ body{
 }
 
 .header-blue{
-  background:linear-gradient(135deg, #172a74, #21a9af);
+  /*background:linear-gradient(135deg, #172a74, #21a9af);
   background-color:#184e8e;
-  /*padding-bottom:30px;*/
+  padding-bottom:30px;*/
+  color: #000;
 }
 
 @media (max-width:767px) {
