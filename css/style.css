@@ -48,7 +48,7 @@ body{
 
 .header-blue .navbar .navbar-brand{
   font-weight:bold;
-  color:inherit;
+  color:#000;
 }
 
 .header-blue .navbar .navbar-brand:hover{
@@ -115,7 +115,7 @@ body{
 }
 
 .header-blue .navbar.navbar-default .navbar-nav > li > a:focus, .header-blue .navbar.navbar-default .navbar-nav > li > a:hover{
-  color:#fcfeff !important;
+  color:#ccc !important;
   background-color:transparent;
 }
 
