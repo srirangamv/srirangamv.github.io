@@ -52,7 +52,7 @@ body{
 }
 
 .header-blue .navbar .navbar-brand:hover{
-  color:#f0f0f0;
+  color:#777;
 }
 
 .header-blue .navbar .navbar-brand img{
@@ -86,7 +86,7 @@ body{
 }
 
 .header-blue .navbar .navbar-toggle .icon-bar{
-  background-color:#eee;
+  background-color:#333;
 }
 
 .header-blue .navbar .navbar-collapse, .header-blue .navbar .navbar-form{
