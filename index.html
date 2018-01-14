@@ -6,8 +6,8 @@ description: Vikram's technical blog, writes on C#, Javascript, Asp.Net, MVC and
 
 {% assign latestpost = site.posts.first %}
 
-<span>{{ latestpost.date | date_to_string }}</span>
 <h2>{{ latestpost.title }}</h2>
+<span>{{ latestpost.date | date_to_string }}</span>
 
 <div class="post">
 {{ latestpost.content }}
