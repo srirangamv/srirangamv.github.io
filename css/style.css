@@ -323,14 +323,14 @@ body{
     width: 100%;
     height: auto;
   }
-}
 
-figure figcaption {
-  display: block;
-  text-align: center;
-  counter-increment: figures;
-  letter-spacing: normal;
-  border-top: solid 1px #ccc;
-  font-style: italic;
-  font-size: small;
+  figure figcaption {
+    display: block;
+    text-align: center;
+    counter-increment: figures;
+    letter-spacing: normal;
+    border-top: solid 1px #ccc;
+    font-style: italic;
+    font-size: small;
+  }
 }
