@@ -63,4 +63,4 @@
 .highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;} 
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
 .lineno::selection {background-color: transparent;} /* Other major browsers */
-.highlight pre { font-family: monospace!important; font-size: 1em!important; background-color: #FFFFFF!important; }
+.highlight pre { font-family: monospace!important; font-size: 14px!important; background-color: #FFFFFF!important; }
