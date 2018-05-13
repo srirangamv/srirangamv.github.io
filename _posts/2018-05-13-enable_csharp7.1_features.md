@@ -1,22 +1,25 @@
 ---
 layout: post
-title: "How to enable C# 7.1 support in VS Code"
+title: "How to enable C# 7.1 support in VS Code?"
 name: "2018-05-13-enable_csharp7.1_features_vs_code"
 description: "How to enable C# 7.1 support in VS Code."
 date: 2018-05-13
 ---
 
+<p>Create a new console project mycs71app using dotnet CLI and open it with VS Code as shown below. To enable C#7.1 new language features in the project we need to edit project file.</p>
+
 <p class="cmd">C:\&gt;Users&gt;Dev1&gt;Desktop&gt;dotnet new console -o mycs71app</p><br>  
 <p class="cmd">C:\&gt;Users&gt;Dev1&gt;Desktop&gt;code mycs71app</p><br>
 
+<p>VS Code opens the newly created project as shown below.</p>
 <p>
     <figure>
-      <img src="/images/Enable71_One.png" alt="Open Visual Studio Code Folder" width="489px" height="289px" />
+      <img src="/images/Enable71_One.png" alt="Open Visual Studio Code Folder" width="833px" height="289px" />
       <figcaption>Visual Studio Code Folder</figcaption>
     </figure>    
 </p>
 
-<p>Replace below code in Program.cs</p>
+<p>Replace below code in Program.cs. Here we are trying async Main which needs C#7.1.</p>
 
 {% highlight csharp %}
 using System;
@@ -36,23 +39,23 @@ namespace mycs71app
 }
 {% endhighlight %}
 
-<p>Add/Update highlighted entry in .csproj file and save</p>
+<p>Add/Update highlighted entry in .csproj file and save it.</p>
 
 <p>
     <figure>
-      <img src="/images/Enable71_Two.png" alt="Open Visual Studio Code Folder" width="489px" height="289px" />
-      <figcaption>Visual Studio Code Folder</figcaption>
+      <img src="/images/Enable71_Two.png" alt="Visual Studio Code Folder" width="833px" height="289px" />
+      <figcaption>Visual Studio Code Editing</figcaption>
     </figure>    
 </p>
 
-<p>Build and Run using dotnet commands as shown below using Integrated Terminal.</p>
+<p>Build and Run using dotnet commands as shown below using VS Code's Integrated Terminal.</p>
 
-<p class="cmd">PS C:\&gt;Users&gt;Dev1&gt;Desktop&gt;mycs71app&gt;dotnet build</p>
-<p class="cmd">PS C:\&gt;Users&gt;Dev1&gt;Desktop&gt;mycs71app&gt;dotnet build</p>
+<p class="cmd">PS C:\&gt;Users&gt;Dev1&gt;Desktop&gt;mycs71app&gt;<span style="color:yellow">dotnet</span> build</p>
+<p class="cmd">PS C:\&gt;Users&gt;Dev1&gt;Desktop&gt;mycs71app&gt;<span style="color:yellow">dotnet</span> run</p>
 <b>Output:</b>
 <p>
     <figure>
-      <img src="/images/Enable71_Three.png" alt="Open Visual Studio Code Folder" width="489px" height="289px" />
-      <figcaption>Visual Studio Code Folder</figcaption>
+      <img src="/images/Enable71_Three.png" alt="Visual Studio Code Folder" width="833px" height="289px" />
+      <figcaption>Visual Studio Code Execution</figcaption>
     </figure>    
 </p>
