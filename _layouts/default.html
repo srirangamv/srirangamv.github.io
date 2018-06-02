@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110523954-1"></script>
@@ -11,14 +11,25 @@
         gtag('config', 'UA-110523954-1');
     </script>
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=no">
     <meta name="description" content="{{ page.description }}">
     <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link rel="manifest" href="/manifest.json">
+    
     <link rel="apple-touch-icon" href="/images/favicon.ico"> 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2F3BA2">
+    <meta name="apple-mobile-web-app-title" content="Vikram's Blog">    
+    <link rel="apple-touch-icon" href="images/launcher192x192.png">
+
+    <meta name="msapplication-TileImage" content="images/launcher192x192.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+    
+    <style src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></style>
+    <style src="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"></style>
+    <style src="/css/syntax.css"></style>
+    <style src="/css/style.css"></style>
 </head>
 <body>
     <div>
@@ -45,8 +56,8 @@
         </div>
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <div class="container hero">
         <div class="row">
@@ -55,5 +66,12 @@
             </div>
         </div>
     </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                    .register('./service-worker.js')
+                    .then(function() { console.log('Service Worker Registered'); });
+        }
+    </script>
 </body>
 </html>

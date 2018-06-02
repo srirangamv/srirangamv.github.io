@@ -5,6 +5,8 @@
   <url> 
     <loc>http://vwtt.github.io/</loc> 
     <loc>http://vwtt.github.io/blog/</loc> 
+    <loc>http://vwtt.github.io/blog/enable_csharp7.1_features</loc>
+    <loc>http://vwtt.github.io/blog/learn_python_in_a_jiffy</loc>
     <loc>http://vwtt.github.io/blog/factory-factory_method_design-pattern</loc>
     <loc>http://vwtt.github.io/blog/flux_like_architecture</loc>
     <loc>http://vwtt.github.io/blog/spa_app_vuejs</loc>
@@ -37,6 +39,22 @@
     <image:image>
        <image:loc>http://vwtt.github.io/images/FactoryPattern.png</image:loc>
        <image:caption>Factory Pattern UML Diagram</image:caption>
+    </image:image>    
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/FactoryMethodPattern.png</image:loc>
+       <image:caption>Factory Method Pattern UML Diagram</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/Enable71_One.webp</image:loc>
+       <image:caption>Visual Studio Code Folder</image:caption>
+    </image:image>    
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/Enable71_Two.webp</image:loc>
+       <image:caption>Visual Studio Code Editing</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/Enable71_Three.webp</image:loc>
+       <image:caption>Visual Studio Code Execution</image:caption>
     </image:image>
   </url>
 </urlset>

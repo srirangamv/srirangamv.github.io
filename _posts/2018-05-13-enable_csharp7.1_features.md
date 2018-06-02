@@ -14,7 +14,7 @@ date: 2018-05-13
 <p>VS Code opens the newly created project as shown below.</p>
 <p>
     <figure>
-      <img src="/images/Enable71_One.png" alt="Open Visual Studio Code Folder" width="833px" height="460px" />
+      <img src="/images/Enable71_One.webp" alt="Open Visual Studio Code Folder" width="833px" height="460px" />
       <figcaption>Visual Studio Code Folder</figcaption>
     </figure>    
 </p>
@@ -43,7 +43,7 @@ namespace mycs71app
 
 <p>
     <figure>
-      <img src="/images/Enable71_Two.png" alt="Visual Studio Code Folder" width="833px" height="460px" />
+      <img src="/images/Enable71_Two.webp" alt="Visual Studio Code Folder" width="833px" height="460px" />
       <figcaption>Visual Studio Code Editing</figcaption>
     </figure>    
 </p>
@@ -55,7 +55,7 @@ namespace mycs71app
 <b>Output:</b>
 <p>
     <figure>
-      <img src="/images/Enable71_Three.png" alt="Visual Studio Code Folder" width="833px" height="460px" />
+      <img src="/images/Enable71_Three.webp" alt="Visual Studio Code Folder" width="833px" height="460px" />
       <figcaption>Visual Studio Code Execution</figcaption>
     </figure>    
 </p>
