@@ -26,7 +26,7 @@ var filesToCache = [
   '/images/FactoryPattern.png',
   '/images/FluxDemo.png',
   '/images/VueJsDemo.png',
-  '/images/PythonBanner.png',
+  '/images/PythonBanner.jpg',
   '/images/Enable71_One.png',
   '/images/Enable71_Two.png',
   '/images/Enable71_Three.png'
