@@ -26,10 +26,10 @@ var filesToCache = [
   '/images/FactoryPattern.png',
   '/images/FluxDemo.png',
   '/images/VueJsDemo.png',
-  '/images/PythonBanner',
-  '/images/Enable71_One.webp',
-  '/images/Enable71_Two.webp',
-  '/images/Enable71_Three.webp'
+  '/images/PythonBanner.png',
+  '/images/Enable71_One.png',
+  '/images/Enable71_Two.png',
+  '/images/Enable71_Three.png'
 ];
 
 self.addEventListener('install', function(e) {
