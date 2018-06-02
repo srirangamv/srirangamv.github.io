@@ -17,7 +17,6 @@
     
     <link rel="manifest" href="/manifest.json">
     
-    <link rel="apple-touch-icon" href="/images/favicon.ico"> 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#2F3BA2">
     <meta name="apple-mobile-web-app-title" content="Vikram's Blog">    
@@ -25,11 +24,11 @@
 
     <meta name="msapplication-TileImage" content="images/launcher192x192.png">
     <meta name="msapplication-TileColor" content="#2F3BA2">
-    
-    <style src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></style>
-    <style src="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"></style>
-    <style src="/css/syntax.css"></style>
-    <style src="/css/style.css"></style>
+        
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css">
 </head>
 <body>
     <div>
@@ -69,7 +68,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
-                    .register('./service-worker.js')
+                    .register('/service-worker.js')
                     .then(function() { console.log('Service Worker Registered'); });
         }
     </script>
