@@ -15,21 +15,21 @@
 var dataCacheName = 'weatherData-v1';
 var cacheName = 'weatherPWA-final-1';
 var filesToCache = [
-  '/',
-  '/blog',
-  '/index.html',
-  '/about.html',
-  '/css/style.css',
-  '/css/syntax.css',
-  '/images/BlipkartArchitecture.png',
-  '/images/FactoryMethodPattern.png',
-  '/images/FactoryPattern.png',
-  '/images/FluxDemo.png',
-  '/images/VueJsDemo.png',
-  '/images/PythonBanner.jpg',
-  '/images/Enable71_One.png',
-  '/images/Enable71_Two.png',
-  '/images/Enable71_Three.png'
+  'https://vwtt.github.io/',
+  'https://vwtt.github.io//blog',
+  'https://vwtt.github.io//index.html',
+  'https://vwtt.github.io//about.html',
+  'https://vwtt.github.io//css/style.css',
+  'https://vwtt.github.io//css/syntax.css',
+  'https://vwtt.github.io//images/BlipkartArchitecture.png',
+  'https://vwtt.github.io//images/FactoryMethodPattern.png',
+  'https://vwtt.github.io//images/FactoryPattern.png',
+  'https://vwtt.github.io//images/FluxDemo.png',
+  'https://vwtt.github.io//images/VueJsDemo.png',
+  'https://vwtt.github.io//images/PythonBanner.jpg',
+  'https://vwtt.github.io//images/Enable71_One.png',
+  'https://vwtt.github.io//images/Enable71_Two.png',
+  'https://vwtt.github.io//images/Enable71_Three.png'
 ];
 
 self.addEventListener('install', function(e) {
