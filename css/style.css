@@ -139,6 +139,23 @@ body{
   background:#ebeff1;
 }
 
+footer {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-bottom: solid 1px transparent;
+}
+
+footer p{
+  font-family: Georgia,serif;
+}
+
+footer p a{
+  color:#007bff;
+  text-decoration: none;
+}
+
 @media (max-width:767px) {
   .header-blue .navbar .navbar-nav .open .dropdown-menu{
     box-shadow:none;
@@ -177,6 +194,17 @@ body{
     font-style: italic;
     font-size: 16px;
   }
+
+  footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: solid 1px #bbb;
+  }
+
+  footer p a{
+    text-decoration: underline;
+  }
 }
 
 @media (max-width:991px) {
@@ -188,7 +216,9 @@ body{
 }
 
 @media (min-width:991px) {  
-  border-bottom: solid 1px transparent;
+  .header-blue{
+    border-bottom: solid 1px transparent;
+  }
 }
 
 .header-blue .action-button, .header-blue .action-button:active{
