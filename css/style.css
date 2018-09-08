@@ -4,8 +4,8 @@ body{
 }
 
 .header-blue{
-  background:linear-gradient(135deg, #172a74, #21a9af);
-  background-color:#184e8e;
+  /*background:linear-gradient(135deg, #172a74, #21a9af);
+  background-color:#184e8e;*/
   padding-bottom:30px;
   border-bottom: solid 1px #bbb;
   color: #000;
@@ -145,15 +145,50 @@ body{
     background:none;
     color:#fff;
   }
-}
-
-@media (max-width:767px) {
+  
   .header-blue .navbar .navbar-nav .open .dropdown-menu > li > a{
     color:#fdfeff;
     padding-top:12px;
     padding-bottom:12px;
     line-height:1;
   }
+  
+  .header-blue .navbar .navbar-form .search-field{
+    display:inline-block;
+    width:80%;
+  }
+
+  .header-blue .hero{
+    margin-top:20px;
+    text-align:center;
+  }
+  
+  img{
+    width: 100%;
+    height: auto;
+  }
+
+  figure figcaption {
+    display: block;
+    text-align: center;
+    counter-increment: figures;
+    letter-spacing: normal;
+    border-top: solid 1px #ccc;
+    font-style: italic;
+    font-size: 16px;
+  }
+}
+
+@media (max-width:991px) {
+  .header-blue .hero h1{
+    margin-top:0;
+    margin-bottom:15px;
+    line-height:1.4;
+  }
+}
+
+@media (min-width:991px) {  
+  border-bottom: solid 1px transparent;
 }
 
 .header-blue .action-button, .header-blue .action-button:active{
@@ -191,13 +226,6 @@ body{
   transition:border-bottom-color 0.3s;
 }
 
-@media (max-width:767px) {
-  .header-blue .navbar .navbar-form .search-field{
-    display:inline-block;
-    width:80%;
-  }
-}
-
 .header-blue .navbar .navbar-form .search-field:focus{
   border-bottom:1px solid #ccc;
 }
@@ -206,27 +234,12 @@ body{
   margin-top:60px;
 }
 
-@media (max-width:767px) {
-  .header-blue .hero{
-    margin-top:20px;
-    text-align:center;
-  }
-}
-
 .header-blue .hero h1{
   color:#fff;
   font-size:40px;
   margin-top:190px;
   margin-bottom:24px;
   font-weight:300;
-}
-
-@media (max-width:991px) {
-  .header-blue .hero h1{
-    margin-top:0;
-    margin-bottom:15px;
-    line-height:1.4;
-  }
 }
 
 .header-blue .hero p{
@@ -298,6 +311,11 @@ body{
     border-radius: 4px;
 }
 
+.postslist{
+  list-style: none;
+  -webkit-padding-start: 15px!important;
+}
+
 .posts{
     list-style-type: decimal;
 }
@@ -322,21 +340,4 @@ body{
 .datatable th {
     height: 50px;
     text-align: center;
-}
-
-@media (max-width:767px) {
-  img{
-    width: 100%;
-    height: auto;
-  }
-
-  figure figcaption {
-    display: block;
-    text-align: center;
-    counter-increment: figures;
-    letter-spacing: normal;
-    border-top: solid 1px #ccc;
-    font-style: italic;
-    font-size: 16px;
-  }
 }
