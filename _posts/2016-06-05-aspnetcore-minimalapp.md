@@ -10,8 +10,8 @@ date: 2016-06-05
 
 <p>Create a new .NET Core project by opening command prompt. "dotnet new" will create Program.cs and project.json file for you.</p>
 
-<p class="cmd">c:\&gt;mkdir aspnetcoreapp</p><br>
-<p class="cmd">c:\&gt;cd aspnetcoreapp</p><br>
+<p class="cmd">c:\&gt;mkdir aspnetcoreapp</p>
+<p class="cmd">c:\&gt;cd aspnetcoreapp</p>
 <p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet new</p>
 
 
@@ -106,7 +106,7 @@ namespace aspnetcoreapp
         
 {% endhighlight %}
 
-<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet restore </p> <br>  
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet restore </p> 
 <p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000
@@ -322,7 +322,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 {% endhighlight %}
 
-<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet restore</p><br>
+<p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet restore</p>
 <p class="cmd">c:\&gt;aspnetcoreapp&gt;dotnet run</p>
 
 Launch the browser with http://localhost:5000/home/index

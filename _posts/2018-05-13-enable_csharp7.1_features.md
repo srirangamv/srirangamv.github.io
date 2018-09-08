@@ -11,15 +11,7 @@ date: 2018-05-13
 <p class="cmd">C:\&gt;Users&gt;Dev1&gt;Desktop&gt;dotnet new console -o mycs71app</p>
 <p class="cmd">C:\&gt;Users&gt;Dev1&gt;Desktop&gt;code mycs71app</p>
 
-<p>VS Code opens the newly created project as shown below.</p>
-<p>
-    <figure>
-      <img src="/images/Enable71_One.png" alt="Open Visual Studio Code Folder" width="833px" height="460px" />
-      <figcaption>Visual Studio Code Folder</figcaption>
-    </figure>    
-</p>
-
-<p>Replace below code in Program.cs. Here we are trying async Main which needs C#7.1.</p>
+<p>Open folder in VS Code and replace below code in Program.cs. Here we are trying async Main which needs C#7.1.</p>
 
 {% highlight csharp %}
 using System;
