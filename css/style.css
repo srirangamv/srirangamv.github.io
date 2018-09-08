@@ -313,7 +313,7 @@ body{
 
 .postslist{
   list-style: none;
-  -webkit-padding-start: 15px!important;
+  -webkit-padding-start: 0px;
 }
 
 .posts{
