@@ -18,7 +18,6 @@ var filesToCache = [
   'https://vwtt.github.io/',
   'https://vwtt.github.io/blog/index.html',
   'https://vwtt.github.io/index.html',
-  'https://vwtt.github.io/about.html',
   'https://vwtt.github.io/css/style.css',
   'https://vwtt.github.io/css/syntax.css',
   'https://vwtt.github.io/images/BlipkartArchitecture.png',
@@ -27,7 +26,6 @@ var filesToCache = [
   'https://vwtt.github.io/images/FluxDemo.png',
   'https://vwtt.github.io/images/VueJsDemo.png',
   'https://vwtt.github.io/images/PythonBanner.jpg',
-  'https://vwtt.github.io/images/Enable71_One.png',
   'https://vwtt.github.io/images/Enable71_Two.png',
   'https://vwtt.github.io/images/Enable71_Three.png'
 ];
