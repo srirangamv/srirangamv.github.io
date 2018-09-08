@@ -4,9 +4,9 @@ body{
 }
 
 .header-blue{
-  /*background:linear-gradient(135deg, #172a74, #21a9af);
+  background:linear-gradient(135deg, #172a74, #21a9af);
   background-color:#184e8e;
-  padding-bottom:30px;*/
+  padding-bottom:30px;
   border-bottom: solid 1px #bbb;
   color: #000;
 }
@@ -52,6 +52,7 @@ body{
 .header-blue .navbar .navbar-brand{
   font-weight:bold;
   color:indianred;
+  font-size: 32px;
 }
 
 .header-blue .navbar .navbar-brand:hover{
@@ -281,6 +282,8 @@ body{
 .cmd{
     background-color: #555;
     color: white;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 .output{
