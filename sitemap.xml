@@ -43,11 +43,7 @@
     <image:image>
        <image:loc>http://vwtt.github.io/images/FactoryMethodPattern.png</image:loc>
        <image:caption>Factory Method Pattern UML Diagram</image:caption>
-    </image:image>
-    <image:image>
-       <image:loc>http://vwtt.github.io/images/Enable71_One.webp</image:loc>
-       <image:caption>Visual Studio Code Folder</image:caption>
-    </image:image>    
+    </image:image>  
     <image:image>
        <image:loc>http://vwtt.github.io/images/Enable71_Two.webp</image:loc>
        <image:caption>Visual Studio Code Editing</image:caption>
