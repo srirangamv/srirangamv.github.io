@@ -421,7 +421,7 @@ footer p a{
   display: none;
   position: absolute;
   top: 0px;
-  height: 1300px;  
+  height: 100%;  
   width: 275px;
   left: 0px;
   margin: 0;
@@ -429,7 +429,7 @@ footer p a{
   border-bottom: 1px solid #ddd;
   border-radius: 2px;
   padding: 25px;
-  background: indianred;
+  background: steelblue;
   box-shadow: 0 1px 3px 0 #eee;
   z-index: 100;
 }
@@ -446,4 +446,10 @@ footer p a{
 
 #menu ul li a:hover {
   text-decoration: underline;
+}
+
+.userprofile{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
