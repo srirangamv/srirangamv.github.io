@@ -335,23 +335,28 @@ footer p a{
     color: white;
     border-radius: 4px;
     font-size: 16px;
+    max-width: 700px;
 }
 
 .output{
     border: 1px solid #ccc;
     color: #555;
     border-radius: 4px;
+    max-width: 700px;
 }
 
 .error{
     border: 1px solid #f00;
     color: #f00;
     border-radius: 4px;
+    max-width: 700px;
 }
 
 .postslist{
   list-style: none;
+  -ms-padding-start: 0px;
   -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
 }
 
 .posts{
