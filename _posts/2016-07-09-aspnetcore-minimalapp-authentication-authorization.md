@@ -15,8 +15,8 @@ We use cookie authentication middleware to persist the identity information once
 
 <p>Create the application as shown below</p>
 
-<p class="cmd">c:\&gt;mkdir aspnetcoreauth</p><br>
-<p class="cmd">c:\&gt;cd aspnetcoreauth</p><br>
+<p class="cmd">c:\&gt;mkdir aspnetcoreauth</p>
+<p class="cmd">c:\&gt;cd aspnetcoreauth</p>
 <p class="cmd">c:\&gt;aspnetcoreauth&gt;dotnet new</p>
 
 <p>Update the <b><i>project.json</i></b> file to add the dependencies for MVC and cookie authentication.</p>

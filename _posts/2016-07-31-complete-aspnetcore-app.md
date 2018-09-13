@@ -67,8 +67,8 @@ A Unit Of Work coordinates multiple repository changes on a single DbContext. We
 <p>Microsoft.AspNetCore.TestHost is used for integration tests.</p>
 
 How to run application:
-<p class="cmd">c:\&gt;Blipkart&gt;Blipkart&gt;dotnet restore</p><br>  
-<p class="cmd">c:\&gt;Blipkart&gt;Blipkart&gt;dotnet ef database update</p><br>
+<p class="cmd">c:\&gt;Blipkart&gt;Blipkart&gt;dotnet restore</p>
+<p class="cmd">c:\&gt;Blipkart&gt;Blipkart&gt;dotnet ef database update</p>
 <p class="cmd">c:\&gt;Blipkart&gt;Blipkart&gt;dotnet run</p>
 
 How to run tests:
