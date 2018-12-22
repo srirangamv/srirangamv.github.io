@@ -5,6 +5,7 @@
   <url> 
     <loc>http://vwtt.github.io/</loc> 
     <loc>http://vwtt.github.io/blog/</loc> 
+    <loc>http://vwtt.github.io/blog/2018-12-22-enums-in-ES6</loc>
     <loc>http://vwtt.github.io/blog/enable_csharp7.1_features</loc>
     <loc>http://vwtt.github.io/blog/learn_python_in_a_jiffy</loc>
     <loc>http://vwtt.github.io/blog/factory-factory_method_design-pattern</loc>
@@ -24,6 +25,10 @@
     <loc>http://vwtt.github.io/blog/javascript-mapreduce-filter-demo</loc>
     <loc>http://vwtt.github.io/blog/net-parallelforeach-demo</loc>
     <loc>http://vwtt.github.io/blog/vikram-srirangam-aspnet-mvc-zipdownload-demo</loc>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/ES6Enums.png</image:loc>
+       <image:caption>Post Banner</image:caption>
+    </image:image>
     <image:image>
        <image:loc>http://vwtt.github.io/images/FluxDemo.png</image:loc>
        <image:caption>Flux like architecture communication diagram</image:caption>

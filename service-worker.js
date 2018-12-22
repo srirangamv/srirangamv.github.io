@@ -27,7 +27,8 @@ var filesToCache = [
   'https://vwtt.github.io/images/VueJsDemo.png',
   'https://vwtt.github.io/images/PythonBanner.jpg',
   'https://vwtt.github.io/images/Enable71_Two.png',
-  'https://vwtt.github.io/images/Enable71_Three.png'
+  'https://vwtt.github.io/images/Enable71_Three.png',
+  'https://vwtt.github.io/images/ES6Enums.png'
 ];
 
 self.addEventListener('install', function(e) {
