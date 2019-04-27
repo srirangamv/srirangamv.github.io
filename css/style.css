@@ -470,7 +470,7 @@ footer p a{
   margin: 5px;
 }
 
-.ide h4 > a{
+.ide h4 > i,a{
   font-weight:bold;
   color:indianred;
   font-size: 32px;
