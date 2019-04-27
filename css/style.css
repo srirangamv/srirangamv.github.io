@@ -464,7 +464,12 @@ footer p a{
     overflow: hidden;
 }
 
-.ide{
+.ide{  
+  color: #333;
+  font-size: 24px;
+}
+
+.ide a{
   font-weight:bold;
   color:indianred;
   font-size: 32px;
