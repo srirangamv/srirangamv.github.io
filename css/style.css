@@ -467,14 +467,15 @@ footer p a{
 .ide{  
   color: #333;
   font-size: 24px;
+  margin: 5px;
 }
 
-.ide a{
+.ide h4 > a{
   font-weight:bold;
   color:indianred;
   font-size: 32px;
 }
 
-.ide a:hover{
+.ide h4 > a:hover{
   color:#777;
 }
