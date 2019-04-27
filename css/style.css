@@ -463,3 +463,13 @@ footer p a{
     margin: 0 auto;
     overflow: hidden;
 }
+
+.ide{
+  font-weight:bold;
+  color:indianred;
+  font-size: 32px;
+}
+
+.ide a:hover{
+  color:#777;
+}
