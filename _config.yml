@@ -6,6 +6,9 @@ syntax-highlighting:
   enabled : true
   css: syntax.css
 
+# Custom Pages
+include: ['_pages']
+
 # Permalinks
 permalink:        /blog/:title
 
