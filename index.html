@@ -4,8 +4,7 @@ title: Vikram's Blog
 description: Vikram's technical blog, writes on C#, Javascript, Asp.Net, MVC and Design Patterns.
 ---      
 
-{% assign allposts = site.posts.first | where_exp: "post", "post.title not contains 'Playground'"  %}
-{% assign latestpost = allposts.first %}
+{% assign latestpost = site.posts.first %}
 
 <h2>{{ latestpost.title }}</h2>
 <h4><i class="icon-calendar">&nbsp;</i>{{ latestpost.date | date_to_string }}</h4>
