@@ -470,12 +470,12 @@ footer p a{
   margin: 5px;
 }
 
-.ide h4 > i,a{
+.ide > h4 > a .ide > h4 > i{
   font-weight:bold;
   color:indianred;
   font-size: 32px;
 }
 
-.ide h4 > a:hover{
+.ide > h4 > a:hover{
   color:#777;
 }
