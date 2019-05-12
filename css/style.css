@@ -485,3 +485,8 @@ footer p a{
     margin: 0px 6px 0px 8px;
     border-radius: 4px;
 }
+
+.social-link{
+  display: inline;
+  text-decoration: none;
+}
