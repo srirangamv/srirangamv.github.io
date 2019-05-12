@@ -29,7 +29,7 @@
     <image:image>
        <image:loc>http://vwtt.github.io/images/ES6Enums.png</image:loc>
        <image:caption>Post Banner</image:caption>
-    </image:image>
+    </image:image>    
     <image:image>
        <image:loc>http://vwtt.github.io/images/FluxDemo.png</image:loc>
        <image:caption>Flux like architecture communication diagram</image:caption>
