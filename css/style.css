@@ -448,10 +448,10 @@ footer p a{
   text-decoration: underline;
 }
 
-.userprofile{
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
+.userprofile {
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
 }
 
 .shadow{
