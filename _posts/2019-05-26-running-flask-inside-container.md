@@ -76,7 +76,7 @@ Creating Docker image with Dockerfile
 
 <p>
     <figure>
-      <img src="/images/firstapp_code2.png" alt="code screenshot" width="50%" height="50%" />
+      <img src="/images/firstapp_code_2.png" alt="code screenshot" width="50%" height="50%" />
       <figcaption>First App</figcaption>
     </figure>    
 </p> 
@@ -217,7 +217,7 @@ running
 
 <p>
     <figure>
-      <img src="/images/docker-output.png" alt="code screenshot" width="50%" height="50%" />
+      <img src="/images/browser-output.png" alt="code screenshot" width="50%" height="50%" />
       <figcaption>Browse the Flask App</figcaption>
     </figure>    
 </p> 
