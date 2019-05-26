@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Running Flask App inside a Docker container"
 name: "2019-05-26-running-flask-inside-container"
@@ -13,7 +14,7 @@ Images
 Docker helpful commands
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker image ls</p>
 <p class="output">
-<br>REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
+REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 <br>
 </p>
 
@@ -21,7 +22,7 @@ Docker helpful commands
 
 
 <p class="output">
-<br>CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 <br>
 </p>
 
@@ -84,7 +85,7 @@ Creating Docker image with Dockerfile
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker build -t firstpy .</p>
 <b>Output:</b>
 <p class="output">
-<br>REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
+REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 <br>firstpy                                 latest              085903a75b6b        3 hours ago         938M
 </p>
 
@@ -190,7 +191,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 
 running
 <p class="output">
-<br>3c58c2854897756bb709aefd2ea34b3e686ab31d02e2070f8a73612ad247fe73
+3c58c2854897756bb709aefd2ea34b3e686ab31d02e2070f8a73612ad247fe73
 <br>
 </p>
 
@@ -206,7 +207,7 @@ running
 
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker logs 3c58c2854897</p>
 <p class="output">
-<br>* Serving Flask app "app" (lazy loading)
+* Serving Flask app "app" (lazy loading)
 <br>* Environment: production
 <br>   WARNING: This is a development server. Do not use it in a production deployment.
 <br>   Use a production WSGI server instead.
