@@ -7,9 +7,10 @@ date: 2019-05-26
 ---
 
 <h3><a name="section1">Docker Introduction</a></h3>
-<p>According to the Wikipedia, Docker is a collection of interoperating software-as-a-service and platform-as-a-service offerings that employ operating-system-level virtualization to cultivate development and delivery of software inside standardized software packages called containers. 
+<p>According to the Wikipedia, Docker is a collection of interoperating software-as-a-service and platform-as-a-service offerings that employ operating-system-level virtualization to cultivate development and delivery of software inside standardized software packages called containers.</p>
 
-It is container platform that enables developers, enterprises build, share, run code seamlessly anywhere.
+<p>
+It is a container platform that enables developers, enterprises build, share, run code seamlessly anywhere.
 </p>
 <h3><a name="section2">Why Docker?</a></h3>
 <ul>
@@ -38,11 +39,10 @@ It is container platform that enables developers, enterprises build, share, run 
 <b>Docker Swarm</b>: Swarming provides native clustering functionality for Docker containers, which turns a group of Docker engines into a single virtual Docker engine.
 </p>
 <h3><a name="section4">Installing Docker</a></h3>
-<p>Docker CE(Community Edition) can be installed from <a href="https://docs.docker.com/install/" alt="Docker CE download link" target="_blank">here</a>. Docker CE consists of Docker Engine and client.
+<p>Docker CE(Community Edition) can be installed from <a href="https://docs.docker.com/install/" alt="Docker CE download link" target="_blank">here</a>. Docker CE consists of Docker Engine and client. Below are some <span>Docker helpful commands</span>
 <p>
 
-<span>Docker helpful commands</span>
-<br>Listing all images:
+Listing all images:
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker image ls</p>
 <b>Output:</b>
 <p class="cmd">
@@ -50,8 +50,7 @@ REPOSITORY        TAG               IMAGE ID             CREATED             SIZ
 <br>
 <br>
 </p>
-
-<br>Listing all containers:
+Listing all containers:
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker container ls</p>
 <b>Output:</b>
 <p class="cmd">
