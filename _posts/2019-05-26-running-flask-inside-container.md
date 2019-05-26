@@ -6,27 +6,83 @@ description: "2019-05-26-running-flask-inside-container"
 date: 2019-05-26
 ---
 
-<h2>Docker Introduction</h2>
-Installing
-Images 
+<h3><a name="section1">Docker Introduction</a></h3>
+<p>According to the Wikipedia, Docker is a collection of interoperating software-as-a-service and platform-as-a-service offerings that employ operating-system-level virtualization to cultivate development and delivery of software inside standardized software packages called containers. 
 
+It is container platform that enables developers, enterprises build, share, run code seamlessly anywhere.
+</p>
+<h3><a name="section2">Why Docker?</a></h3>
+<ul>
+  <li>Light: e.g., A physical machine running 10 Docker container means, all the 10 containers shares a single kernel. whereas a physical machine running 5 VMs will have 5 different Operating Systems.</li>
+  <li>Sharing: Anyone can download/pull publicly available images and start running the containers.</li>
+  <li>Distribution:Anyone can create an image and publish to Docker Registry.</li>
+  <li>Scale: Docker container are easily scalable.</li>
+</ul>
+<h3><a name="section3">Docker Terminology</a></h3>
+<p>
+<b>Image</b>: A Docker Image is unit/package of code created and a specification file (usually a text file named Dockerfile) which lists runtime, tools, libraries and settings required to run the code creted.
+<br>
+<b>Container</b>: A Docker container is a lightweight, isolated, executable package of software that includes everything needed to run an application: code, runtime, tools, libraries and settings essentially a Docker Image. Docker image is a static entity and when Docker engine runs that image, it become a container.
+</p>
+<b>Registry</b>: A Docker registry is a repository for Docker images. Docker clients connect to registries to download ("pull") images for use or upload ("push") images that they have built. Registries can be public or private. Two main public registries are Docker Hub and Docker Cloud. Docker Hub is the default registry where Docker looks for images.
+<b>dockerd</b>: This is a daemon process that manages containers and listens to Docker client requests sent using Docker Engine API.
+<b>docker</b>: This is a docker client provides CLI for issueing requests to Docker daemon.
+<b>Docker Compose</b>: Docker compose is a tool for defining and running multi-container Docker applications specified using YAML file. The docker-compose.yml file is used to define an application's services and includes various configuration options for the same. docker-compose CLI utility allows users to run commands on multiple containers at once, e.g., building images, scaling containers, running containers that were stopped, and more.
+<b>Docker Swarm</b>: Swarming provides native clustering functionality for Docker containers, which turns a group of Docker engines into a single virtual Docker engine.
+</p>
+<h3><a name="section3">Installing Docker</a></h3>
+<p>Docker CE(Community Edition) can be installed from <a href="https://docs.docker.com/install/" alt="Docker CE download link" target="_blank">here</a>. Docker CE consists of Docker Engine and client.
+<p>
 
-Docker helpful commands
+<span>Docker helpful commands</span>
+Listing all images:
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker image ls</p>
-<p class="output">
-REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
-<br>
+<p class="cmd">
+<table>
+<tr>
+<th>REPOSITORY</th>
+<th>TAG</th>
+<th>IMAGE ID</th>
+<th>CREATED</th>
+<th>SIZE</th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
 </p>
 
+Listing all containers:
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker container ls</p>
-
-
-<p class="output">
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
-<br>
+<p class="cmd">
+<table>
+<tr>
+<th>CONTAINER ID</th>
+<th>IMAGE</th>
+<th>COMMAND</th>
+<th>CREATED</th>
+<th>STATUS</th>
+<th>PORTS</th>
+<th>NAMES</th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
 </p>
 
-Running Python inside a container
+<h3><a name="section3">Running Python inside a container</a></h3>
+
 <p> </p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -it python:3 python</p>
 
