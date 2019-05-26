@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Running Flask App inside a Docker container"
+title: "Running A Flask App inside a Docker container"
 name: "2019-05-26-running-flask-inside-container"
 description: "2019-05-26-running-flask-inside-container"
 date: 2019-05-26
