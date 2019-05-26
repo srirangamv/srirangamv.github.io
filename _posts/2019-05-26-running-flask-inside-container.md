@@ -227,7 +227,7 @@ Sending build context to Docker daemon  3.584kB
 </p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -d -p 8080:80 firstpy</p>
 
-<p>In case, you have come across below error. Restart the Docker as shows in the below screenshot.
+<p>In case, you have come across below error. Restart the Docker as shows in the below screenshot.</p>
 <b>Output:</b>
 <p class="cmd">
 docker: Error response from daemon: driver failed programming external connectivity on endpoint distracted_bhabha (ed515f04e2926e48c0231bc5e7bc7c6adab303c9fbc07fc342ad3ce74a2e6442): Error starting userland proxy: mkdir /port/tcp:0.0.0.0:8080:tcp:172.17.0.2:80: input/output error.
@@ -279,6 +279,6 @@ Open browser, point to http://localhost:8080. You will se below output.
     </figure>    
 </p> 
 
-<p>Run below command to stop the container. You can find the container using <i>docker ps</i> command.</p>
+<p>Run below command to stop the container. You can find the container ID using <i>docker ps</i> command.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker stop 3c58c2854897</p>
 <p>
