@@ -1,16 +1,16 @@
 layout: post
-title: "Up & Running Flask App inside a Docker container"
+title: "Running Flask App inside a Docker container"
 name: "2019-05-26-running-flask-inside-container"
 description: "2019-05-26-running-flask-inside-container"
 date: 2019-05-26
 ---
 
 <h2>Docker Introduction</h2>
-# Installing
-# Images 
+Installing
+Images 
 
 
-# Docker helpful commands
+Docker helpful commands
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker image ls</p>
 <p class="output">
 <br>REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
@@ -25,7 +25,7 @@ date: 2019-05-26
 <br>
 </p>
 
-# Running Python inside a container
+Running Python inside a container
 <p> </p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -it python:3 python</p>
 
@@ -35,7 +35,7 @@ date: 2019-05-26
 	runs pyhton inside the container
 	once done removes the container
 
-# Running our First Python App inside a container
+Running our First Python App inside a container
 create application folder FirstApp
 create new folder src
 create app.py inside FirstApp\src folder
@@ -61,9 +61,9 @@ print('Hello World!')
 Hello World!
 </p>
 
-# Creating Docker image with Dockerfile
+Creating Docker image with Dockerfile
 
-{% highlight make,shell %}
+{% highlight shell %}
 //file: Dockerfile
 
 	# Dockerfile
@@ -141,7 +141,7 @@ if __name__ == "__main__":
 for real world apps use this line
 create a new requirements.txt file
 
-{% highlight text %}
+{% highlight xml %}
 //file: requirements.txt
 
 	Flask
