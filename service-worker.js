@@ -29,7 +29,12 @@ var filesToCache = [
   'https://vwtt.github.io/images/LkdIn.jpg',
   'https://vwtt.github.io/images/Enable71_Two.png',
   'https://vwtt.github.io/images/Enable71_Three.png',
-  'https://vwtt.github.io/images/ES6Enums.png'
+  'https://vwtt.github.io/images/ES6Enums.png',
+  'https://vwtt.github.io/images/firstapp_flask_code.png',
+  'https://vwtt.github.io/images/firstapp_code.png',
+  'https://vwtt.github.io/images/firstapp_code_2.png',
+  'https://vwtt.github.io/images/browser_output.png',
+  'https://vwtt.github.io/images/docker-restart.png'
 ];
 
 self.addEventListener('install', function(e) {

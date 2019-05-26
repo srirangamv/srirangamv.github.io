@@ -490,3 +490,8 @@ footer p a{
   display: inline !important;
   text-decoration: none;
 }
+
+.titlebg{
+  background-image: url("/images/abstract_vector.jpg");
+  height: 120px;
+}

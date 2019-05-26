@@ -6,6 +6,7 @@
     <loc>http://vwtt.github.io/</loc> 
     <loc>http://vwtt.github.io/blog/</loc> 
     <loc>http://vwtt.github.io/blog/2019-04-27-csharp-playground</loc>
+    <loc>http://vwtt.github.io/blog/running-flask-inside-container</loc>
     <loc>http://vwtt.github.io/blog/2018-12-22-enums-in-ES6</loc>
     <loc>http://vwtt.github.io/blog/enable_csharp7.1_features</loc>
     <loc>http://vwtt.github.io/blog/learn_python_in_a_jiffy</loc>
@@ -56,6 +57,26 @@
     </image:image>
     <image:image>
        <image:loc>http://vwtt.github.io/images/Enable71_Three.webp</image:loc>
+       <image:caption>Visual Studio Code Execution</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/firstapp_flask_code.png</image:loc>
+       <image:caption>Visual Studio Code Execution</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/firstapp_code.png</image:loc>
+       <image:caption>Visual Studio Code Execution</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/firstapp_code_2.png</image:loc>
+       <image:caption>Visual Studio Code Execution</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/docker-restart.png</image:loc>
+       <image:caption>Visual Studio Code Execution</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://vwtt.github.io/images/browser-output.png</image:loc>
        <image:caption>Visual Studio Code Execution</image:caption>
     </image:image>
   </url>
