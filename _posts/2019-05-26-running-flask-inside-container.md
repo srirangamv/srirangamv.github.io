@@ -45,14 +45,14 @@ It is container platform that enables developers, enterprises build, share, run 
 <br>Listing all images:
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker image ls</p>
 <p class="cmd">
-<br>REPOSITORY        TAG               IMAGE ID             CREATED             SIZE
+REPOSITORY        TAG               IMAGE ID             CREATED             SIZE
 <br>
 </p>
 
 <br>Listing all containers:
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker container ls</p>
 <p class="cmd">
-<br>CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
 <br>
 </p>
 
@@ -71,7 +71,7 @@ Above command do the following things.
 </p>
 
 <h3><a name="section6">Running our first Python program inside a container</a></h3>
-<p>Let's create a simple python program. create application folder <b>FirstApp</b>.<br>create new folder <b>src</b> inside FirstApp folder.<br>create app.py inside <b>FirstApp\src</b> folder.
+<p>Let's create a simple python program. <br>Create application folder <b>FirstApp</b>.<br>create new folder <b>src</b> inside FirstApp folder.<br>create app.py inside <b>FirstApp\src</b> folder.
 <br>Add the following code to app.py.
 </p>
 
@@ -94,15 +94,14 @@ print('Hello World!')
 <!-- <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -it -v $(pwd):/First python:3 python /FirstApp/src/app.py</p> -->
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -it -v "%cd%":/FirstApp python:3 python /FirstApp/src//app.py</p>
 <b>Output:</b>
-<p class="output">
+<p class="cmd">
 Hello World!
 </p>
 
 <h3><a name="section7">Creating custom Docker image with Dockerfile</a></h3>
-<p>Let's add Dockerfile as showm below inside the folder <b>FirstApp</b></p>
+<p>Let's add Dockerfile as shown below inside the folder <b>FirstApp</b></p>
 
 {% highlight shell %}
-//file: Dockerfile
 
 	# Dockerfile
 	FROM python:3
@@ -118,26 +117,33 @@ Hello World!
       <img src="/images/firstapp_code_2.png" alt="code screenshot" width="50%" height="50%" />
       <figcaption>First App</figcaption>
     </figure>    
-    Now, run the below command for creating our custom image using standard python:3 image.
+    Now, run the below commands for creating our custom image using standard python:3 image and list all images.
 </p> 
 	
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker build -t firstpy .</p>
+<p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker image ls</p>
 <b>Output:</b>
-<p class="output">
+<p class="cmd">
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 <br>firstpy                                 latest              085903a75b6b        3 hours ago         938M
 </p>
 
+<p>Using below command we can run our custom image. You will see Hello World! on console.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run firstpy</p>
+<b>Output:</b>
+<p class="cmd">
+Hello World!
+</p>
 
+<h3><a name="section8">Running Flask inside the container</a></h3>
+<p>Let's convert our simple program to Flask app. 
+<br>add this new line to Dockerfile
+<br>RUN pip3 install Flask
 
-Let's install Flask
-add this new line to Dockerfile
-
-RUN pip3 install Flask
+adding above line to Dockerfile will install Flask libraries to the image.
+</p>
 
 {% highlight shell %}
-//file: Dockerfile
 
 	# Dockerfile
 	FROM python:3
@@ -149,9 +155,9 @@ RUN pip3 install Flask
 
 {% endhighlight %}
 
-also modify app.py as shown below
+<p>also, modify app.py as shown below.</p>
 {% highlight python %}
-//file: app.py
+# file: app.py
 
 from flask import Flask
 import os
@@ -174,28 +180,20 @@ if __name__ == "__main__":
 <p>
     <figure>
       <img src="/images/firstapp_flask_code.png" alt="code screenshot" width="50%" height="50%" />
-      <figcaption>First App</figcaption>
+      <figcaption>Flask App</figcaption>
     </figure>    
+    Ideally, we have to install the dependencies using pip requirements file. Below shown the requirements.txt file that specifying Flask as dependency for the application. And adding RUN pip3 install -r requirements.txt to Dockerfile just do the same. It will the dependecies specified in the file to the image.
 </p> 
 
-for real world apps use this line
-create a new requirements.txt file
-
 {% highlight xml %}
-//file: requirements.txt
+  # file: requirements.txt
 
 	Flask
-
 {% endhighlight %}
 
-we can install dependencies using requirements file as shown below.
-RUN pip3 install -r requirements.txt
-
-running in detached mode.
-so far interactive mode. let's run detached mode without user interaction.
-
+<p>Now, build the image again using below command.</p> 	
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker build -t firstpy .</p>
-<p class="output">>
+<p class="cmd">>
 <br>Sending build context to Docker daemon  3.584kB
 <br>Step 1/5 : FROM python:3
 <br> ---> a4cc999cf2aa
@@ -215,9 +213,16 @@ so far interactive mode. let's run detached mode without user interaction.
 <br>SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
 </p>
 
+<p>So far, we have run Docker container in interactive mode. Let's run the Flask app image in detached mode as specified below. This command will do the following things.
+<ul>  
+  <li>Runs Flask app in detached mode as specified by -d switch using the port 8080 as specified by -p switch.</li>  
+  <li>Removes the container specified by --rm switch.</li>
+</ul>
+</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -d -p 8080:80 firstpy</p>
-<p>
-<p class="output">
+
+<p>In case, you have come across below error. Restart the Docker as shows in the below screenshot.
+<p class="cmd">
 docker: Error response from daemon: driver failed programming external connectivity on endpoint distracted_bhabha (ed515f04e2926e48c0231bc5e7bc7c6adab303c9fbc07fc342ad3ce74a2e6442): Error starting userland proxy: mkdir /port/tcp:0.0.0.0:8080:tcp:172.17.0.2:80: input/output error.
 </p>
 
@@ -228,12 +233,11 @@ docker: Error response from daemon: driver failed programming external connectiv
     </figure>    
 </p> 
 
-running
-<p class="output">
+<p>If running successfully, you will see below sample output.</p>
+<p class="cmd">
 3c58c2854897756bb709aefd2ea34b3e686ab31d02e2070f8a73612ad247fe73
 <br>
 </p>
-
 
 <p>Run below command to list all running containers.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker ps</p>
