@@ -47,12 +47,14 @@ It is container platform that enables developers, enterprises build, share, run 
 <p class="cmd">
 REPOSITORY        TAG               IMAGE ID             CREATED             SIZE
 <br>
+<br>
 </p>
 
 <br>Listing all containers:
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker container ls</p>
 <p class="cmd">
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
+<br>
 <br>
 </p>
 
@@ -86,7 +88,7 @@ print('Hello World!')
     Your code should look like below.
     <figure>
       <img src="/images/firstapp_code.png" alt="code screenshot" width="50%" height="50%" />
-      <figcaption>code view</figcaption>
+      <figcaption></figcaption>
     </figure>    
     Now, we can run the above program using standard python:3 image as shown below. run the command.
 </p> 
@@ -115,7 +117,7 @@ Hello World!
     Your code should look like below.
     <figure>
       <img src="/images/firstapp_code_2.png" alt="code screenshot" width="50%" height="50%" />
-      <figcaption>First App</figcaption>
+      <figcaption></figcaption>
     </figure>    
     Now, run the below commands for creating our custom image using standard python:3 image and list all images.
 </p> 
@@ -126,6 +128,8 @@ Hello World!
 <p class="cmd">
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 <br>firstpy                                 latest              085903a75b6b        3 hours ago         938M
+<br>
+<br>
 </p>
 
 <p>Using below command we can run our custom image. You will see Hello World! on console.</p>
@@ -137,8 +141,7 @@ Hello World!
 
 <h3><a name="section8">Running Flask inside the container</a></h3>
 <p>Let's convert our simple program to Flask app. 
-<br>add this new line to Dockerfile
-<br>RUN pip3 install Flask
+<br>add this new line to Dockerfile <i>>RUN pip3 install Flask</i>
 
 adding above line to Dockerfile will install Flask libraries to the image.
 </p>
@@ -182,13 +185,13 @@ if __name__ == "__main__":
       <img src="/images/firstapp_flask_code.png" alt="code screenshot" width="50%" height="50%" />
       <figcaption>Flask App</figcaption>
     </figure>    
-    Ideally, we have to install the dependencies using pip requirements file. Below shown the requirements.txt file that specifying Flask as dependency for the application. And adding RUN pip3 install -r requirements.txt to Dockerfile just do the same. It will the dependecies specified in the file to the image.
+    Ideally, we have to install the dependencies using pip requirements file. Below shown the requirements.txt file that specifying Flask as dependency for the application. And adding <i>RUN pip3 install -r requirements.txt</i> to Dockerfile just do the same here. It will the dependecies specified in the file to the image.
 </p> 
 
 {% highlight xml %}
-  # file: requirements.txt
+# file: requirements.txt
 
-	Flask
+Flask
 {% endhighlight %}
 
 <p>Now, build the image again using below command.</p> 	
@@ -229,7 +232,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 <p>
     <figure>
       <img src="/images/docker-restart.png" alt="code screenshot" width="50%" height="50%" />
-      <figcaption>First App</figcaption>
+      <figcaption></figcaption>
     </figure>    
 </p> 
 
@@ -237,20 +240,22 @@ docker: Error response from daemon: driver failed programming external connectiv
 <p class="cmd">
 3c58c2854897756bb709aefd2ea34b3e686ab31d02e2070f8a73612ad247fe73
 <br>
+<br>
 </p>
 
 <p>Run below command to list all running containers.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker ps</p>
 <p>
 <p class="output">
-<br>CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
 <br>3c58c2854897        firstpy             "python app.py"     42 seconds ago      Up 40 seconds       0.0.0.0:8080->80/tcp   eager_hamilton
+<br>
 <br>
 </p>
 
 <p>Run below command to check the logs from the running container.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker logs 3c58c2854897</p>
-<p class="output">
+<p class="cmd">
 * Serving Flask app "app" (lazy loading)
 <br>* Environment: production
 <br>   WARNING: This is a development server. Do not use it in a production deployment.
@@ -264,10 +269,10 @@ docker: Error response from daemon: driver failed programming external connectiv
 Open browser, point to http://localhost:8080. You will se below output.
     <figure>
       <img src="/images/browser-output.png" alt="browser screenshot" width="50%" height="50%" />
-      <figcaption>browse the flask app</figcaption>
+      <figcaption></figcaption>
     </figure>    
 </p> 
 
-<p>Run below command to stop the container.</p>
+<p>Run below command to stop the container. You can find the container using <i>docker ps</i> command.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker stop 3c58c2854897</p>
 <p>
