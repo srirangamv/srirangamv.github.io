@@ -23,102 +23,83 @@ It is container platform that enables developers, enterprises build, share, run 
 <b>Image</b>: A Docker Image is unit/package of code created and a specification file (usually a text file named Dockerfile) which lists runtime, tools, libraries and settings required to run the code creted.
 <br>
 <b>Container</b>: A Docker container is a lightweight, isolated, executable package of software that includes everything needed to run an application: code, runtime, tools, libraries and settings essentially a Docker Image. Docker image is a static entity and when Docker engine runs that image, it become a container.
-</p>
+ which lists runtime, tools, libraries and settings required to run the code creted.
+<br>
 <b>Registry</b>: A Docker registry is a repository for Docker images. Docker clients connect to registries to download ("pull") images for use or upload ("push") images that they have built. Registries can be public or private. Two main public registries are Docker Hub and Docker Cloud. Docker Hub is the default registry where Docker looks for images.
+<br>
 <b>dockerd</b>: This is a daemon process that manages containers and listens to Docker client requests sent using Docker Engine API.
+ which lists runtime, tools, libraries and settings required to run the code creted.
+<br>
 <b>docker</b>: This is a docker client provides CLI for issueing requests to Docker daemon.
+<br>
 <b>Docker Compose</b>: Docker compose is a tool for defining and running multi-container Docker applications specified using YAML file. The docker-compose.yml file is used to define an application's services and includes various configuration options for the same. docker-compose CLI utility allows users to run commands on multiple containers at once, e.g., building images, scaling containers, running containers that were stopped, and more.
+ which lists runtime, tools, libraries and settings required to run the code creted.
+<br>
 <b>Docker Swarm</b>: Swarming provides native clustering functionality for Docker containers, which turns a group of Docker engines into a single virtual Docker engine.
 </p>
-<h3><a name="section3">Installing Docker</a></h3>
+<h3><a name="section4">Installing Docker</a></h3>
 <p>Docker CE(Community Edition) can be installed from <a href="https://docs.docker.com/install/" alt="Docker CE download link" target="_blank">here</a>. Docker CE consists of Docker Engine and client.
 <p>
 
 <span>Docker helpful commands</span>
-Listing all images:
+<br>Listing all images:
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker image ls</p>
 <p class="cmd">
-<table>
-<tr>
-<th>REPOSITORY</th>
-<th>TAG</th>
-<th>IMAGE ID</th>
-<th>CREATED</th>
-<th>SIZE</th>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
+<br>REPOSITORY        TAG               IMAGE ID             CREATED             SIZE
+<br>
 </p>
 
-Listing all containers:
+<br>Listing all containers:
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker container ls</p>
 <p class="cmd">
-<table>
-<tr>
-<th>CONTAINER ID</th>
-<th>IMAGE</th>
-<th>COMMAND</th>
-<th>CREATED</th>
-<th>STATUS</th>
-<th>PORTS</th>
-<th>NAMES</th>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
+<br>CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
+<br>
 </p>
 
-<h3><a name="section3">Running Python inside a container</a></h3>
-
-<p> </p>
+<h3><a name="section5">Running Python inside a container</a></h3>
+Please run the below command.
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -it python:3 python</p>
+<p>You will see pyhton interpreter running from inside a Docker container. You can issue any python statements. type exit() to close the container.
+Above command do the following things.
+<ul>
+  <li>Checks if python:3 image already downloaded and available.</li>
+  <li>If not, downloads it from public registry.</li>
+  <li>Creates, a new container with python:3 image.</li>
+  <li>Runs pyhton program inside the container in interactive mode using terminal specified by --it switch.</li>
+  <li>Once interpreter closed via exit(), removes the container specified by --rm switch.</li>
+</ul>	
+</p>
 
-	checks in local if python:3 image available
-	if not available downloads it
-	create a new container
-	runs pyhton inside the container
-	once done removes the container
-
-Running our First Python App inside a container
-create application folder FirstApp
-create new folder src
-create app.py inside FirstApp\src folder
+<h3><a name="section6">Running our first Python program inside a container</a></h3>
+<p>Let's create a simple python program. create application folder <b>FirstApp</b>.<br>create new folder <b>src</b> inside FirstApp folder.<br>create app.py inside <b>FirstApp\src</b> folder.
+<br>Add the following code to app.py.
+</p>
 
 {% highlight python %}
-//file: app.py
+# file: app.py
 
 print('Hello World!')
 
 {% endhighlight %}
 
 <p>
+    Your code should look like below.
     <figure>
       <img src="/images/firstapp_code.png" alt="code screenshot" width="50%" height="50%" />
-      <figcaption>First App</figcaption>
+      <figcaption>code view</figcaption>
     </figure>    
+    Now, we can run the above program using standard python:3 image as shown below. run the command.
 </p> 
 
-<p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -it -v $(pwd):/First python:3 python /FirstApp/src/app.py</p>
-<p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -it -v "%cd%":/First python:3 python /FirstApp/src//app.py</p>
+<!-- <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -it -v $(pwd):/First python:3 python /FirstApp/src/app.py</p> -->
+<p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker run --rm -it -v "%cd%":/FirstApp python:3 python /FirstApp/src//app.py</p>
 <b>Output:</b>
 <p class="output">
 Hello World!
 </p>
 
-Creating Docker image with Dockerfile
+<h3><a name="section7">Creating custom Docker image with Dockerfile</a></h3>
+<p>Let's add Dockerfile as showm below inside the folder <b>FirstApp</b></p>
 
 {% highlight shell %}
 //file: Dockerfile
@@ -132,10 +113,12 @@ Creating Docker image with Dockerfile
 {% endhighlight %}
 
 <p>
+    Your code should look like below.
     <figure>
       <img src="/images/firstapp_code_2.png" alt="code screenshot" width="50%" height="50%" />
       <figcaption>First App</figcaption>
     </figure>    
+    Now, run the below command for creating our custom image using standard python:3 image.
 </p> 
 	
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker build -t firstpy .</p>
@@ -252,7 +235,7 @@ running
 </p>
 
 
-
+<p>Run below command to list all running containers.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker ps</p>
 <p>
 <p class="output">
@@ -261,6 +244,7 @@ running
 <br>
 </p>
 
+<p>Run below command to check the logs from the running container.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker logs 3c58c2854897</p>
 <p class="output">
 * Serving Flask app "app" (lazy loading)
@@ -273,12 +257,13 @@ running
 </p>
 
 <p>
+Open browser, point to http://localhost:8080. You will se below output.
     <figure>
-      <img src="/images/browser-output.png" alt="code screenshot" width="50%" height="50%" />
-      <figcaption>Browse the Flask App</figcaption>
+      <img src="/images/browser-output.png" alt="browser screenshot" width="50%" height="50%" />
+      <figcaption>browse the flask app</figcaption>
     </figure>    
 </p> 
 
-
+<p>Run below command to stop the container.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker stop 3c58c2854897</p>
 <p>
