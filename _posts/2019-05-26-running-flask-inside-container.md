@@ -7,14 +7,14 @@ date: 2019-05-26
 ---
 
 <h3><a name="section1">Docker Introduction</a></h3>
-<p>According to the Wikipedia, Docker is a collection of interoperating software-as-a-service and platform-as-a-service offerings that employ operating-system-level virtualization to cultivate development and delivery of software inside standardized software packages called containers.</p>
+<p>According to the Wikipedia, "Docker is a collection of interoperating software-as-a-service and platform-as-a-service offerings that employ operating-system-level virtualization to cultivate development and delivery of software inside standardized software packages called containers."</p>
 
 <p>
-It is a container platform that enables developers, enterprises build, share, run code seamlessly anywhere.
+Essentially, It is a container platform that enables developers and enterprises build, share, and run code seamlessly anywhere.
 </p>
 <h3><a name="section2">Why Docker?</a></h3>
 <ul>
-  <li>Light: e.g., A physical machine running 10 Docker container means, all the 10 containers shares a single kernel. whereas a physical machine running 5 VMs will have 5 different Operating Systems.</li>
+  <li>Light: A physical machine that is running 10 Docker containers, means, all these 10 containers shares a single OS kernel whereas a physical machine running 5 VMs will have 5 different Operating Systems.</li>
   <li>Sharing: Anyone can download/pull publicly available images and start running the containers.</li>
   <li>Distribution:Anyone can create an image and publish to Docker Registry.</li>
   <li>Scale: Docker container are easily scalable.</li>
@@ -248,7 +248,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 <p>Run below command to list all running containers.</p>
 <p class="cmd">C:\&gt;Users&gt;King&gt;Desktop&gt;docker ps</p>
 <b>Output:</b>
-<p class="output">
+<p class="cmd">
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
 <br>3c58c2854897        firstpy             "python app.py"     42 seconds ago      Up 40 seconds       0.0.0.0:8080->80/tcp   eager_hamilton
 <br>
