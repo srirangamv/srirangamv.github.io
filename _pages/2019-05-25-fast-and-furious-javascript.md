@@ -21,9 +21,9 @@ permalink: /jside/
     {% endhighlight %}
     <div class="controlpanel">
         <ul>
-            <li><a href="javascript:myeval(this)">Run</a></li>
-            <li><a href="javascript:cleareditor(this)">Clear</a></li>                
-            <li><a href="#">More at Github</a></li>
+            <li><a href="#" onclick="myeval(this)">Run</a></li>
+            <li><a href="#" onclick="cleareditor(this)">Clear</a></li>                
+            <li><a href="https://github.com/vwtt/jscheatsheet">More at Github</a></li>
         </ul>
     </div>
 
@@ -36,9 +36,9 @@ permalink: /jside/
     {% endhighlight %}
     <div class="controlpanel">
         <ul>
-            <li><a href="javascript:myeval()">Run</a></li>
-            <li><a href="javascript:cleareditor()">Clear</a></li>                
-            <li><a href="#">More at Github</a></li>
+            <li><a href="#" onclick="myeval(this)">Run</a></li>
+            <li><a href="#" onclick="cleareditor(this)">Clear</a></li>                
+            <li><a href="https://github.com/vwtt/jscheatsheet">More at Github</a></li>
         </ul>
     </div>
 
@@ -50,9 +50,9 @@ permalink: /jside/
     {% endhighlight %}
     <div class="controlpanel">
         <ul>
-            <li><a href="javascript:myeval()">Run</a></li>
-            <li><a href="javascript:cleareditor()">Clear</a></li>                
-            <li><a href="#">More at Github</a></li>
+            <li><a href="#" onclick="myeval(this)">Run</a></li>
+            <li><a href="#" onclick="cleareditor(this)">Clear</a></li>                
+            <li><a href="https://github.com/vwtt/jscheatsheet">More at Github</a></li>
         </ul>
     </div>
 </div>
