@@ -12,7 +12,7 @@ permalink: /jside/
     <h3>Type System<h3>
     <p>Primary: number, boolean, string, symbol, undefined, null</p>
     {% highlight javascript %}
-    typeof(8)
+    console.log(typeof(8));
     typeof(true)
     typeof("true")
     typeof(Symbol())
@@ -32,7 +32,7 @@ permalink: /jside/
     typeof(new Date())
     typeof([])
     typeof(function(){})
-    typeof({})
+    console.log(typeof({}));
     {% endhighlight %}
     <div class="controlpanel">
         <ul>
@@ -167,7 +167,7 @@ from([1, 2, 3, 4])
     function myeval(tgt){
         let arr=[];
         const err=['you cheat!', 'yo dawg!'];
-        r=tgt.parentElement.parentElement.nextElementSibling;
+        r=tgt.parentElement.parentElement.parentElement.nextElementSibling;
         const logger = function(m){ 
             arr.push(m);                 
             r.innerHTML = arr.join("<br>");
@@ -176,7 +176,7 @@ from([1, 2, 3, 4])
         s=s.trim().replace(/console.log/g, 'logger');        
         if(!r){
             r=document.createElement("p");
-            tgt.parentElement.parentElement.appendChild(r);
+            tgt.parentElement.parentElement.parentElement.appendChild(r);
         }
         if(s.length===0)
             r.innerHTML = err[0];
@@ -187,7 +187,7 @@ from([1, 2, 3, 4])
         }
     }
     function cleareditor(tgt){
-        r=tgt.parentElement.parentElement.nextElementSibling;
+        r=tgt.parentElement.parentElement.parentElement.nextElementSibling;
         r.innerHTML = "";
     }
 </script>    
