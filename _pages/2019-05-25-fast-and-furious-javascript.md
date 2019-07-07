@@ -4,6 +4,7 @@ title: "JavaScript Reference Cheatsheet"
 name: "2019-05-05-fast-and-furious-javascript"
 description: "JavaScript Reference Cheatsheet"
 date: 2019-05-05
+permalink: /jside/
 ---
 <p>Here is the Javascript language reference sheet. Find code <a href="https://github.com/vwtt/jscheatsheet" target="_blank" title="javascript cheatsheet repository">here</a>.</p>
    
