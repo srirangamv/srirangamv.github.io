@@ -167,17 +167,17 @@ from([1, 2, 3, 4])
     function myeval(tgt){
         let arr=[];
         const err=['you cheat!', 'yo dawg!'];
-        r=tgt.parentElement.parentElement.parentElement.nextElementSibling;
+        r=tgt.parentElement.parentElement.nextElementSibling;        
+        if(!r){
+            r=document.createElement("p");
+            tgt.parentElement.parentElement.parentElement.appendChild(r);
+        }
         const logger = function(m){ 
             arr.push(m);                 
             r.innerHTML = arr.join("<br>");
         };
         s=tgt.parentElement.parentElement.parentElement.previousElementSibling.innerText;
-        s=s.trim().replace(/console.log/g, 'logger');        
-        if(!r){
-            r=document.createElement("p");
-            tgt.parentElement.parentElement.parentElement.appendChild(r);
-        }
+        s=s.trim().replace(/console.log/g, 'logger');
         if(s.length===0)
             r.innerHTML = err[0];
         else if (s.length>500)
@@ -187,7 +187,7 @@ from([1, 2, 3, 4])
         }
     }
     function cleareditor(tgt){
-        r=tgt.parentElement.parentElement.parentElement.nextElementSibling;
+        r=tgt.parentElement.parentElement.nextElementSibling;
         r.innerHTML = "";
     }
 </script>    
