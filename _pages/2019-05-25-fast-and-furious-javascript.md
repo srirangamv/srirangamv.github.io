@@ -21,8 +21,8 @@ permalink: /jside/
     {% endhighlight %}
     <div class="controlpanel">
         <ul>
-            <li><a href="javascript:myeval()">Run</a></li>
-            <li><a href="javascript:cleareditor()">Clear</a></li>                
+            <li><a href="javascript:myeval(this)">Run</a></li>
+            <li><a href="javascript:cleareditor(this)">Clear</a></li>                
             <li><a href="#">More at Github</a></li>
         </ul>
     </div>
@@ -164,7 +164,7 @@ from([1, 2, 3, 4])
 	.then(result => console.log(result)) -->
 
 <script>
-    function myeval(){
+    function myeval(tgt){
         let arr=[];
         const err=['you cheat!', 'yo dawg!'];
         const logger = function(m){ 
@@ -181,7 +181,7 @@ from([1, 2, 3, 4])
             eval(s);
         }
     }
-    function cleareditor(){
+    function cleareditor(tgt){
         document.getElementsByClassName("code")[0].innerHTML = "";
     }
 </script>    
