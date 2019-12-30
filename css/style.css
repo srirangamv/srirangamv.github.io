@@ -419,11 +419,11 @@ footer p a{
 
 #menu ul {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0px;
-  height: 100%;  
-  width: 325px;
   left: 0px;
+  height: 100%;  
+  width: 100%;
   margin: 0;
   border: 1px solid #efefef;
   border-bottom: 1px solid #ddd;
@@ -455,13 +455,13 @@ footer p a{
 }
 
 .shadow{
-  border-radius: 2px;
+  /*border-radius: 2px;
   border-top: solid 1px rgba(0,0,0,0.12);
-    padding: 8px 12px;
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
-    background-color: #fff;
-    margin: 0 auto;
-    overflow: hidden;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);*/
+  padding: 8px 12px;  
+  background-color: #fff;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .ide{  
@@ -492,6 +492,6 @@ footer p a{
 }
 
 .titlebg{
-  background-image: url("/images/abstract_vector.jpg");
-  height: 120px;
+  color:indianred;
+  height: 90px;
 }
