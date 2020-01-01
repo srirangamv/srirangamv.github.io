@@ -8,7 +8,7 @@ body{
   background-color:#184e8e;
   border-bottom: solid 1px #bbb;
   padding-bottom:30px; */
-  color: #000;
+  color: slategrey;
 }
 
 @media (max-width:767px) {
@@ -52,7 +52,7 @@ body{
 
 .header-blue .navbar .navbar-brand{
   font-weight:bold;
-  color:indianred;
+  color:mediumvioletred;
   font-size: 32px;
 }
 
@@ -200,7 +200,7 @@ footer p a{
   }
 
   footer{
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     border-bottom: solid 1px #bbb;
@@ -410,6 +410,7 @@ footer p a{
   border-radius: 2px;
   border: 1px solid transparent;
   z-index: 5;
+  padding: 2px 0px 0px 8px;
 }
 
 #menu:hover a#toggle {
