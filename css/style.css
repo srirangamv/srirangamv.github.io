@@ -8,7 +8,7 @@ body{
   background-color:#184e8e;
   border-bottom: solid 1px #bbb;
   padding-bottom:30px; */
-  color: slategrey;
+  color: #000;
 }
 
 @media (max-width:767px) {
