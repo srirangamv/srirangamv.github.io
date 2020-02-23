@@ -1,115 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110523954-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-110523954-1');
-    </script>
-    <title>{{ page.title }}</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Vikram Kumar Srirangam's Tech Blog">
+    <meta name="keywords" content="HTML,CSS,JavaScript,C#,Design Patterns,.Net Core, Asp.Net Core">
+    <meta name="author" content="Vikram Kumar Srirangam">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ page.description }}">
-    <link rel="shortcut icon" href="/images/favicon.ico">
-
-    <link rel="manifest" href="/manifest.json">
-
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#2F3BA2">
     <meta name="apple-mobile-web-app-title" content="Vikram's Blog">
     <link rel="apple-touch-icon" href="images/launcher192x192.png">
-
     <meta name="msapplication-TileImage" content="images/launcher192x192.png">
     <meta name="msapplication-TileColor" content="#2F3BA2">
-
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fonts/foundation-icons.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/syntax.css">
 </head>
 
 <body>
-    <div class="container hero">
-        <div class="header-blue">
-            <div id="menu">
-                <a id="toggle" href="javascript:void();" onclick="return false;">
-                    <i class="icon-menu">&nbsp;</i>
-                </a>
-                <ul>
-                    <li>
-                        <img src="/images/LkdIn.jpg"
-                            class="userprofile" alt="user profile photo" />
-                        <h5 id="mainText" class="center">My Name Is</h5>
-                        <h1 style="color: white;" class="center">
-                            Vikram Kumar <b>Srirangam</b>
-                        </h1>
-                        <h6 id="mainText" class="center">Full Stack Web Developer.</h6>
-                        <h5 class="center"><b>ABOUT ME</b></h5>
-                        <p>
-                            A .Net Web Application Developer and an open source enthusiast. Writes most of the code in JavaScript, C# and Python. Completed Masters in Computer Applications in 2006. An amateur photographer, avid reader, movie buff, knows and follows most of the fictional characters in the literature, nature and history lover.
-                            <br />
-                            <br />
-                            <i>"My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style. -Maya Angelou"</i>
-                        </p>
-                    </li>
-                    <li>
-                        <a href="https://in.linkedin.com/in/vikramsrirangam?trk=profile-badge" class="social-link"
-                            target="_blank" title="social link to Linkedin">
-                            <i class="icon-social-linkedin">&nbsp;</i>
-                        </a>
-                        <a href="https://github.com/vwtt" class="social-link" target="_blank"
-                            title="social link to GitHub">
-                            <i class="icon-social-github">&nbsp;</i>
-                        </a>
-                        <a href="https://www.codewars.com/users/vwtt" class="social-link" target="_blank" title="social link to CodeWars">
-                            <img src="https://www.codewars.com/users/vwtt/badges/small" alt="codewars badge of honor">
-                        </a>
-                    </li>
-                    <!-- <li class="skills">
-                        <b>Skills</b>
-                        <span>.NET</span>
-                        <span>.NET Core</span>
-                        <span>Asp.NET Core</span>
-                        <span>JavaScript</span>
-                        <span>Python</span>
-                        <span>Node.js</span>
-                        <span>Angular</span>
-                        <span>React</span>
-                        <span>Java</span>
-                        <span>KnockoutJs</span>
-                        <span>SQL Server</span>
-                        <span>Oracle</span>
-                        <span>Azure SQL</span>
-                        <span>T-SQL</span>
-                        <span>PL-SQL</span>
-                    </li> -->
-                </ul>
-            </div>
-            <div class="navbar">
-                <a class="navbar-brand navbar-link" href="/blog">vikram's blog</a>
-            </div>
-        </div>
-    </div>
+    <div class="container">
+        <header>
+            <!-- Header content -->
+            <span>&nbsp;</span>
+            <a href="/">vikram's blog</a>
+            <span>&nbsp;</span>
+        </header>
 
-    <div class="container hero">
-        <div class="row">
-            <div class="col-lg-12 shadow">
-                {{ content }}
-            </div>
-        </div>
+        <input id="hamburger" type='checkbox' class="hamburger-checkbox">
+        <label for="hamburger" class="hamburger-label" role="button" aria-labelledby="menu">=</label>
+        <nav class="sidebar">
+            <!-- Navigation -->
+            <ul class="menu">
+                <li>
+                    <img src="/images/LkdIn.jpg" class="userprofile" alt="user profile photo" />
+                    <a id="close" href="javascript:void();" onclick="return false;">
+                        <i class="icon-close">&nbsp;</i>
+                    </a>
+                    <h5 id="mainText" class="center">My Name Is</h5>
+                    <h1 style="color: white;" class="center">
+                        Vikram Kumar <b>Srirangam</b>
+                    </h1>
+                    <h6 id="mainText" class="center">Full Stack Web Developer.</h6>
+                    <h5 class="center"><b>ABOUT ME</b></h5>
+                    <p>
+                        A .Net Web Application Developer and an open source enthusiast. Writes most of the code in
+                        JavaScript, C# and Python. Completed Masters in Computer Applications in 2006. An amateur
+                        photographer, avid reader, movie buff, knows and follows most of the fictional characters in the
+                        literature, nature and history lover.
+                        <br />
+                        <br />
+                        <i>"My mission in life is not merely to survive, but to thrive; and to do so with some passion,
+                            some compassion, some humor, and some style. -Maya Angelou"</i>
+                    </p>
+                </li>
+                <li>
+                    <a href="https://in.linkedin.com/in/vikramsrirangam?trk=profile-badge" class="social-link"
+                        target="_blank" title="social link to Linkedin">
+                        <i class="icon-social-linkedin">&nbsp;</i>
+                    </a>
+                    <a href="https://github.com/vwtt" class="social-link" target="_blank" title="social link to GitHub">
+                        <i class="icon-social-github">&nbsp;</i>
+                    </a>
+                    <a href="https://www.codewars.com/users/vwtt" class="social-link" target="_blank"
+                        title="social link to CodeWars">
+                        <img src="https://www.codewars.com/users/vwtt/badges/small" alt="codewars badge of honor">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Main content -->
+            {{ content }}
+        </main>
+
+        <aside>
+            <!-- Sidebar / Ads -->
+        </aside>
+
+        <footer>
+            <!-- Footer content -->
+            <p>
+                © Copyright 2020, <a href="https://vwtt.github.io" target="_blank" rel="noopener">Vikram Srirangam</a>
+            </p>
+        </footer>
     </div>
-    <footer>
-        <p>
-            © Copyright 2019, <a href="https://vwtt.github.io" target="_blank" rel="noopener">Vikram Srirangam</a>
-        </p>
-    </footer>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker

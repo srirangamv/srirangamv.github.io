@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "JavaScript Reference Cheatsheet"
-name: "2019-05-05-fast-and-furious-javascript"
-description: "JavaScript Reference Cheatsheet"
+name: "2019-05-25-javascript-playground"
+description: "JavaScript Playground"
 date: 2019-05-05
-permalink: /jside/
+permalink: /javascript_playground/
 ---
 <p>Here is the Javascript language reference sheet. Find code <a href="https://github.com/vwtt/jscheatsheet" target="_blank" title="javascript cheatsheet repository">here</a>.</p>
    
@@ -96,6 +96,79 @@ permalink: /jside/
         first class functions   function is data
         higher order functions  a function that can take a function as argument and can return a function
         imperative vs declarative
+        // memoize decorator with single argument
+function memoize(f) {
+    var obj = {};
+    function wrapper(x) {
+        obj[x] ? obj[x] : obj[x] = f(x);
+        console.table(obj);
+        return obj[x];
+    }
+
+    return wrapper;
+}
+
+// memoize decorator with arguments
+function memoize(f) {
+    var obj = {};
+    function wrapper() {
+        var arg_str = JSON.stringify(arguments);
+        obj[arg_str] = obj[arg_str] || f.apply(f, arguments);
+        console.table(obj);
+        return cache[arg_str];
+    }
+
+    return wrapper;
+}
+
+// currying
+function add(x) {
+    return function (y) {
+        return x + y;
+    }
+}
+
+var increment = add(1);
+increment(5);
+increment(6);
+
+var incrementbydozen = add(12);
+incrementbydozen(5);
+incrementbydozen(6);
+
+function cube(x) { return x * x * x; }
+function square(x) { return x * x; }
+memcuber = memoize(cube)
+memsquarer = memoize(square)
+
+// compose
+var compose = function (f, g) {
+    return function (x) {
+        return g(f(x));
+    };
+};
+
+function addone(x) { return x + 1; }
+function square(x) { return x * x; }
+
+// creates a pipe of addone and then square
+var plusonetosquare = compose(addone, square)
+
+plusonetosquare(5)
+plusonetosquare(6)
+plusonetosquare(7)
+
+var replacer = function (what, replacement) {
+    return function (str) { return str.replace(what, replacement); };
+}
+
+var tolower = function (str) {
+    return str.toLowerCase();
+}
+
+var snakeCase = compose(replacer(/\s+/ig, '_'), toLowerCase);
+
+snakeCase("The Very Long Anaconda");
 
 # Collections
     Array
