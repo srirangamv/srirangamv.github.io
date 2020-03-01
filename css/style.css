@@ -160,7 +160,9 @@
             height: 64px;
         }
 
-        p.cmd {            
+        p.cmd, p.output {
             background-color: black;
             color: white;
+            border-top: solid 20px rgb(227, 227, 227);
+            font-size: 12px;
         }
