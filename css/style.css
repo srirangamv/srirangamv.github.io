@@ -134,7 +134,7 @@
                 display: inline-block;
                 width: 75%;
                 height: 100%;
-                padding-top: 6.5em;
+                /* padding-top: 6.5em; */
                 position: absolute;
                 z-index: 100;
             }
@@ -152,4 +152,15 @@
             color: #2DAEBF;
             cursor: pointer;
             /*text-shadow: 0px 1px 0px #0092b3, 0px 2px 0px #0087a6, 0px 3px 0px #008099, 0px 4px 0px #00758c, 0px 5px 0px #555, 0px 6px 0px #006a80, 0px 0px 0px #006073, 0px 8px 7px #005566;*/
+        }
+
+        .userprofile {            
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+        }
+
+        p.cmd {            
+            background-color: black;
+            color: white;
         }
