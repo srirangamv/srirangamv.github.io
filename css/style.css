@@ -7,7 +7,7 @@
 
         html,
         body {
-            overflow-x: hidden;
+            overflow: hidden;
             font-family: 'Fira Code';
             font-size: 16px;
         }
@@ -44,6 +44,7 @@
 
         main {
             grid-area: content;
+            overflow-y: scroll;
         }
 
         aside {
@@ -169,4 +170,15 @@
             border-top: solid 20px rgb(227, 227, 227);
             font-size: 12px;
             max-width: 650px;
+        }
+
+        .social {
+            font-size: xx-large;
+            text-decoration: none;
+            color:crimson;
+        }
+
+        .icon {
+            font-size: 20px;
+            color: crimson;
         }
