@@ -7,7 +7,7 @@ description: Welcome to Vikram's blog roll.
 <ul class="postslist">
   {% for post in site.posts %}
     <li>
-        <span>{{ post.date | date_to_string }}</span> &raquo;
+        <span class="smallicon fi-calendar">&nbsp;{{ post.date | date_to_string }}</span> &raquo;
         <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
       </li>
