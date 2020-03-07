@@ -16,11 +16,11 @@
             display: grid;
 
             grid-template-areas:
-                "header header header"
-                "nav content content"
-                "footer footer footer";
+                "header header"
+                "nav content"
+                "footer footer";
 
-            grid-template-columns: 200px 1fr 200px;
+            grid-template-columns: 275px 1fr;
             grid-template-rows: auto 1fr auto;
             grid-gap: 10px;
 
@@ -32,6 +32,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-weight: bolder;
+            background-color: aliceblue;
+            padding: 0.75em;
         }
 
         nav {
@@ -165,4 +168,5 @@
             color: white;
             border-top: solid 20px rgb(227, 227, 227);
             font-size: 12px;
+            max-width: 650px;
         }
