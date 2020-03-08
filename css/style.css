@@ -44,7 +44,7 @@
 
         main {
             grid-area: content;
-            overflow-y: scroll;
+            overflow-y: auto;
         }
 
         aside {
