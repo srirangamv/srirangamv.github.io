@@ -67,20 +67,20 @@
             .container {
                 grid-template-areas:
                     "header"
-                    "nav"
+                    /* "nav" */
                     "content"
-                    "side"
+                    /* "side" */
                     "footer";
 
                 grid-template-columns: 1fr;
                 grid-template-rows:
                     auto
                     /* Header */
-                    minmax(75px, auto)
+                    /* minmax(75px, auto) */
                     /* Nav */
                     1fr
                     /* Content */
-                    minmax(75px, auto)
+                    /* minmax(75px, auto) */
                     /* Sidebar */
                     auto;
                 /* Footer */
