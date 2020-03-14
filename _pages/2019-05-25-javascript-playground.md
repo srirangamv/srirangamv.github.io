@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "JavaScript Reference Cheatsheet"
+layout: editor
+title: "JavaScript Playground"
 name: "2019-05-25-javascript-playground"
 description: "JavaScript Reference Cheatsheet"
 date: 2019-05-05
@@ -70,13 +70,13 @@ permalink: /javascript_Reference/
       background-color: #111111;
     }
   </style>
-<p>Here is the Javascript language reference sheet. Find code <a href="https://github.com/vwtt/jscheatsheet" target="_blank" title="javascript cheatsheet repository">here</a>.</p>
 
 <div class="codeboxwrapper">
     <div id="codebox" class="codebox" contenteditable="true">
       function HelloWorld() {
-      alert("Hello World!");
+      console.log("Hello World!");
       }
+      HelloWorld();
     </div>
     <!--each line should be wrapped in div tag. all the spans will be inside this tag.-->
     <ul>
