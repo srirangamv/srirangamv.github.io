@@ -72,7 +72,7 @@ permalink: /javascript_Reference/
   </style>
 
 <div class="codeboxwrapper">
-    <div id="codebox" class="codebox" contenteditable="true">
+    <div id="codebox" class="codebox" contenteditable="true" onpaste="myFunction()">
       function HelloWorld() {
       console.log("Hello World!");
       }
@@ -319,6 +319,10 @@ from([1, 2, 3, 4])
 
 <script>
             w3CodeColor(document.getElementById("codebox"));
+
+            function myFunction(){
+              w3CodeColor(document.getElementById("codebox"));
+            }
 
             function w3CodeColor(elmnt, mode) {
               var lang = (mode || "js");
