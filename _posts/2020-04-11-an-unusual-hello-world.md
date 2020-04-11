@@ -5,16 +5,22 @@ name: "2020-04-11-an-unusual-hello-world"
 description: "An Unusual Hello World Program using Dynamic Code Execution with C#"
 date: 2020-04-11
 ---
-<p>Here is a simple way of implementing enums in JavaScript with ES6 Proxies.</p>
+<p>Here we discuss two C# programs which executes a dynamic C# code to print the familiar "Hello World!" message to the console.</p>
 
+<p>First program, using Rosalyn scripting APIs, we will print the mesage to the console window. Rosalyn is nickname for .NET Compiler Platform whcih exposed API for compiler services. Using these APIs we can run simple scripts to entire programs. Build syntax trees, anlyze them, compile them and finally execute them. We can use many .NET language compiler services in self hosted programs and execute the code which is dynamically created. In this sample we will execute a simple interpolated string by passing the values required for it dynamically. Let's ger started by creating a new dotnet core console application.</p>
+
+<p>Run the commands as shown below. Creating application folder and initiating a dotnet core console and application and open the same in VS code editor.</p>
 <p class="cmd">
-cd rosylindemo<br\>
-md rosylindemo<br\>
-dotnet new console<br\>
+cd rosylindemo<br/>
+md rosylindemo<br/>
+dotnet new console<br/>
 code .<br\>
 </p>
 
-on Terminal => dotnet add package Microsoft.CodeAnalysis.CSharp.Scripting
+<p>once Code opend go to the terminal and add this package executing below.
+<p class="cmd">
+dotnet add package Microsoft.CodeAnalysis.CSharp.Scripting
+</p>
 
 {% highlight csharp %}
 using System;
@@ -70,22 +76,20 @@ dotnet run<br/>
 
 <b>Output:</b>
 <p class="output">
-Hello World!
-Hello World 1!
-Hello World 2!
-Hello World 3!
-Hello World 4!
-Hello World 5!
-Hello World 6!
-Hello World 7!
-Hello World 8!
-Hello World 9!
-Hello World 10!
+Hello World!<br/>
+Hello World 1!<br/>
+Hello World 2!<br/>
+Hello World 3!<br/>
+Hello World 4!<br/>
+Hello World 5!<br/>
+Hello World 6!<br/>
+Hello World 7!<br/>
+Hello World 8!<br/>
+Hello World 9!<br/>
+Hello World 10!<br/>
 </p>
 
-************************CodeDom example************************
-open visual studio
-create new console app targeting .NET 4.5 framework
+<p>The .NET Framework includes a mechanism called the Code Document Object Model (CodeDOM) that enables developers of programs that emit source code to generate source code in multiple programming languages at run time, based on a single model that represents the code to render. open visual studio create new console app targeting .NET 4.5 framework</p>
 
 
 {% highlight csharp %}
