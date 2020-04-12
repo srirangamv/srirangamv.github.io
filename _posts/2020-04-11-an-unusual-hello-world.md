@@ -5,19 +5,19 @@ name: "2020-04-11-an-unusual-hello-world"
 description: "An Unusual Hello World Program using Dynamic Code Execution with C#"
 date: 2020-04-11
 ---
-<p>Here we discuss two C# programs which executes a dynamic C# code to print the familiar "Hello World!" message to the console.</p>
+<p>Here we will discuss two C# programs which executes a dynamic C# code to print the familiar "Hello World!" message to the console. First one is using Rosalyn platform targeting modern applications with .NET core. he second one is a legacy .NET console application using CodeDOM API.</p>
 
-<p>First program, using Rosalyn scripting APIs, we will print the mesage to the console window. Rosalyn is nickname for .NET Compiler Platform whcih exposed API for compiler services. Using these APIs we can run simple scripts to entire programs. Build syntax trees, anlyze them, compile them and finally execute them. We can use many .NET language compiler services in self hosted programs and execute the code which is dynamically created. In this sample we will execute a simple interpolated string by passing the values required for it dynamically. Let's ger started by creating a new dotnet core console application.</p>
+<p>First program, using Rosalyn scripting APIs, we will print the mesage to the console window. Rosalyn is nickname for .NET Compiler Platform whcih exposed API for compiler services. Using these APIs we can run simple scripts to entire programs. Build syntax trees, anlyze them, compile them and finally execute them. We can use many .NET language compiler services in self hosted programs and execute the code which is dynamically created. In this sample we will execute a simple script consist of interpolated string by passing the values required for it dynamically. Also we compile the same script for multiple execution and execute using a loop for many times passing different parameter each time. Let's ger started by creating a new dotnet core console application.</p>
 
 <p>Run the commands as shown below. Creating application folder and initiating a dotnet core console and application and open the same in VS code editor.</p>
 <p class="cmd">
 cd rosylindemo<br/>
 md rosylindemo<br/>
 dotnet new console<br/>
-code .<br\>
+code .<br/>
 </p>
 
-<p>once Code opend go to the terminal and add this package executing below.
+<p>once VS Code opens the code fodler from the view menu select terminal and add the below package executing below command. "RunScript" method executes a simple C# statement dynamically by passing runtime parameters in this "Name". And "RunMultipleTimes" method executes the same C# statement compiling first so that we can run multiple times without much overhead. We pass parameters to statement dynamically inside the loop.</p>
 <p class="cmd">
 dotnet add package Microsoft.CodeAnalysis.CSharp.Scripting
 </p>
@@ -39,6 +39,12 @@ namespace HelloRoslyn
     {
         public static async Task Main()
         {
+            RunScript();
+            RunMultipleTimes();
+        }
+
+        public static void RunScript()
+        {
             var script = @"$""Hello {Name}!""";            
 
             var globals = new Globals { Name = "World" };
@@ -46,11 +52,9 @@ namespace HelloRoslyn
             var result = await CSharpScript.EvaluateAsync(script, globals: globals) as string;
 
             Console.WriteLine(result);
-
-            RunMultipleTimes();
         }
 
-        public static async void RunMultipleTimes()
+        public static async void RunCompiledScript()
         {
             var code = @"$""Hello {Name}!""";
 
@@ -89,7 +93,7 @@ Hello World 9!<br/>
 Hello World 10!<br/>
 </p>
 
-<p>The .NET Framework includes a mechanism called the Code Document Object Model (CodeDOM) that enables developers of programs that emit source code to generate source code in multiple programming languages at run time, based on a single model that represents the code to render. open visual studio create new console app targeting .NET 4.5 framework</p>
+<p>.NET Framework provides a mechanism called the Code Document Object Model (CodeDOM). Using this we can compile dynamic code and generate assemblies from a .NET program itself. This can be done using any of programming languages at run time, based on a single model that represents the code to render. Open visual studio create new console app targeting .NET 4.5 framework</p>
 
 
 {% highlight csharp %}
