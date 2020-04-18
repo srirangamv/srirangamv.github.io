@@ -54,7 +54,7 @@ namespace HelloRoslyn
             Console.WriteLine(result);
         }
 
-        public static async void RunCompiledScript()
+        public static async void RunMultipleTimes()
         {
             var code = @"$""Hello {Name}!""";
 
@@ -93,7 +93,7 @@ Hello World 9!<br/>
 Hello World 10!<br/>
 </p>
 
-<p>.NET Framework provides a mechanism called the Code Document Object Model (CodeDOM). Using this we can compile dynamic code and generate assemblies from a .NET program itself. This can be done using any of programming languages at run time, based on a single model that represents the code to render. Open visual studio create new console app targeting .NET 4.5 framework</p>
+<p>The second program, targetted for classic .NET applications. .NET Framework provides a mechanism called the Code Document Object Model (CodeDOM) using this we can compile dynamic code and generate assemblies from within a .NET program itself. This dynamic assembly generation can be done using any of .NET programming languages at run time, based on a single model that represents the code to execute. Open visual studio create new console app targeting .NET 4.5 framework. Here, we compile C# program and generate a .NET assembly and execute the same assembly to print the "Hello World" on the screen.</p>
 
 
 {% highlight csharp %}
@@ -146,16 +146,16 @@ namespace CodeDomDemo
 
             if (results.Errors.Count > 0)
             {
+                StringBuilder errors = new StringBuilder();
                 foreach (CompilerError compiler_error in results.Errors)
-                {
-                    StringBuilder errors = new StringBuilder();
+                {                    
                     errors.Append(
                         "Line: " + compiler_error.Line + ", " +
                         "Error Number: " + compiler_error.ErrorNumber +
-                        ", " + compiler_error.ErrorText + "\n");
-
-                    throw new Exception(errors.ToString());
+                        ", " + compiler_error.ErrorText + "\n");                    
                 }
+
+                throw new Exception(errors.ToString());
             }
             else
             {
