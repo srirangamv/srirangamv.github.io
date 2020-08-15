@@ -20,7 +20,7 @@
             --text-color: var(--dark-text);
             --bg-color: var(--dark-bg);
             --code-bg: var(--dark-code-bg);
-            --link-color: var(--dark-bg);
+            --link-color: white;
         }
 
         html,
