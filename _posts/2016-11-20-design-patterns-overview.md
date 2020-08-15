@@ -18,7 +18,7 @@ These patterns are based on how the objects are created and constructed to solve
 </p>
 
 1. Abstract Factory
-2. Builder
+2. [Builder](http://vwtt.github.io/blog/builder-design-pattern)
 3. [Factory](http://vwtt.github.io/blog/factory-design-pattern)
 4. [Factory Method](http://vwtt.github.io/blog/factory-method-design-pattern)
 5. Prototype

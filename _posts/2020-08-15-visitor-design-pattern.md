@@ -10,7 +10,7 @@ date: 2020-08-15
 
 <p>
     <figure>
-      <img src="/images/VisitorPattern.png" alt="Visitor Pattern UML Diagram" width="606px" height="448px" />
+      <img src="/images/VisitorPattern.png" alt="Visitor Pattern UML Diagram" width="716px" height="185px" />
       <figcaption>Visitor Pattern UML Diagram</figcaption>
     </figure>    
 </p>
