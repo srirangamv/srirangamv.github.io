@@ -47,7 +47,7 @@ namespace SolidPrinciples
             // some way
         }
     }
-
+}
 {% endhighlight %}
 
 # Open Closed Principle
@@ -121,7 +121,7 @@ namespace SolidPrinciples
             return 0.99 * price;
         }
     }
-
+}
 {% endhighlight %}
 
 # Lislov Substituition Principle
@@ -182,7 +182,7 @@ namespace SolidPrinciples
             throw new Exception("we won't do this in Newzeland.");
         }
     }
-
+}
 {% endhighlight %}
 
 # Interface Segregation Principle
@@ -291,6 +291,7 @@ namespace SolidPrinciples
             }
         }
     }
+}
 
 {% endhighlight %}
 
