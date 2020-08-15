@@ -52,4 +52,4 @@ These design patterns are based on how objects behave. For example, some times w
 8. State
 9. Strategy
 10. Template method
-11. Visitor
+11. [Visitor](http://vwtt.github.io/blog/visitor-design-pattern)
