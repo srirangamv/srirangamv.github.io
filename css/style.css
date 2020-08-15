@@ -5,6 +5,24 @@
             margin: 0;
         }*/
 
+        :root {
+            /* Light mode */
+            --light-text: #222430;
+            --light-bg: white;
+            --light-code-bg: black;
+          
+            /* Dark mode */
+            --dark-text: #f7f7f7;
+            --dark-bg: black;
+            --dark-code-bg: white;
+            
+            /* Default mode */
+            --text-color: var(--dark-text);
+            --bg-color: var(--dark-bg);
+            --code-bg: var(--dark-code-bg);
+            --link-color: var(--dark-bg);
+        }
+
         html,
         body {
             overflow: hidden;
@@ -23,6 +41,9 @@
             grid-template-columns: 275px 1fr;
             grid-template-rows: auto 1fr auto;
             grid-gap: 10px;
+            
+            color: var(--text-color);
+            background-color: var(--bg-color);
 
             height: 100vh;
         }
@@ -33,7 +54,7 @@
             justify-content: space-between;
             align-items: center;
             font-weight: bolder;
-            background-color: aliceblue;
+            background-color: crimson;
             padding: 0.75em;
         }
 
@@ -54,7 +75,7 @@
 
         footer {
             grid-area: footer;
-            background: aliceblue;
+            background: crimson;
             padding: 1rem;
             /*for tool items*/
             display: flex;
@@ -96,7 +117,7 @@
 
             .sidebar {
                 display: none;
-                background-color: aliceblue;
+                background-color: var(--bg-color);
             }
 
             .hamburger-checkbox {
@@ -188,5 +209,6 @@
         }
 
         a {
+            color: var(--link-color);
             text-decoration: none;
         }
