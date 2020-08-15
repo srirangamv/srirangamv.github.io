@@ -42,7 +42,7 @@ These design patterns are based on how class and object composed of and structur
 These design patterns are based on how objects behave. For example, some times we need to notify certain state changes of an object to several other objects. Observer pattern addresses this issue and provide guideline for implementing this issue. Below is the list of behavioral patterns.
 </p>
 
-1. Chain of responsibility
+1. [Chain of responsibility](http://vwtt.github.io/blog/chainofresponsibility-design-pattern)
 2. Command
 3. Interpreter
 4. Iterator
