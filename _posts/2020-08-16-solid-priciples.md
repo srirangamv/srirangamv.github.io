@@ -7,7 +7,7 @@ date: 2020-08-16
 ---
 
 # Single Responsibility Principle
-<p>We should have only one reason to modify a class.</p>
+<p>We should have only one reason to modify a class. Essentially, we have to make a class responsible for only one thing. In practice, we stuff more responsibilities in a single class. This should be avoided. We can break the responsibilitis into multiple classes. Below is a Temparature conversion class, handling additional responsiblities like saving to file or database. Keeping the responsibilities separate in different classes allow us making changes easier in the future.</p>
 
 {% highlight csharp %}
 
@@ -50,7 +50,7 @@ namespace SolidPrinciples
 {% endhighlight %}
 
 # Open Closed Principle
-<p>consider long chains of if..else or switch cases inside classes.</p>
+<p>Consider long chains of if..else or switch cases inside classes, this makes the class vulnerable to changes in the future and thus it may interrupt or break the already exisitng functionality. Below class NonOCP has a switch statement, which makes it open to modification in the future. E.g. for a new a case, we may have to modify this class by adding another case. This class is not adhere to open closed principle. What this principle tells that a class should be open for extention and closed for modification. See the example class OCP, which wraps each switch case into a class of IDiscountStrategy thus we can always extend the class by creating new sub class but base class itself is closed for modification. Without modifying the any class but by creating a new sub class we are safely extending the functionality. Here we can have N number of discount strategies, without distrubing any of the existing classes.</p>
 
 {% highlight csharp %}
 
@@ -81,7 +81,6 @@ namespace SolidPrinciples
                     // 3 specific functionality
                     this.DiscountedPrice =  0.4 * this.Price;
                     break;
-
                 default:
                     // default functionality
                     this.DiscountedPrice =  0.05 * this.Price;
@@ -113,7 +112,6 @@ namespace SolidPrinciples
         }
     }
     
-    //... we can have N number of discount strategies. without distrubing the any existing classes.
     public class NthTypeDiscount : IDiscountStrategy
     {
         public double applyDiscount(double price)
@@ -125,7 +123,7 @@ namespace SolidPrinciples
 {% endhighlight %}
 
 # Lislov Substituition Principle
-<p>all sub classes replaceable using base absrtaction. wrong abstraction applied.</p>
+<p>When, we are creaing an hierarchy, we should make sure that all sub classes replaceable using base absrtaction. Some times wrong abstraction applied and a subclass is created. This wrongly abstracted class will break this principle. Consider a real example of Bird abstraction, most of the birds will fly. But in the case of Kiwi which is a bird and cannot fly. This makes Kiwi a wrong abstraction here.This principle make sures that when we dealing with abstraction, all the sub classes should adhere to the abstracted behavior. Otherwise a client class which depends on this abstraction will fail by one or two wrongly abstracted sub classes.</p>
 
 {% highlight csharp %}
 
@@ -138,24 +136,6 @@ namespace SolidPrinciples
     {        
         public static void Main()
         {
-            List<Base> arr = new List<Base>()
-            {
-                new A(),
-                new A(),
-                new A(),
-                new B(),
-                new B(),
-                //new C(), //this not replacable.
-                new D()
-            };
-
-            foreach(Base element in arr)
-            {
-                element.BaseFunc();
-            }
-
-            (new D()).BaseFunc();
-
             var birds = new List<Bird>()
             {
                 new Parrot(),
@@ -196,62 +176,14 @@ namespace SolidPrinciples
     {
         public override void Fly()
         {
-            throw new Exception("we won't do that in Newzeland.");
-        }
-    }
-
-    public class Base
-    {
-        public virtual void BaseFunc()
-        {
-            ThisMustBeCalled();
-        }
-
-        public void ThisMustBeCalled()
-        {
-            Console.WriteLine("calling a protocal");
-        }
-    }
-
-    public class A: Base
-    {
-        public override void BaseFunc()
-        {
-            // do sub stuff
-            base.BaseFunc();
-        }
-    }    
-
-    public class B: Base
-    {
-        public override void BaseFunc()
-        {
-            // do sub stuff
-            base.BaseFunc();
-        }
-    }
-
-    public class C: Base
-    {
-        public override void BaseFunc()
-        {
-            throw new Exception("we don't do that here.");
-        }
-    }
-
-    public class D: Base
-    {
-        public new void BaseFunc()
-        {
-            Console.WriteLine("calling D");
-            throw new Exception("we don't do that here.");
+            throw new Exception("we won't do this in Newzeland.");
         }
     }
 
 {% endhighlight %}
 
 # Interface Segregation Principle
-<p>not giving more details via interfaces/abstraction.<p>
+<p>We should not force a client class with more details it needed from the class. Giving more details will create a chance of client misusing the functionality. This principle tells about not giving more details via interfaces/abstraction to the client classes. Cleanly separated interfaces or abstraction will make sure this principle followed. Consider the interface NonISPBankAccount whcih wraps all the functionality into a signle abstraction and when this interface used by InterestCalculator client class, probable misuse can happen. InterestCalculator need not have access to transfer method. All it needs is how to get balance and deposit the interest amount into the account.<p>
 
 {% highlight csharp %}
 
@@ -260,99 +192,98 @@ using System.Collections.Generic;
 
 namespace SolidPrinciples
 {
-
+    //bad non isp
     public interface NonISPBankAccount
     {
-        double getBalance();
-        double deposit(double d);
-        double withdraw(double d);
-
-        double transfer(Account to, double d);
-    }
-
-    public interface ISPBankAccountPart1
-    {
-        public double getBalance();
-        public double deposit(double d);
-    }
-
-    public interface ISPBankAccountPart2
-    {
-        public double withdraw(double d);
-
-        public double transfer(Account to, double d);
+        double GetBalance();
+        double Deposit(double d);
+        double Withdraw(double d);
+        double Transfer(Account to, double d);
     }
 
     public class Account : NonISPBankAccount
-    { 
-        //bad non isp
-        public double getBalance()
+    {        
+        public double GetBalance()
         {
             return 0.0;
         }
 
-        public double deposit(double d)
+        public double Deposit(double d)
         {
             return d;
         }
 
-        public double withdraw(double d)
+        public double Withdraw(double d)
         {
             return -d;
         }
 
-        public double transfer(Account to, double d)
-        {
-            return -d;
-        }
-    }
-
-    public class Account2 : ISPBankAccountPart1, ISPBankAccountPart2 
-    { 
-        //good isp
-        public double getBalance()
-        {
-            return 0.0;
-        }
-        public double deposit(double d)
-        {
-            return d;
-        }
-        public double withdraw(double d)
-        {
-            return -d;
-        }
-
-        public double transfer(Account to, double d)
+        public double Transfer(Account to, double d)
         {
             return -d;
         }
     }
 
     public class InterestCalculator
-    { 
-        //bad
+    {
         public void CalculateInterest(ICollection<NonISPBankAccount> accounts)
         {
             foreach(var account in accounts)
             {
-                account.deposit(account.getBalance() * 0.4);
-                //probable misuse.//this calculator doesn't need to have access to withdraw/transfer.
-                account.withdraw(5); 
+                account.Deposit(account.getBalance() * 0.4);
+                // probable misuse.
+                // this calculator doesn't need to have access to withdraw/transfer.
+                account.Withdraw(5);         // bad.
             }
         }
     }
 
+    //good isp
+    public interface ISPBankAccountPart1
+    {
+        public double GetBalance();
+        public double Deposit(double d);
+    }
+
+    public interface ISPBankAccountPart2
+    {
+        public double Withdraw(double d);
+
+        public double Transfer(Account to, double d);
+    }
+
+    public class Account2 : ISPBankAccountPart1, ISPBankAccountPart2 
+    {        
+        public double GetBalance()
+        {
+            return 0.0;
+        }
+
+        public double Deposit(double d)
+        {
+            return d;
+        }
+
+        public double Withdraw(double d)
+        {
+            return -d;
+        }
+
+        public double Transfer(Account to, double d)
+        {
+            return -d;
+        }
+    }
+
     public class InterestCalculator2
-    { 
-        //good
+    {        
         public void CalculateInterest(ICollection<ISPBankAccountPart1> accounts)
         {
             foreach(var account in accounts)
             {
-                account.deposit(account.getBalance() * 0.4);
+                account.Deposit(account.getBalance() * 0.4);
                 //cannot misuse.//this calculator doesn't have access to withdraw/transfer.
-                //account.withdraw(5); //will not work.
+                account.Withdraw(5); //good //will not work. 
             }
         }
     }
@@ -360,7 +291,7 @@ namespace SolidPrinciples
 {% endhighlight %}
 
 # Dependency Inversion Principle
-<p>try to decouple the classes. removing hard dependencies among classes.</p>
+<p>A client class should not directly depend implementations of a class. It should depend on abstractions. This principle tries to decouple the classes by removing hard dependencies among classes. A client class directly creates a dependency class makes the changes difficult. As the implementation changes, client class may break. Depending on the abstraction removes this dependency. Both classes can have independent and will works fine as long as the abstraction is not broken.</p>
 
 {% highlight csharp %}
 
@@ -374,9 +305,10 @@ namespace SolidPrinciples
 
     }
 
+    // bad
     public class NonDIPUsageOfDependency
     {
-        //creating a hard dependency. hence not testable. mockable.
+        //creating a hard dependency. hence not testable.
         private Dependency dep = new Dependency();
 
         public NonDIPUsageOfDependency()
@@ -384,22 +316,25 @@ namespace SolidPrinciples
 
         }
     }
-
-    //this testable. injectable. works well with DI containers.
-    //coding to abstraction.
+    
+    // good
     public interface IDependentServices
     {
 
     }
 
-    public class LooselyDependency : IDependentServices
+    //coding to abstraction.
+    public class Dependency : IDependentServices
     {
 
     }    
-    
+
+    // this testable. injectable. works well with DI containers.    
     public class DIPUsageOfDependency
     {
+        // client class dependent on abstraction. not implementation.
         private IDependentServices dep;
+
         public DIPUsageOfDependency(IDependentServices _d)
         {
             this.dep = _d;
