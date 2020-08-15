@@ -9,12 +9,12 @@
             /* Light mode */
             --light-text: #222430;
             --light-bg: white;
-            --light-code-bg: black;
+            --light-code-bg: aliceblue;
           
             /* Dark mode */
             --dark-text: #f7f7f7;
             --dark-bg: black;
-            --dark-code-bg: white;
+            --dark-code-bg: #222430;
             
             /* Default mode */
             --text-color: var(--dark-text);
@@ -28,6 +28,7 @@
             overflow: hidden;
             font-family: 'Fira Code';
             font-size: 16px;
+            margin: 0px;
         }
 
         .container {
