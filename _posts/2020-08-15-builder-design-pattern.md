@@ -10,7 +10,7 @@ date: 2020-08-15
 
 <p>
     <figure>
-      <img src="/images/BuilderPattern.png" alt="Builder Pattern UML Diagram" width="716px" height="185px" />
+      <img src="/images/BuilderPattern.png" alt="Builder Pattern UML Diagram" width="699px" height="181px" />
       <figcaption>Builder Pattern UML Diagram</figcaption>
     </figure>    
 </p>

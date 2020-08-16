@@ -10,7 +10,7 @@ date: 2020-08-17
 
 <p>
     <figure>
-      <img src="/images/SinglePattern.png" alt="Single Pattern UML Diagram" width="716px" height="185px" />
+      <img src="/images/SinglePattern.png" alt="Single Pattern UML Diagram" width="426px" height="205px" />
       <figcaption>Single Pattern UML Diagram</figcaption>
     </figure>    
 </p>

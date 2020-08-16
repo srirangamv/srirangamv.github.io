@@ -10,7 +10,7 @@ date: 2020-08-17
 
 <p>
     <figure>
-      <img src="/images/DecoratorPattern.png" alt="Decorator Pattern UML Diagram" width="716px" height="185px" />
+      <img src="/images/DecoratorPattern.png" alt="Decorator Pattern UML Diagram" width="656px" height="166px" />
       <figcaption>Decorator Pattern UML Diagram</figcaption>
     </figure>    
 </p>
