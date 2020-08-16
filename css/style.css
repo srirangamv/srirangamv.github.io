@@ -63,10 +63,6 @@
             list-style: none;
         }
 
-        div.post > a {
-            text-decoration: underline!important;
-        }
-
         nav {
             grid-area: nav;
             margin-left: 0.5rem;
@@ -220,4 +216,8 @@
         a {
             color: var(--link-color);
             text-decoration: none;
+        }
+
+        div.post > a {
+            text-decoration: underline!important;
         }

@@ -190,7 +190,7 @@ namespace SolidPrinciples
 
 ## I for **Interface Segregation Principle**
 
-<p>We should not force a client class with more details it needed from the class. Giving more details will create a chance of client misusing the functionality. This principle tells about not giving more details via interfaces/abstraction to the client classes. Cleanly separated interfaces or abstraction will make sure this principle followed. Consider the interface NonISPBankAccount whcih wraps all the functionality into a signle abstraction and when this interface used by InterestCalculator client class, probable misuse can happen. InterestCalculator need not have access to transfer method. All it needs is how to get balance and deposit the interest amount into the account.<p>
+<p>We should not force a client class with more details it needed from the class. Giving more details will create a chance of client misusing the functionality. This principle tells about not giving more details via interfaces/abstraction to the client classes. Cleanly separated interfaces or abstraction will make sure this principle followed. Consider the interface NonISPBankAccount whcih wraps all the functionality into a signle abstraction and when this interface used by InterestCalculator client class, probable misuse can happen. InterestCalculator need not have access to transfer method. All it needs is how to get balance and deposit the interest amount into the account.</p>
 
 {% highlight csharp %}
 
