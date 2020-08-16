@@ -6,7 +6,9 @@ description: "Simple example for demonstrating S.O.L.I.D Priciples."
 date: 2020-08-16
 ---
 
-# Single Responsibility Principle
+The following principles are known as object oriented design priciples. These priciples provide guidance in decomposing functionalities into classes while applying abstraction, inheritance and polymorphism correctly, which leads to good object oriented design.
+
+## S for **Single Responsibility Principle**
 
 <p>We should have only one reason to modify a class. Essentially, we have to make a class responsible for only one thing. In practice, we stuff more responsibilities in a single class. This should be avoided. We can break the responsibilitis into multiple classes. Below is a Temparature conversion class, handling additional responsiblities like saving to file or database. Keeping the responsibilities separate in different classes allow us making changes easier in the future.</p>
 
@@ -50,7 +52,7 @@ namespace SolidPrinciples
 }
 {% endhighlight %}
 
-# Open Closed Principle
+## O for **Open Closed Principle**
 
 <p>Consider long chains of if..else or switch cases inside classes, this makes the class vulnerable to changes in the future and thus it may interrupt or break the already exisitng functionality. Below class NonOCP has a switch statement, which makes it open to modification in the future. E.g. for a new a case, we may have to modify this class by adding another case. This class is not adhere to open closed principle. What this principle tells that a class should be open for extention and closed for modification. See the example class OCP, which wraps each switch case into a class of IDiscountStrategy thus we can always extend the class by creating new sub class but base class itself is closed for modification. Without modifying the any class but by creating a new sub class we are safely extending the functionality. Here we can have N number of discount strategies, without distrubing any of the existing classes.</p>
 
@@ -124,7 +126,7 @@ namespace SolidPrinciples
 }
 {% endhighlight %}
 
-# Lislov Substituition Principle
+## L for **Lislov Substituition Principle**
 
 <p>When, we are creaing an hierarchy, we should make sure that all sub classes replaceable using base absrtaction. Some times wrong abstraction applied and a subclass is created. This wrongly abstracted class will break this principle. Consider a real example of Bird abstraction, most of the birds will fly. But in the case of Kiwi which is a bird and cannot fly. This makes Kiwi a wrong abstraction here.This principle make sures that when we dealing with abstraction, all the sub classes should adhere to the abstracted behavior. Otherwise a client class which depends on this abstraction will fail by one or two wrongly abstracted sub classes.</p>
 
@@ -185,7 +187,7 @@ namespace SolidPrinciples
 }
 {% endhighlight %}
 
-# Interface Segregation Principle
+## I for **Interface Segregation Principle**
 
 <p>We should not force a client class with more details it needed from the class. Giving more details will create a chance of client misusing the functionality. This principle tells about not giving more details via interfaces/abstraction to the client classes. Cleanly separated interfaces or abstraction will make sure this principle followed. Consider the interface NonISPBankAccount whcih wraps all the functionality into a signle abstraction and when this interface used by InterestCalculator client class, probable misuse can happen. InterestCalculator need not have access to transfer method. All it needs is how to get balance and deposit the interest amount into the account.<p>
 
@@ -295,7 +297,7 @@ namespace SolidPrinciples
 
 {% endhighlight %}
 
-# Dependency Inversion Principle
+## D for **Dependency Inversion Principle**
 
 <p>A client class should not directly depend implementations of a class. It should depend on abstractions. This principle tries to decouple the classes by removing hard dependencies among classes. A client class directly creates a dependency class makes the changes difficult. As the implementation changes, client class may break. Depending on the abstraction removes this dependency. Both classes can have independent and will works fine as long as the abstraction is not broken.</p>
 
