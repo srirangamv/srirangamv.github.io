@@ -63,8 +63,8 @@
             list-style: none;
         }
 
-        .post > a {
-            text-decoration: underline;
+        div.post > a {
+            text-decoration: underline!important;
         }
 
         nav {
