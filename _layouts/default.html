@@ -2,21 +2,20 @@
 <html>
 
 <head>
+    <title>{{ page.title }} | Vikram's Blog</title>
     <meta http-equiv="Contect-Type" content="text/html" charset="UTF-8">
     <meta name="description" content="Vikram Kumar Srirangam's Tech Blog">
     <meta property="og:description" content="Vikram Kumar Srirangam's Tech Blog" />
-    <meta name="Copyright" content="© Copyright 2020, Vikram Kumar Srirangam">
-    {% if page.tags %}
+    <meta name="Copyright" content="© Copyright 2020, Vikram Kumar Srirangam">    
     <meta name="keywords" content="{{ page.tags }}">        
-    {% endif %}    
     <meta name="robots" content="index,follow">
     <meta name="author" content="Vikram Kumar Srirangam">
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:locale" content="en_US" />    
-    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:url" content="{{site.url}}{{ page.url }}" />
     <meta property="og:site_name" content="Vikram's Blog" />
     <meta property="og:type" content="blog posts" />
-    <meta property="article:published_time" content="{{ page.published_time}}" />
+    <meta property="article:published_time" content="{{ page.date | date_to_string }}" />
     <!-- <meta name="twitter:app:name:iphone" content="">
     <meta name="twitter:app:id:iphone" content="">
     <meta name="twitter:app:name:ipad" content="">
@@ -25,14 +24,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#2F3BA2">
     <meta name="apple-mobile-web-app-title" content="Vikram's Blog">
-    <link rel="apple-touch-icon" href="images/launcher192x192.png">
+    <link rel="apple-touch-icon" href="images/launcher96x96.png">
     <meta name="msapplication-TileImage" content="images/launcher192x192.png">
     <meta name="msapplication-TileColor" content="#2F3BA2">
     <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/fonts/foundation-icons.css" />
     <link rel="shortcut icon" href="/images/favicon.ico">
     <link rel="manifest" href="/manifest.json">
-    <title>{{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/syntax.css">
 </head>
