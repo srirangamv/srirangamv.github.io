@@ -3,6 +3,7 @@ layout: post
 title: "Learn Python In A Jiffy"
 name: "2017-12-08-learn_python_in_a_jiffy"
 description: "Learn Python In A Jiffy."
+tags: "python,cheatsheet,code,basic,simple,code idioms,technical article,blog,post"
 date: 2017-12-08
 ---
 

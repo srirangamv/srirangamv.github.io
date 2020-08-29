@@ -3,6 +3,7 @@ layout: post
 title: "Decorator Design Pattern"
 name: "2020-08-17-decorator-design-pattern"
 description: "Simple example of Decorator design pattern."
+tags: "c#,.net,.net core,decorator design pattern,code,design pattern,UML,unified modeling language,technical article,blog,post"
 date: 2020-08-17
 ---
 

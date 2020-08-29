@@ -2,7 +2,8 @@
 layout: post
 title: "Running A Flask App inside a Docker container"
 name: "2019-05-26-running-flask-inside-container"
-description: "2019-05-26-running-flask-inside-container"
+description: "Running a simple Flask app inside Docker containers"
+tags: "python,docker,containers,images,docker daemon,containerized apps,code,basic,simple,code idioms,technical article,blog,post"
 date: 2019-05-26
 ---
 

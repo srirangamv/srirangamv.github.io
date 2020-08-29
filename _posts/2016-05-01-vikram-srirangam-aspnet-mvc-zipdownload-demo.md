@@ -2,7 +2,8 @@
 layout: post
 title: "Asp.Net MVC, Generate Zip file entirely from memory."
 name: "2016-05-01-vikram-srirangam-aspnet-mvc-zipdownload-demo"
-description: "Asp.Net MVC, Generate Zip file as an attachment entirely from memory."
+description: "Asp.Net MVC, Generate Zip file attachment entirely from memory without writing to disk or temporary file."
+tags: "c#,.net,.net core,asp.net mvc,code,zip,compression,technical article,blog,post"
 date: 2016-05-01
 ---
 

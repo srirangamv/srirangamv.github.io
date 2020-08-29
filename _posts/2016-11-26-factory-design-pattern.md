@@ -3,6 +3,7 @@ layout: post
 title: "Factory Design Pattern"
 name: "2016-11-26-factory-design-pattern"
 description: "Simple example of Factory design pattern."
+tags: "c#,.net,.net core,factory design pattern,code,design pattern,UML,unified modeling language,technical article,blog,post"
 date: 2016-11-26
 ---
 

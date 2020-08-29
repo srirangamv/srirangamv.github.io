@@ -2,7 +2,8 @@
 layout: post
 title: "Vikram, Launches Site"
 name: "2016-05-01-site-launched"
-description: "Site launch."
+description: "launching my static blog."
+tags: "static site,jekyll,github pages,personal blog,tech articles."
 date: 2016-05-01
 ---
 

@@ -2,7 +2,8 @@
 layout: post
 title: "Parallel.ForEach demo for finding if a number is prime."
 name: "2016-05-28-net-parallelforeach-demo"
-description: "Finding if a number is prime parallelly using .Net task parallel library."
+description: "Finding if a number is prime parallelly using .Net task parallel library. Split the task across the CPU cores."
+tags: "c#,.net,.net core,threading,multi threading,program to processor cores,cpu cores,code,technical article,blog,post"
 date: 2016-05-28
 ---
 

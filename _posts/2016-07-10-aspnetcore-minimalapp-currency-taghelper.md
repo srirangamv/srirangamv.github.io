@@ -3,6 +3,7 @@ layout: post
 title: "Asp.Net Core app, Currency tag helper"
 name: "2016-07-10-aspnetcore-minimalapp-currency-taghelper"
 description: "AspNet Core Currency tag helper."
+tags: "c#,.net core,asp.net core,mvc,dotnet cli,razor,MVC tag helpers,code,technical article,blog,post"
 date: 2016-07-10
 ---
 

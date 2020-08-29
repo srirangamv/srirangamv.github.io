@@ -3,6 +3,7 @@ layout: post
 title: "Map, Reduce and Combine with .Net Parallel Programming"
 name: "2016-07-30-map-reduce-combine-net-prallel-programming"
 description: "Map, Reduce and Combine with .Net Parallel Programming"
+tags: "c#,.net,.net core,threading,multi threading,program to processor cores,cpu cores,code,technical article,blog,post"
 date: 2016-07-31
 ---
 

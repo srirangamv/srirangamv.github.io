@@ -3,6 +3,7 @@ layout: post
 title: "Builder Design Pattern"
 name: "2020-08-15-builder-design-pattern"
 description: "Simple example of Builder design pattern."
+tags: "c#,.net,.net core,builder design pattern,code,design pattern,UML,unified modeling language,technical article,blog,post"
 date: 2020-08-15
 ---
 

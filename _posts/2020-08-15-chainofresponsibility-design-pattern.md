@@ -3,6 +3,7 @@ layout: post
 title: "Chain of Responsibility Design Pattern"
 name: "2020-08-15-chainofresponsibility-design-pattern"
 description: "Simple example of chain of responsibility design pattern."
+tags: "c#,.net,.net core,chain of responsibility design pattern,code,design pattern,UML,unified modeling language,technical article,blog,post"
 date: 2020-08-15
 ---
 

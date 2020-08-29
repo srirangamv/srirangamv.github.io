@@ -3,6 +3,7 @@ layout: post
 title: "Asp.Net Core app setup, step by step."
 name: "2016-06-05-aspnetcore-minimalapp"
 description: "Creating AspNet Core application step by step."
+tags: "c#,.net core,asp.net core,mvc,dotnet cli,kestrel,middleware,code,technical article,blog,post"
 date: 2016-06-05
 ---
 

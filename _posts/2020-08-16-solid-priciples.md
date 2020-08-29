@@ -3,7 +3,7 @@ layout: post
 title: "S.O.L.I.D Priciples"
 name: "2020-08-16-solid-priciples"
 description: "Simple example for demonstrating S.O.L.I.D Priciples."
-keywords: "object orientation, design principles, solid principles, obejct oriented design, obejct oriented software design, single responsibility principle, open closed principle, liskov substituition principle, interface segregation principle, dependency inversion principle, better software design"
+keywords: "object orientation, design principles, solid principles, obejct oriented design, obejct oriented software design, single responsibility principle, open closed principle, liskov substituition principle, interface segregation principle, dependency inversion principle, better software design,c#,.net,.net core,technical article,blog,post"
 date: 2020-08-16
 ---
 

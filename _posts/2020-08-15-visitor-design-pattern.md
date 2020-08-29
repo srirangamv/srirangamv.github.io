@@ -3,6 +3,7 @@ layout: post
 title: "Visitor Design Pattern"
 name: "2020-08-15-visitor-design-pattern"
 description: "Simple example of Visitor design pattern."
+tags: "c#,.net,.net core,visitor design pattern,code,design pattern,UML,unified modeling language,technical article,blog,post"
 date: 2020-08-15
 ---
 

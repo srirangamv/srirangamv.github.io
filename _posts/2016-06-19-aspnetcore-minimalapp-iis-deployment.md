@@ -3,6 +3,7 @@ layout: post
 title: "Asp.Net Core app, IIS deployment."
 name: "2016-06-19-aspnetcore-minimalapp-iis-deployment"
 description: "Deploying AspNet Core application to IIS."
+tags: "c#,.net core,asp.net core,mvc,dotnet cli,IIS,middleware,code,technical article,blog,post"
 date: 2016-06-19
 ---
 

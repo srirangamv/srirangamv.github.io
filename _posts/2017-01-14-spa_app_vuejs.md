@@ -2,7 +2,8 @@
 layout: post
 title: "Single Page App with Vue.Js"
 name: "2017-01-14-spa_app_vuejs"
-description: "Single Page App with Vue.Js."
+description: "A simple single page app with Vue.Js."
+tags: "SPA,single page apps,vue.js,javascript,html,technical article,blog,post"
 date: 2017-01-14
 ---
 

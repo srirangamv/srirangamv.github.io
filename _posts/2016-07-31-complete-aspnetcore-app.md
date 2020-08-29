@@ -2,7 +2,8 @@
 layout: post
 title: "An aspnet core application with Entity Framework Core, Repository, UoW and Unit Testing."
 name: "2016-07-31-complete-aspnetcore-app"
-description: "AspNet Core Application with Unit Of Work and Repositiry patterns."
+description: "A complete AspNet Core Application with Unit Of Work and Repositiry patterns."
+tags: "c#,.net core,asp.net core,mvc,dotnet cli,cookie authentication,authentication,authorization,repository pattern,unit of work pattern,custom identity,orders,products,asp.net core app architecture,complete application,view models,code,technical article,blog,post"
 date: 2016-07-31
 ---
 

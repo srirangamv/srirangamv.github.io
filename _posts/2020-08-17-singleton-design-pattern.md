@@ -3,7 +3,7 @@ layout: post
 title: "Singleton Design Pattern"
 name: "2020-08-17-singleton-design-pattern"
 description: "Simple example of Singleton design pattern."
-tags: "c#,singleton pattern,code,design patterns,UML,unified modeling language,technical article,blog,post"
+tags: "c#,.net,.net core,singleton pattern,code,design patterns,UML,unified modeling language,technical article,blog,post"
 date: 2020-08-17
 ---
 

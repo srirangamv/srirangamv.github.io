@@ -3,6 +3,7 @@ layout: post
 title: "How to enable C# 7.1 support in VS Code?"
 name: "2018-05-13-enable_csharp7.1_features_vs_code"
 description: "How to enable C# 7.1 support in VS Code."
+tags: "c#,.net,.net core,editor,visual studio code,code,technical article,blog,post"
 date: 2018-05-13
 ---
 

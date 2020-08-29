@@ -3,6 +3,7 @@ layout: post
 title: "An Unusual Hello World Program"
 name: "2020-04-11-an-unusual-hello-world"
 description: "An Unusual Hello World Program using Dynamic Code Execution with C#"
+tags: "c#,.net,.net core,hello world,reflection,meta programming,dynamic code compilation,code,technical article,blog,post"
 date: 2020-04-11
 ---
 <p>Here we will discuss two C# programs which executes a dynamic C# code to print the familiar "Hello World!" message to the console. First one is using Rosalyn platform targeting modern applications with .NET core. he second one is a legacy .NET console application using CodeDOM API.</p>

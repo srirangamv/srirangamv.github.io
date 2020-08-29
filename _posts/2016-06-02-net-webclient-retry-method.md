@@ -3,6 +3,7 @@ layout: post
 title: "Retry functions for .Net's webclient."
 name: "2016-06-02-net-webclient-retry-method"
 description: "Reusable retry functions for .Net's webclients."
+tags: "c#,.net,.net core,,retry policy,code,technical article,blog,post"
 date: 2016-06-02
 ---
 

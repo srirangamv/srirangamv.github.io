@@ -2,14 +2,22 @@
 <html>
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176700300-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176700300-1');
+    </script>
     <title>{{ page.title }} | Vikram's Blog</title>
     <meta http-equiv="Contect-Type" content="text/html" charset="UTF-8">
-    <meta name="description" content="{{ page.description | 'Vikram Kumar Srirangam's Tech Blog' }}">
-    <meta property="og:description" content="Vikram Kumar Srirangam's Tech Blog" />
+    <meta name="description" content="{{ page.description | 'Vikram Kumar Srirangam's Tech Blog' }}">    
     <meta name="Copyright" content="© Copyright 2020, Vikram Kumar Srirangam">    
     <meta name="keywords" content="{{ page.tags }}">        
     <meta name="robots" content="index,follow">
     <meta name="author" content="Vikram Kumar Srirangam">
+    <meta property="og:description" content="{{ page.description | 'Vikram Kumar Srirangam's Tech Blog' }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:locale" content="en_US" />    
     <meta property="og:url" content="{{site.url}}{{ page.url }}" />

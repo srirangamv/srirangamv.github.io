@@ -2,7 +2,8 @@
 layout: post
 title: "Design Patterns Overview"
 name: "2016-11-20-design-patterns-overview"
-description: "Introduction to Design Patterns"
+description: "Introduction to Software Design Patterns"
+tags: "software design patterns,design pattern overview,creational patterns,structural patterns,behavioral patterns,technical article,blog,post"
 date: 2016-11-20
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: "Factory Method vs Factory Design Pattern"
 name: "2017-02-26-factory-factory_method_design-pattern"
 description: "Factory Method vs Factory Design Patterns."
+tags: "c#,.net,.net core,factory method design pattern,factory design pattern,code,design pattern,UML,unified modeling language,technical article,blog,post"
 date: 2017-02-26
 ---
 <p>Though these two patterns are about creating objects, Here are differences between factory and factory method pattern.</p>

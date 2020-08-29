@@ -3,6 +3,7 @@ layout: post
 title: "Asp.Net Core app, simple Authentication and Authorization."
 name: "2016-07-09-aspnetcore-minimalapp-authentication-authorization"
 description: "AspNet Core application implementing simple security."
+tags: "c#,.net core,asp.net core,mvc,dotnet cli,cookie authentication,authentication,authorization,code,technical article,blog,post"
 date: 2016-07-09
 ---
 
