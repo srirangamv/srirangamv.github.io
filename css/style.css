@@ -218,6 +218,6 @@
             text-decoration: none;
         }
 
-        div.post > a {
+        div.post > li > a, ul.postslist > li > a {
             text-decoration: underline!important;
         }
