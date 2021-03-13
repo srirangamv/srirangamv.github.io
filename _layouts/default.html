@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176700300-1"></script>
@@ -80,14 +80,15 @@
                 </li>
                 <li>
                     <a href="https://in.linkedin.com/in/vikramsrirangam?trk=profile-badge" class="social fi-social-linkedin"
-                        target="_blank" title="social link to Linkedin">
+                        target="_blank" rel="noopener" title="social link to Linkedin">
                         <i class="icon-social-linkedin">&nbsp;</i>
                     </a>
-                    <a href="https://github.com/vwtt" class="social fi-social-github" target="_blank" title="social link to GitHub">
+                    <a href="https://github.com/vwtt" class="social fi-social-github" target="_blank"  rel="noopener"
+                        title="social link to GitHub">
                         <i class="icon-social-github">&nbsp;</i>
                     </a>
                     <!-- <a href="https://www.codewars.com/users/vwtt" class="social-link" target="_blank"
-                        title="social link to CodeWars">
+                        rel="noopener" title="social link to CodeWars">
                         <img src="https://www.codewars.com/users/vwtt/badges/small" alt="codewars badge of honor">
                     </a> -->
                 </li>
@@ -114,7 +115,7 @@
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
                 .register('/service-worker.js')
-                .then(function () { console.log('Service Worker Registered'); });
+                .then(function () { });
         }
     </script>
 </body>

@@ -1,6 +1,6 @@
+Sitemap: https://vwtt.github.io/sitemap.xml
 User-agent: *
 Disallow: /images/
 Disallow: /css/
 Disallow: /_layouts/
 Disallow: /_posts/
-Sitemap: /sitemap.xml
