@@ -20,7 +20,7 @@
             --text-color: var(--dark-text);
             --bg-color: var(--dark-bg);
             --code-bg: var(--dark-code-bg);
-            --link-color: white;
+            --link-color: #07102b;
         }
 
         html,
@@ -127,7 +127,8 @@
 
             .sidebar {
                 display: none;
-                background-color: var(--bg-color);
+                background-color: crimson;
+                border: 1px crimson outset;
             }
 
             .hamburger-checkbox {
@@ -221,6 +222,7 @@
         a {
             color: var(--link-color);
             text-decoration: none;
+            font-weight: 600;
         }
 
         ol > li > a {
