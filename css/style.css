@@ -12,9 +12,9 @@
             --light-code-bg: aliceblue;
           
             /* Dark mode */
-            --dark-text: #f7f7f7;
-            --dark-bg: black;
-            --dark-code-bg: #222430;
+            --dark-text: black;
+            --dark-bg: white;
+            --dark-code-bg: lightgrey;
             
             /* Default mode */
             --text-color: var(--dark-text);
@@ -71,6 +71,7 @@
         main {
             grid-area: content;
             overflow-y: auto;
+            padding-left: 2rem;
         }
 
         aside {
@@ -87,6 +88,10 @@
             justify-content: space-between;
             align-items: center;
             /*for tool items*/
+        }
+
+        footer span {
+            margin: auto;
         }
 
         @media (max-width: 768px) {
