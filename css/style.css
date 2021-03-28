@@ -217,6 +217,9 @@
         .smallicon {
             color: crimson;
         }
+        .postslist {
+            padding-inline-start: unset !important;
+        }
 
         a {
             color: var(--link-color);

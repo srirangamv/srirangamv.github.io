@@ -23,7 +23,7 @@ These patterns are based on how the objects are created and constructed to solve
 3. [Factory](http://vwtt.github.io/blog/factory-design-pattern)
 4. [Factory Method](http://vwtt.github.io/blog/factory-method-design-pattern)
 5. Prototype
-6. Singleton
+6. [Singleton](http://vwtt.github.io/blog/singleton-design-pattern)
 
 #### **Structural Patterns**
 <p>
@@ -31,9 +31,9 @@ These design patterns are based on how class and object composed of and structur
 </p>
 
 1. Adapter
-2. Bridge
+2. [Bridge](http://vwtt.github.io/blog/bridge-design-pattern)
 3. Composite
-4. Decorator
+4. [Decorator](http://vwtt.github.io/blog/decorator-design-pattern)
 5. Facade
 6. Flyweight
 7. Proxy
@@ -49,8 +49,8 @@ These design patterns are based on how objects behave. For example, some times w
 4. Iterator
 5. Mediator
 6. Memento
-7. Observer
+7. [Observer](http://vwtt.github.io/blog/observer-design-pattern)
 8. State
-9. Strategy
-10. Template method
+9. [Strategy](http://vwtt.github.io/blog/strategy-design-pattern)
+10. [Template method](http://vwtt.github.io/blog/templatemethod-design-pattern)
 11. [Visitor](http://vwtt.github.io/blog/visitor-design-pattern)
