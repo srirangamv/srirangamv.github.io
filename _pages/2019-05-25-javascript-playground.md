@@ -1,17 +1,12 @@
 ---
 layout: editor
 title: "JavaScript Playground"
-name: "2019-05-25-javascript-playground"
+name: "2021-07-21-javascript-playground"
 description: "JavaScript Reference Cheatsheet"
-date: 2019-05-05
-permalink: /javascript_Reference/
+date: 2021-07-21
+permalink: /javascript_playground/
 ---
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Fira Sans Extra Condensed', sans-serif;
-    }
-
     .codeboxwrapper {
       width: 100%;
       min-height: 400px;
