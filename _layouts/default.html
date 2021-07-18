@@ -2,22 +2,23 @@
 <html lang="en">
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176700300-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176700300-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-176700300-1');
-    </script>
+    </script> -->
     <title>{{ page.title }} | Vikram's Blog</title>
     <meta http-equiv="Contect-Type" content="text/html" charset="UTF-8">
-    <meta name="description" content="{{ page.description | 'Vikram Kumar Srirangam's Tech Blog' }}">    
-    <meta name="Copyright" content="© Copyright 2020, Vikram Kumar Srirangam">    
+    <meta name="description" content="{{ page.description | 'Vikram's Tech Blog' }}">    
+    <meta name="Copyright" content="© Copyright 2021, Srirangam, Vikram">    
     <meta name="keywords" content="{{ page.tags }}">        
     <meta name="robots" content="index,follow">
-    <meta name="author" content="Vikram Kumar Srirangam">
-    <meta property="og:description" content="{{ page.description | 'Vikram Kumar Srirangam's Tech Blog' }}" />
+    <meta name="author" content="Srirangam, Vikram">
+    <meta name="theme-color" content="crimson">
+    <meta property="og:description" content="{{ page.description | 'Vikram's Tech Blog' }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:locale" content="en_US" />    
     <meta property="og:url" content="{{site.url}}{{ page.url }}" />
@@ -35,7 +36,7 @@
     <link rel="apple-touch-icon" href="images/launcher96x96.png">
     <meta name="msapplication-TileImage" content="images/launcher192x192.png">
     <meta name="msapplication-TileColor" content="#2F3BA2">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" media="all" rel="stylesheet">
     <link rel="stylesheet" href="../css/fonts/foundation-icons.css" />
     <link rel="shortcut icon" href="/images/favicon.ico">
     <link rel="manifest" href="/manifest.json">
@@ -109,7 +110,7 @@
             </span>
         </footer>
     </div>
-    <script>
+    <script async>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
                 .register('/service-worker.js')

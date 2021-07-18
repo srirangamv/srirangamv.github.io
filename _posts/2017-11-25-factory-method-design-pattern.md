@@ -7,7 +7,7 @@ tags: "c#,.net,.net core,factory design pattern,code,design pattern,UML,unified 
 date: 2017-11-25
 ---
 
-<p>Factory Method design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://srirangamv.github.io/blog/design-patterns-overview" target="_blank">here</a>. The intent of Factory Method pattern is hiding creation of objects from the client by using a common interface. Client awares of all subclasses of family and instead client creating objects for these family of types it depends on common interface and requests for objects. The difference between Factory and Factory Method pattern is here we can have creation logic defer to the sub class. Thus allowing us to initialize the object via a common interface.</p>
+<p>Factory Method design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://srirangamv.github.io/blog/design-patterns-overview" title="sofware design patterns using c#" target="_blank">here</a>. The intent of Factory Method pattern is hiding creation of objects from the client by using a common interface. Client awares of all subclasses of family and instead client creating objects for these family of types it depends on common interface and requests for objects. The difference between Factory and Factory Method pattern is here we can have creation logic defer to the sub class. Thus allowing us to initialize the object via a common interface.</p>
 
 <p>
     <figure>
