@@ -242,9 +242,12 @@ ol > li > a {
     font-size: xxx-large;
     color: crimson;
     background-size: cover;
+    background-position: center;
+    margin-block-end: 0px;
 }
 
 .credit {
     font-style: italic;
     color: lightslategray;
+    font-size: smaller;
 }
