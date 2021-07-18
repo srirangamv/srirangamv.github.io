@@ -9,12 +9,12 @@
             /* Light mode */
             --light-text: #222430;
             --light-bg: white;
-            --light-code-bg: aliceblue;
+            --light-code-bg: #ebf3fb;
           
             /* Dark mode */
             --dark-text: black;
             --dark-bg: white;
-            --dark-code-bg: lightgrey;
+            --dark-code-bg: #ebf3fb;
             
             /* Default mode */
             --text-color: var(--dark-text);
@@ -229,4 +229,8 @@
 
         ol > li > a {
             text-decoration: underline!important;
+        }
+
+        .post p {
+            margin-inline-end: 40pxs;
         }
