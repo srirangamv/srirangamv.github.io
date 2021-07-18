@@ -68,7 +68,6 @@ var filesToCache = [
   'https://srirangamv.github.io/images/firstapp_flask_code.png',
   'https://srirangamv.github.io/images/firstapp_code.png',
   'https://srirangamv.github.io/images/firstapp_code_2.png',
-  'https://srirangamv.github.io/images/browser_output.png',
   'https://srirangamv.github.io/images/docker-restart.png',
   'https://srirangamv.github.io/images/BridgePattern.png',
   'https://srirangamv.github.io/images/ObserverPattern.png',
