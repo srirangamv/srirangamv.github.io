@@ -12,10 +12,11 @@ permalink: /javascript_playground/
 
       grid-template-areas:
           "codebox"
+          "tools"
           "output";
 
       grid-template-columns: 1fr;
-      grid-template-rows: auto 150px;
+      grid-template-rows: 1fr 40px 150px;
       grid-gap: 10px;
       
       color: var(--text-color);
@@ -86,7 +87,7 @@ permalink: /javascript_playground/
       HelloWorld();
     </div>
     <!--each line should be wrapped in div tag. all the spans will be inside this tag.-->
-    <ul>
+    <ul class="tools">
       <li><a href="#" onclick="myeval(this)">Run</a></li>
       <li><a href="#" onclick="cleareditor(this)">Clear</a></li>
       <li><a href="https://github.com/srirangamv/jscheatsheet">More at Github</a></li>
