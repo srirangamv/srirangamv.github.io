@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Strategy Design Pattern"
-name: "2020-08-30-strategy-design-pattern"
+name: "2021-07-18-strategy-design-pattern"
 description: "Simple example of Strategy design pattern."
 tags: "c#,.net,.net core,strategy pattern,code,design patterns,UML,unified modeling language,technical article,blog,post"
-date: 2020-08-30
+date: 2021-07-18
 ---
 
-<p>Strategy design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://vwtt.github.io/blog/design-patterns-overview" target="_blank">here</a>. The intent of Strategy pattern is deferring separate algorithm into sub class.  A client uses these concrete strategy implementation depending on the situation, instead of embedding different algorithms into client class and use them based on a condition. we can introduce as many strategy classes/implemntation in the future without touching the client object.</p>
+<p>Strategy design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://srirangamv.github.io/blog/design-patterns-overview" target="_blank">here</a>. The intent of Strategy pattern is deferring separate algorithm into sub class.  A client uses these concrete strategy implementation depending on the situation, instead of embedding different algorithms into client class and use them based on a condition. we can introduce as many strategy classes/implemntation in the future without touching the client object.</p>
 
 <p>
     <figure>

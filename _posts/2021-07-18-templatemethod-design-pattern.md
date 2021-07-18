@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Template Method Design Pattern"
-name: "2020-08-30-templatemethod-design-pattern"
+name: "2021-07-18-templatemethod-design-pattern"
 description: "Simple example of template method design pattern."
 tags: "c#,.net,.net core,template method pattern,code,design patterns,UML,unified modeling language,technical article,blog,post"
-date: 2020-08-30
+date: 2021-07-18
 ---
 
-<p>Builder design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://vwtt.github.io/blog/design-patterns-overview" target="_blank">here</a>. The intent of Builder pattern is separating object construction and its represenation. Here builder knows how to build a complex object and we also need a Director class, essentially a helper class which know what to build. Director uses Builder class (one or more builder classes) and helps in building the complex object.</p>
+<p>Builder design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://srirangamv.github.io/blog/design-patterns-overview" target="_blank">here</a>. The intent of Builder pattern is separating object construction and its represenation. Here builder knows how to build a complex object and we also need a Director class, essentially a helper class which know what to build. Director uses Builder class (one or more builder classes) and helps in building the complex object.</p>
 
 <p>
     <figure>
