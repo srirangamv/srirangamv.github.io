@@ -55,7 +55,7 @@
             justify-content: space-between;
             align-items: center;
             font-weight: bolder;
-            background-color: crimson;
+            /* background-color: crimson; */
             padding: 0.75em;
         }
 
@@ -81,7 +81,7 @@
 
         footer {
             grid-area: footer;
-            background: crimson;
+            /* background: crimson; */
             padding: 1rem;
             /*for tool items*/
             display: flex;
