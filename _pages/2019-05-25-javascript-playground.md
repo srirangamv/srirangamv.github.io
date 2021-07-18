@@ -8,7 +8,19 @@ permalink: /javascript_playground/
 ---
   <style>
     .codeboxwrapper {
-      width: 100%;
+      display: grid;
+
+      grid-template-areas:
+          "codebox"
+          "output";
+
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 150px;
+      grid-gap: 10px;
+      
+      color: var(--text-color);
+      background-color: var(--bg-color);
+
       min-height: 400px;
       background-color: aliceblue;
       overflow: hidden;
@@ -83,7 +95,7 @@ permalink: /javascript_playground/
       
     <div>
 <div>
-
+<!-- <script src="https://gist.github.com/srirangamv/4cc59a07f6959bd9389cefeda1b081ac.js"></script> -->
 <!--<div class="codepanel">
     <h3>Type System<h3>
     <p>Primary Types: number, boolean, string, symbol, undefined, null</p>
