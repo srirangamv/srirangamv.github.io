@@ -24,18 +24,25 @@ namespace PatternsDemo
     {
         List<IAsset> assets = new List<IAsset>();
 
-        public int AssessRisk()
+        int riskAppetiteFactor;
+
+        public int AssessPortfolioRisk()
         {
-            return assets.Sum(a=>a.GetRiskScore());
+            return assets.Sum(a => a.AssessRisk(riskAppetiteFactor));
         }
     }
 
-    public interface IAsset
+    public absrtact class Asset
     {        
         public abstract int GetRiskScore();
+
+        public int AssessRisk(int personAppetiteFactor)
+        {
+            return personAppetiteFactor * a.GetRiskScore());
+        }
     }
 
-    public class StockAsset : IAsset
+    public class StockAsset : Asset
     {
         public int GetRiskScore()
         {
@@ -43,7 +50,7 @@ namespace PatternsDemo
         }
     }
 
-    public class FixedDepositAsset : IAsset
+    public class FixedDepositAsset : Asset
     {
         public int GetRiskScore()
         {
