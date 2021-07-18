@@ -26,7 +26,7 @@ var filesToCache = [
   'https://srirangamv.github.io/images/FluxDemo.png',
   'https://srirangamv.github.io/images/VueJsDemo.png',
   'https://srirangamv.github.io/images/PythonBanner.jpg',
-  'https://srirangamv.github.io/images/LkdIn.jpg',
+  'https://srirangamv.github.io/images/LkdIn.png',
   'https://srirangamv.github.io/images/Enable71_Two.png',
   'https://srirangamv.github.io/images/Enable71_Three.png',
   'https://srirangamv.github.io/images/ES6Enums.png',
@@ -34,7 +34,12 @@ var filesToCache = [
   'https://srirangamv.github.io/images/firstapp_code.png',
   'https://srirangamv.github.io/images/firstapp_code_2.png',
   'https://srirangamv.github.io/images/browser_output.png',
-  'https://srirangamv.github.io/images/docker-restart.png'
+  'https://srirangamv.github.io/images/docker-restart.png',
+  'https://srirangamv.github.io/images/BridgePattern.png',
+  'https://srirangamv.github.io/images/ObserverPattern.png',
+  'https://srirangamv.github.io/images/StrategyPattern.png',
+  'https://srirangamv.github.io/images/TemplatemethodPattern.png',
+  'https://srirangamv.github.io/images/iowa-centennial-bridge.jpg'
 ];
 
 self.addEventListener('install', function(e) {

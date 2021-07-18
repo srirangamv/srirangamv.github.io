@@ -231,6 +231,20 @@ ol > li > a {
     text-decoration: underline!important;
 }
 
-.post > p {
+.postslist > li > p, .post > p {
     margin-inline-end: 40px;
+}
+
+.titlebg {
+    background-image: url("/images/iowa-centennial-bridge.jpg");
+    height: 250px;
+    margin-inline-end: 40px;
+    font-size: xxx-large;
+    color: crimson;
+    background-size: cover;
+}
+
+.credit {
+    font-style: italic;
+    color: lightslategray;
 }

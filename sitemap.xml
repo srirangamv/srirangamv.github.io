@@ -114,5 +114,21 @@
        <image:loc>http://srirangamv.github.io/images/browser-output.png</image:loc>
        <image:caption>Visual Studio Code Execution</image:caption>
     </image:image>
+    <image:image>
+       <image:loc>https://srirangamv.github.io/images/BridgePattern.png</image:loc>
+       <image:caption>Bridge Pattern UML Diagram</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>https://srirangamv.github.io/images/ObserverPattern.png</image:loc>
+       <image:caption>Observer Pattern UML Diagram</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>https://srirangamv.github.io/images/StrategyPattern.png</image:loc>
+       <image:caption>Strategy Pattern UML Diagram</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>https://srirangamv.github.io/images/TemplatemethodPattern.png</image:loc>
+       <image:caption>Template Method Pattern UML Diagram</image:caption>
+    </image:image>
   </url>
 </urlset>
