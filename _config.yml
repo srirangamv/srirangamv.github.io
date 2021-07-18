@@ -14,12 +14,12 @@ permalink:        /blog/:title
 
 # Setup
 title:            Vikram Kumar Srirangam
-url:              https://vwtt.github.io
+url:              https://srirangamv.github.io
 baseurl:          /
 
 author:
   name:           'Vikram Kumar Srirangam'
-  url:            https://twitter.com/vwtt
+  url:            https://twitter.com/srirangamv
 
 paginate:         5
 
@@ -27,4 +27,4 @@ paginate:         5
 version:          1.0.0
 
 github:
-  repo:           https://github.com/vwtt/vwtt.github.io
+  repo:           https://github.com/srirangamv/srirangamv.github.io

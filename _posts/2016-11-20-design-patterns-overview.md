@@ -19,11 +19,11 @@ These patterns are based on how the objects are created and constructed to solve
 </p>
 
 1. Abstract Factory
-2. [Builder](http://vwtt.github.io/blog/builder-design-pattern)
-3. [Factory](http://vwtt.github.io/blog/factory-design-pattern)
-4. [Factory Method](http://vwtt.github.io/blog/factory-method-design-pattern)
+2. [Builder](http://srirangamv.github.io/blog/builder-design-pattern)
+3. [Factory](http://srirangamv.github.io/blog/factory-design-pattern)
+4. [Factory Method](http://srirangamv.github.io/blog/factory-method-design-pattern)
 5. Prototype
-6. [Singleton](http://vwtt.github.io/blog/singleton-design-pattern)
+6. [Singleton](http://srirangamv.github.io/blog/singleton-design-pattern)
 
 #### **Structural Patterns**
 <p>
@@ -31,9 +31,9 @@ These design patterns are based on how class and object composed of and structur
 </p>
 
 1. Adapter
-2. [Bridge](http://vwtt.github.io/blog/bridge-design-pattern)
+2. [Bridge](http://srirangamv.github.io/blog/bridge-design-pattern)
 3. Composite
-4. [Decorator](http://vwtt.github.io/blog/decorator-design-pattern)
+4. [Decorator](http://srirangamv.github.io/blog/decorator-design-pattern)
 5. Facade
 6. Flyweight
 7. Proxy
@@ -43,14 +43,14 @@ These design patterns are based on how class and object composed of and structur
 These design patterns are based on how objects behave. For example, some times we need to notify certain state changes of an object to several other objects. Observer pattern addresses this issue and provide guideline for implementing this issue. Below is the list of behavioral patterns.
 </p>
 
-1. [Chain of responsibility](http://vwtt.github.io/blog/chainofresponsibility-design-pattern)
+1. [Chain of responsibility](http://srirangamv.github.io/blog/chainofresponsibility-design-pattern)
 2. Command
 3. Interpreter
 4. Iterator
 5. Mediator
 6. Memento
-7. [Observer](http://vwtt.github.io/blog/observer-design-pattern)
+7. [Observer](http://srirangamv.github.io/blog/observer-design-pattern)
 8. State
-9. [Strategy](http://vwtt.github.io/blog/strategy-design-pattern)
-10. [Template method](http://vwtt.github.io/blog/templatemethod-design-pattern)
-11. [Visitor](http://vwtt.github.io/blog/visitor-design-pattern)
+9. [Strategy](http://srirangamv.github.io/blog/strategy-design-pattern)
+10. [Template method](http://srirangamv.github.io/blog/templatemethod-design-pattern)
+11. [Visitor](http://srirangamv.github.io/blog/visitor-design-pattern)

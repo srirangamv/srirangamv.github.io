@@ -15,26 +15,26 @@
 var dataCacheName = 'weatherData-v1';
 var cacheName = 'weatherPWA-final-1';
 var filesToCache = [
-  'https://vwtt.github.io/',
-  'https://vwtt.github.io/blog/index.html',
-  'https://vwtt.github.io/index.html',
-  'https://vwtt.github.io/css/style.css',
-  'https://vwtt.github.io/css/syntax.css',
-  'https://vwtt.github.io/images/BlipkartArchitecture.png',
-  'https://vwtt.github.io/images/FactoryMethodPattern.png',
-  'https://vwtt.github.io/images/FactoryPattern.png',
-  'https://vwtt.github.io/images/FluxDemo.png',
-  'https://vwtt.github.io/images/VueJsDemo.png',
-  'https://vwtt.github.io/images/PythonBanner.jpg',
-  'https://vwtt.github.io/images/LkdIn.jpg',
-  'https://vwtt.github.io/images/Enable71_Two.png',
-  'https://vwtt.github.io/images/Enable71_Three.png',
-  'https://vwtt.github.io/images/ES6Enums.png',
-  'https://vwtt.github.io/images/firstapp_flask_code.png',
-  'https://vwtt.github.io/images/firstapp_code.png',
-  'https://vwtt.github.io/images/firstapp_code_2.png',
-  'https://vwtt.github.io/images/browser_output.png',
-  'https://vwtt.github.io/images/docker-restart.png'
+  'https://srirangamv.github.io/',
+  'https://srirangamv.github.io/blog/index.html',
+  'https://srirangamv.github.io/index.html',
+  'https://srirangamv.github.io/css/style.css',
+  'https://srirangamv.github.io/css/syntax.css',
+  'https://srirangamv.github.io/images/BlipkartArchitecture.png',
+  'https://srirangamv.github.io/images/FactoryMethodPattern.png',
+  'https://srirangamv.github.io/images/FactoryPattern.png',
+  'https://srirangamv.github.io/images/FluxDemo.png',
+  'https://srirangamv.github.io/images/VueJsDemo.png',
+  'https://srirangamv.github.io/images/PythonBanner.jpg',
+  'https://srirangamv.github.io/images/LkdIn.jpg',
+  'https://srirangamv.github.io/images/Enable71_Two.png',
+  'https://srirangamv.github.io/images/Enable71_Three.png',
+  'https://srirangamv.github.io/images/ES6Enums.png',
+  'https://srirangamv.github.io/images/firstapp_flask_code.png',
+  'https://srirangamv.github.io/images/firstapp_code.png',
+  'https://srirangamv.github.io/images/firstapp_code_2.png',
+  'https://srirangamv.github.io/images/browser_output.png',
+  'https://srirangamv.github.io/images/docker-restart.png'
 ];
 
 self.addEventListener('install', function(e) {

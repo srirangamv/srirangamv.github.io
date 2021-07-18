@@ -3,115 +3,115 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url> 
-    <loc>http://vwtt.github.io/</loc> 
-    <loc>http://vwtt.github.io/blog/</loc> 
-    <loc>http://vwtt.github.io/blog/2020-08-17-singleton-design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/2020-08-17-decorator-design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/2020-08-16-solid-priciples</loc>
-    <loc>http://vwtt.github.io/blog/2020-08-15-visitor-design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/2020-08-15-templatemethod-design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/2020-08-15-strategy-design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/2020-08-15-observer-design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/2020-08-15-chainofresponsibility-design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/2020-08-15-builder-design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/2020-08-15-bridge-design-pattern</loc>    
-    <loc>http://vwtt.github.io/blog/2020-04-11-an-unusual-hello-world</loc>
-    <loc>http://vwtt.github.io/blog/2019-05-25-javascript-playground</loc>
-    <loc>http://vwtt.github.io/blog/running-flask-inside-container</loc>
-    <loc>http://vwtt.github.io/blog/2018-12-22-enums-in-ES6</loc>
-    <loc>http://vwtt.github.io/blog/enable_csharp7.1_features</loc>
-    <loc>http://vwtt.github.io/blog/learn_python_in_a_jiffy</loc>
-    <loc>http://vwtt.github.io/blog/factory-factory_method_design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/flux_like_architecture</loc>
-    <loc>http://vwtt.github.io/blog/spa_app_vuejs</loc>
-    <loc>http://vwtt.github.io/blog/factory-design-pattern</loc>
-    <loc>http://vwtt.github.io/blog/design-patterns-overview</loc>
-    <loc>http://vwtt.github.io/blog/map-reduce-combine-net-parallel-programming</loc>
-    <loc>http://vwtt.github.io/blog/complete-aspnetcore-app</loc>
-    <loc>http://vwtt.github.io/blog/aspnetcore-minimalapp-currency-taghelper</loc>
-    <loc>http://vwtt.github.io/blog/aspnetcore-minimalapp-authentication-authorization</loc>
-    <loc>http://vwtt.github.io/blog/aspnetcore-minimalapp-iis-deployment</loc>
-    <loc>http://vwtt.github.io/blog/csharp6.0-new-features</loc>
-    <loc>http://vwtt.github.io/blog/aspnetcore-minimalapp</loc>
-    <loc>http://vwtt.github.io/blog/net-fibonacciseries-recursiveandmemoized</loc>
-    <loc>http://vwtt.github.io/blog/net-webclient-retry-method</loc>
-    <loc>http://vwtt.github.io/blog/javascript-mapreduce-filter-demo</loc>
-    <loc>http://vwtt.github.io/blog/net-parallelforeach-demo</loc>
-    <loc>http://vwtt.github.io/blog/vikram-srirangam-aspnet-mvc-zipdownload-demo</loc>
+    <loc>http://srirangamv.github.io/</loc> 
+    <loc>http://srirangamv.github.io/blog/</loc> 
+    <loc>http://srirangamv.github.io/blog/2020-08-17-singleton-design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/2020-08-17-decorator-design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/2020-08-16-solid-priciples</loc>
+    <loc>http://srirangamv.github.io/blog/2020-08-15-visitor-design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/2020-08-15-templatemethod-design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/2020-08-15-strategy-design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/2020-08-15-observer-design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/2020-08-15-chainofresponsibility-design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/2020-08-15-builder-design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/2020-08-15-bridge-design-pattern</loc>    
+    <loc>http://srirangamv.github.io/blog/2020-04-11-an-unusual-hello-world</loc>
+    <loc>http://srirangamv.github.io/blog/2019-05-25-javascript-playground</loc>
+    <loc>http://srirangamv.github.io/blog/running-flask-inside-container</loc>
+    <loc>http://srirangamv.github.io/blog/2018-12-22-enums-in-ES6</loc>
+    <loc>http://srirangamv.github.io/blog/enable_csharp7.1_features</loc>
+    <loc>http://srirangamv.github.io/blog/learn_python_in_a_jiffy</loc>
+    <loc>http://srirangamv.github.io/blog/factory-factory_method_design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/flux_like_architecture</loc>
+    <loc>http://srirangamv.github.io/blog/spa_app_vuejs</loc>
+    <loc>http://srirangamv.github.io/blog/factory-design-pattern</loc>
+    <loc>http://srirangamv.github.io/blog/design-patterns-overview</loc>
+    <loc>http://srirangamv.github.io/blog/map-reduce-combine-net-parallel-programming</loc>
+    <loc>http://srirangamv.github.io/blog/complete-aspnetcore-app</loc>
+    <loc>http://srirangamv.github.io/blog/aspnetcore-minimalapp-currency-taghelper</loc>
+    <loc>http://srirangamv.github.io/blog/aspnetcore-minimalapp-authentication-authorization</loc>
+    <loc>http://srirangamv.github.io/blog/aspnetcore-minimalapp-iis-deployment</loc>
+    <loc>http://srirangamv.github.io/blog/csharp6.0-new-features</loc>
+    <loc>http://srirangamv.github.io/blog/aspnetcore-minimalapp</loc>
+    <loc>http://srirangamv.github.io/blog/net-fibonacciseries-recursiveandmemoized</loc>
+    <loc>http://srirangamv.github.io/blog/net-webclient-retry-method</loc>
+    <loc>http://srirangamv.github.io/blog/javascript-mapreduce-filter-demo</loc>
+    <loc>http://srirangamv.github.io/blog/net-parallelforeach-demo</loc>
+    <loc>http://srirangamv.github.io/blog/vikram-srirangam-aspnet-mvc-zipdownload-demo</loc>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/BuilderPattern.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/BuilderPattern.png</image:loc>
        <image:caption>Post Banner</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/DecoratorPattern.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/DecoratorPattern.png</image:loc>
        <image:caption>Post Banner</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/FactoryMethodPattern.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/FactoryMethodPattern.png</image:loc>
        <image:caption>Post Banner</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/FactoryPattern.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/FactoryPattern.png</image:loc>
        <image:caption>Post Banner</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/SinglePattern.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/SinglePattern.png</image:loc>
        <image:caption>Post Banner</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/VisitorPattern.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/VisitorPattern.png</image:loc>
        <image:caption>Post Banner</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/ES6Enums.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/ES6Enums.png</image:loc>
        <image:caption>Post Banner</image:caption>
     </image:image>    
     <image:image>
-       <image:loc>http://vwtt.github.io/images/FluxDemo.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/FluxDemo.png</image:loc>
        <image:caption>Flux like architecture communication diagram</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/VueJsDemo.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/VueJsDemo.png</image:loc>
        <image:caption>VueJs Single Page App Demo</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/BlipkartArchitecture.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/BlipkartArchitecture.png</image:loc>
        <image:caption>Architecture Diagram</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/FactoryPattern.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/FactoryPattern.png</image:loc>
        <image:caption>Factory Pattern UML Diagram</image:caption>
     </image:image>    
     <image:image>
-       <image:loc>http://vwtt.github.io/images/FactoryMethodPattern.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/FactoryMethodPattern.png</image:loc>
        <image:caption>Factory Method Pattern UML Diagram</image:caption>
     </image:image>  
     <image:image>
-       <image:loc>http://vwtt.github.io/images/Enable71_Two.webp</image:loc>
+       <image:loc>http://srirangamv.github.io/images/Enable71_Two.webp</image:loc>
        <image:caption>Visual Studio Code Editing</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/Enable71_Three.webp</image:loc>
+       <image:loc>http://srirangamv.github.io/images/Enable71_Three.webp</image:loc>
        <image:caption>Visual Studio Code Execution</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/firstapp_flask_code.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/firstapp_flask_code.png</image:loc>
        <image:caption>Visual Studio Code Execution</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/firstapp_code.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/firstapp_code.png</image:loc>
        <image:caption>Visual Studio Code Execution</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/firstapp_code_2.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/firstapp_code_2.png</image:loc>
        <image:caption>Visual Studio Code Execution</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/docker-restart.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/docker-restart.png</image:loc>
        <image:caption>Visual Studio Code Execution</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://vwtt.github.io/images/browser-output.png</image:loc>
+       <image:loc>http://srirangamv.github.io/images/browser-output.png</image:loc>
        <image:caption>Visual Studio Code Execution</image:caption>
     </image:image>
   </url>

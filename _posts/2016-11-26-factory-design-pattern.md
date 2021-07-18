@@ -7,7 +7,7 @@ tags: "c#,.net,.net core,factory design pattern,code,design pattern,UML,unified 
 date: 2016-11-26
 ---
 
-<p>Factory design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://vwtt.github.io/blog/design-patterns-overview" target="_blank">here</a>. The intent of Factory pattern is hiding creation of objects from the client by using a common interface. Client awares of all subclasses of family and instead client creating objects for these family of types it depends on common interface and requests for objects.</p>
+<p>Factory design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://srirangamv.github.io/blog/design-patterns-overview" target="_blank">here</a>. The intent of Factory pattern is hiding creation of objects from the client by using a common interface. Client awares of all subclasses of family and instead client creating objects for these family of types it depends on common interface and requests for objects.</p>
 
 <p>
     <figure>

@@ -82,7 +82,7 @@ permalink: /javascript_Reference/
     <ul>
       <li><a href="#" onclick="myeval(this)">Run</a></li>
       <li><a href="#" onclick="cleareditor(this)">Clear</a></li>
-      <li><a href="https://github.com/vwtt/jscheatsheet">More at Github</a></li>
+      <li><a href="https://github.com/srirangamv/jscheatsheet">More at Github</a></li>
     </ul>
     <div class="output">
       
@@ -104,7 +104,7 @@ permalink: /javascript_Reference/
         <ul>
             <li><a href="#" onclick="myeval(this)">Run</a></li>
             <li><a href="#" onclick="cleareditor(this)">Clear</a></li>                
-            <li><a href="https://github.com/vwtt/jscheatsheet">More at Github</a></li>
+            <li><a href="https://github.com/srirangamv/jscheatsheet">More at Github</a></li>
         </ul>
     </div>
     
@@ -119,7 +119,7 @@ permalink: /javascript_Reference/
         <ul>
             <li><a href="#" onclick="myeval(this)">Run</a></li>
             <li><a href="#" onclick="cleareditor(this)">Clear</a></li>                
-            <li><a href="https://github.com/vwtt/jscheatsheet">More at Github</a></li>
+            <li><a href="https://github.com/srirangamv/jscheatsheet">More at Github</a></li>
         </ul>
     </div>
     
@@ -133,7 +133,7 @@ permalink: /javascript_Reference/
         <ul>
             <li><a href="#" onclick="myeval(this)">Run</a></li>
             <li><a href="#" onclick="cleareditor(this)">Clear</a></li>                
-            <li><a href="https://github.com/vwtt/jscheatsheet">More at Github</a></li>
+            <li><a href="https://github.com/srirangamv/jscheatsheet">More at Github</a></li>
         </ul>
     </div>
 </div>

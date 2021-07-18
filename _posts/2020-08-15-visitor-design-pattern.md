@@ -7,7 +7,7 @@ tags: "c#,.net,.net core,visitor design pattern,code,design pattern,UML,unified 
 date: 2020-08-15
 ---
 
-<p>Visitor design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://vwtt.github.io/blog/design-patterns-overview" target="_blank">here</a>. The intent of Visitor pattern is allowing another class to read the data from another several classes without violating object orientation rules. Here the several classes implements a common interface using that these classes share the internal data to the external client (in this case client is a visitor). Take a real example of a food inspector visiting several hotels, restaurants and other food chains for inspection.</p>
+<p>Visitor design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://srirangamv.github.io/blog/design-patterns-overview" target="_blank">here</a>. The intent of Visitor pattern is allowing another class to read the data from another several classes without violating object orientation rules. Here the several classes implements a common interface using that these classes share the internal data to the external client (in this case client is a visitor). Take a real example of a food inspector visiting several hotels, restaurants and other food chains for inspection.</p>
 
 <p>
     <figure>
