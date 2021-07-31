@@ -236,11 +236,8 @@ ol > li > a {
 }
 
 .titlebg {
-    background-image: url("/images/abstract_vector.jpg");
     height: 250px;
     margin-inline-end: 40px;
-    font-size: xxx-large;
-    color: crimson;
     background-size: cover;
     background-position: center;
     margin-block-end: 0px;

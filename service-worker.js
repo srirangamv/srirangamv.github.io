@@ -72,6 +72,5 @@ var filesToCache = [
   'https://srirangamv.github.io/images/BridgePattern.png',
   'https://srirangamv.github.io/images/ObserverPattern.png',
   'https://srirangamv.github.io/images/StrategyPattern.png',
-  'https://srirangamv.github.io/images/TemplatemethodPattern.png',
-  'https://srirangamv.github.io/images/iowa-centennial-bridge.jpg'
+  'https://srirangamv.github.io/images/TemplatemethodPattern.png'
 ];
