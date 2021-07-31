@@ -251,6 +251,7 @@ ol > li > a {
 
 .diagram {
     width: 95%;
+    max-height: 630px;
     object-fit: cover;
     object-position: bottom;
     object-fit: scale-down;
