@@ -11,7 +11,7 @@ date: 2021-07-18
 
 <p>
     <figure>
-      <img src="/images/TemplatemethodPattern.png" alt="Template Method Pattern UML Diagram" width="716px" height="185px" />
+      <img class="diagram" src="/images/TemplatemethodPattern.png" alt="Template Method Pattern UML Diagram" width="716px" height="185px" />
       <figcaption>Template Method Pattern UML Diagram</figcaption>
     </figure>    
 </p>

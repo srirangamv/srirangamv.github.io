@@ -11,7 +11,7 @@ date: 2021-07-18
 
 <p>
     <figure>
-      <img src="/images/StrategyPattern.png" alt="Strategy Pattern UML Diagram" width="655px" height="185px" />
+      <img class="diagram" src="/images/StrategyPattern.png" alt="Strategy Pattern UML Diagram" width="655px" height="185px" />
       <figcaption>Strategy Pattern UML Diagram</figcaption>
     </figure>    
 </p>

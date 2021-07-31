@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "S.O.L.I.D Priciples"
-name: "2020-08-16-solid-priciples"
-description: "Simple example for demonstrating S.O.L.I.D Priciples."
+title: "S.O.L.I.D Principles"
+name: "2020-08-16-solid-principles"
+description: "Simple example for demonstrating S.O.L.I.D Principles."
 keywords: "object orientation, design principles, solid principles, obejct oriented design, obejct oriented software design, single responsibility principle, open closed principle, liskov substituition principle, interface segregation principle, dependency inversion principle, better software design,c#,.net,.net core,technical article,blog,post"
 date: 2020-08-16
 ---
 
-The following principles are known as object oriented design priciples. These priciples provide guidance in decomposing functionalities into classes while applying abstraction, inheritance and polymorphism correctly, which leads to good object oriented design.
+The following principles are known as object oriented design principles. These principles provide guidance in decomposing functionalities into classes while applying abstraction, inheritance and polymorphism correctly, which leads to good object oriented design.
 
 ## S for **Single Responsibility Principle**
 

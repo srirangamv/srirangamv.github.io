@@ -36,7 +36,7 @@ namespace mycs71app
 
 <p>
     <figure>
-      <img src="/images/Enable71_Two.png" alt="Visual Studio Code Folder" width="833px" height="460px" />
+      <img class="diagram" src="/images/Enable71_Two.png" alt="Visual Studio Code Folder" width="833px" height="460px" />
       <figcaption>Visual Studio Code Editing</figcaption>
     </figure>    
 </p>
@@ -48,7 +48,7 @@ namespace mycs71app
 <b>Output:</b>
 <p>
     <figure>
-      <img src="/images/Enable71_Three.png" alt="Visual Studio Code Folder" width="833px" height="460px" />
+      <img class="diagram" src="/images/Enable71_Three.png" alt="Visual Studio Code Folder" width="833px" height="460px" />
       <figcaption>Visual Studio Code Execution</figcaption>
     </figure>    
 </p>

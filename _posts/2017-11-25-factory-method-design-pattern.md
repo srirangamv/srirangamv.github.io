@@ -11,7 +11,7 @@ date: 2017-11-25
 
 <p>
     <figure>
-      <img src="/images/FactoryMethodPattern.png" alt="Factory Method Pattern UML Diagram" width="700px" height="630px" />
+      <img class="diagram" src="/images/FactoryMethodPattern.png" alt="Factory Method Pattern UML Diagram" width="700px" height="630px" />
       <figcaption>Factory Method Pattern UML Diagram</figcaption>
     </figure>    
 </p>

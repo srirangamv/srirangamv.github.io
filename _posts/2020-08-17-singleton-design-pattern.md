@@ -11,7 +11,7 @@ date: 2020-08-17
 
 <p>
     <figure>
-      <img src="/images/SinglePattern.png" alt="Singleton Pattern UML Diagram" width="426px" height="205px" />
+      <img class="diagram" src="/images/SinglePattern.png" alt="Singleton Pattern UML Diagram" width="426px" height="205px" />
       <figcaption>Singleton Pattern UML Diagram</figcaption>
     </figure>    
 </p>

@@ -248,3 +248,10 @@ ol > li > a {
     color: lightslategray;
     font-size: smaller;
 }
+
+.diagram {
+    width: 95%;
+    object-fit: cover;
+    object-position: bottom;
+    object-fit: scale-down;
+}

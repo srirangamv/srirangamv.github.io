@@ -89,7 +89,7 @@ print('Hello World!')
 <p>
     Your code should look like below.
     <figure>
-      <img src="/images/firstapp_code.png" alt="code screenshot" width="50%" height="50%" />
+      <img class="diagram" src="/images/firstapp_code.png" alt="code screenshot" width="50%" height="50%" />
       <figcaption></figcaption>
     </figure>    
     Now, we can run the above program using standard python:3 image as shown below. run the command.
@@ -118,7 +118,7 @@ Hello World!
 <p>
     Your code should look like below.
     <figure>
-      <img src="/images/firstapp_code_2.png" alt="code screenshot" width="50%" height="50%" />
+      <img class="diagram" src="/images/firstapp_code_2.png" alt="code screenshot" width="50%" height="50%" />
       <figcaption></figcaption>
     </figure>    
     Now, run the below commands for creating our custom image using standard python:3 image and list all images.
@@ -182,7 +182,7 @@ if __name__ == "__main__":
 
 <p>
     <figure>
-      <img src="/images/firstapp_flask_code.png" alt="code screenshot" width="50%" height="50%" />
+      <img class="diagram" src="/images/firstapp_flask_code.png" alt="code screenshot" width="50%" height="50%" />
       <figcaption>Flask App</figcaption>
     </figure>    
     Ideally, we have to install the dependencies using pip requirements file. Below shown the requirements.txt file that specifying Flask as dependency for the application. And adding <i>RUN pip3 install -r requirements.txt</i> to Dockerfile just do the same here. It will the dependecies specified in the file to the image.
@@ -233,7 +233,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 
 <p>
     <figure>
-      <img src="/images/docker-restart.png" alt="code screenshot" width="50%" height="50%" />
+      <img class="diagram" src="/images/docker-restart.png" alt="code screenshot" width="50%" height="50%" />
       <figcaption></figcaption>
     </figure>    
 </p> 
@@ -272,7 +272,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 <p>
 Open browser, point to http://localhost:8080. You will se below output.
     <figure>
-      <img src="/images/browser-output.png" alt="browser screenshot" width="50%" height="50%" />
+      <img class="diagram" src="/images/browser-output.png" alt="browser screenshot" width="50%" height="50%" />
       <figcaption></figcaption>
     </figure>    
 </p> 
