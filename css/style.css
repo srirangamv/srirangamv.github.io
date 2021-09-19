@@ -90,6 +90,16 @@ footer {
     /*for tool items*/
 }
 
+figure img {
+    margin-top: 20px;
+}
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    background-color: var(--code-bg);
+}
+
 footer span {
     margin: auto;
 }
@@ -255,4 +265,11 @@ ol > li > a {
     object-fit: cover;
     object-position: bottom;
     object-fit: scale-down;
+}
+
+.redlink {
+    color: white;
+    background-color: crimson;
+    border-radius: 4px;
+    padding: 0px 5px;
 }
