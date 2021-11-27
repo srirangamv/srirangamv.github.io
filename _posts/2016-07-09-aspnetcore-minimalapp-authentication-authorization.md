@@ -440,4 +440,4 @@ Navigate the browser to http://localhost:5000/Account/LogOff
 <p>Now cookie middleware removes the authentication cookie if you visit "Home/Update" action, you will be propmpted for login credentials as you are signed off from the application.</p>
 
 
-<p>Please find the complete code <a href="https://github.com/srirangamv/aspnetcoreauth">here</a> for this atricle.</p>
+<p>Please find the complete code <a href="https://github.com/viksrirangam/aspnetcoreauth">here</a> for this atricle.</p>

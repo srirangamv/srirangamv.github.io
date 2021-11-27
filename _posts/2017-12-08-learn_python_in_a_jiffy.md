@@ -7,7 +7,7 @@ tags: "python,cheatsheet,code,basic,simple,code idioms,technical article,blog,po
 date: 2017-12-08
 ---
 
-<p>Here is the python language reference sheet. Find code <a href="https://github.com/srirangamv/PythonCheatSheet" target="_blank" title="python cheatsheet repository">here</a>.</p>
+<p>Here is the python language reference sheet. Find code <a href="https://github.com/viksrirangam/PythonCheatSheet" target="_blank" title="python cheatsheet repository">here</a>.</p>
 
 {% highlight python %}
 

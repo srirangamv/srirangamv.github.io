@@ -90,13 +90,13 @@ permalink: /javascript_playground/
     <ul class="tools">
       <li><a href="#" onclick="myeval(this)">Run</a></li>
       <li><a href="#" onclick="cleareditor(this)">Clear</a></li>
-      <li><a href="https://github.com/srirangamv/jscheatsheet">More at Github</a></li>
+      <li><a href="https://github.com/viksrirangam/jscheatsheet">More at Github</a></li>
     </ul>
     <div class="output">
       
     <div>
 <div>
-<!-- <script src="https://gist.github.com/srirangamv/4cc59a07f6959bd9389cefeda1b081ac.js"></script> -->
+<!-- <script src="https://gist.github.com/viksrirangam/4cc59a07f6959bd9389cefeda1b081ac.js"></script> -->
 <!--<div class="codepanel">
     <h3>Type System<h3>
     <p>Primary Types: number, boolean, string, symbol, undefined, null</p>
@@ -112,7 +112,7 @@ permalink: /javascript_playground/
         <ul>
             <li><a href="#" onclick="myeval(this)">Run</a></li>
             <li><a href="#" onclick="cleareditor(this)">Clear</a></li>                
-            <li><a href="https://github.com/srirangamv/jscheatsheet">More at Github</a></li>
+            <li><a href="https://github.com/viksrirangam/jscheatsheet">More at Github</a></li>
         </ul>
     </div>
     
@@ -127,7 +127,7 @@ permalink: /javascript_playground/
         <ul>
             <li><a href="#" onclick="myeval(this)">Run</a></li>
             <li><a href="#" onclick="cleareditor(this)">Clear</a></li>                
-            <li><a href="https://github.com/srirangamv/jscheatsheet">More at Github</a></li>
+            <li><a href="https://github.com/viksrirangam/jscheatsheet">More at Github</a></li>
         </ul>
     </div>
     
@@ -141,7 +141,7 @@ permalink: /javascript_playground/
         <ul>
             <li><a href="#" onclick="myeval(this)">Run</a></li>
             <li><a href="#" onclick="cleareditor(this)">Clear</a></li>                
-            <li><a href="https://github.com/srirangamv/jscheatsheet">More at Github</a></li>
+            <li><a href="https://github.com/viksrirangam/jscheatsheet">More at Github</a></li>
         </ul>
     </div>
 </div>

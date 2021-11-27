@@ -483,4 +483,4 @@ Hello from our View Template!
 
 <p>Now we have setup webapi and basic mvc controller with a view for ASp.Net Core application.
 
-Please find the complete code at <a href="https://github.com/srirangamv/aspnetcoreminapp" title="code download path">here</a>.</p>
+Please find the complete code at <a href="https://github.com/viksrirangam/aspnetcoreminapp" title="code download path">here</a>.</p>
