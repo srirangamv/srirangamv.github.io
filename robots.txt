@@ -1,4 +1,4 @@
-Sitemap: https://srirangamv.github.io/sitemap.xml
+Sitemap: https://viksrirangam.github.io/sitemap.xml
 User-agent: *
 Disallow: /images/
 Disallow: /css/

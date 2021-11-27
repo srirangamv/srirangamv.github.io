@@ -7,7 +7,7 @@ tags: "c#,.net,.net core,decorator design pattern,code,design pattern,UML,unifie
 date: 2020-08-17
 ---
 
-<p>Decorator design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://srirangamv.github.io/blog/design-patterns-overview" title="sofware design patterns using c#" target="_blank">here</a>. The intent of Decorator pattern is adding new or additional  responsibilities to objects dynamically without modifying original object. Usually, the new class provide new functionality/responsibility by wrapping the original object.</p>
+<p>Decorator design pattern is a most often used software design pattern. Please refer to the overview of design patterns <a href="http://viksrirangam.github.io/blog/design-patterns-overview" title="sofware design patterns using c#" target="_blank">here</a>. The intent of Decorator pattern is adding new or additional  responsibilities to objects dynamically without modifying original object. Usually, the new class provide new functionality/responsibility by wrapping the original object.</p>
 
 <p>
     <figure>

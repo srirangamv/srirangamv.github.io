@@ -14,7 +14,7 @@ permalink:        /blog/:title
 
 # Setup
 title:            Vikram Kumar Srirangam
-url:              https://srirangamv.github.io
+url:              https://viksrirangam.github.io
 baseurl:          /
 
 author:
@@ -27,4 +27,4 @@ paginate:         5
 version:          1.0.0
 
 github:
-  repo:           https://github.com/srirangamv/srirangamv.github.io
+  repo:           https://github.com/viksrirangam/viksrirangam.github.io

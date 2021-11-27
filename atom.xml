@@ -5,10 +5,10 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>Vikram Srirangam's Blog</title>
-  <link href="http://srirangamv.github.io/atom.xml" rel="self"/>
-  <link href="http://srirangamv.github.io"/>
+  <link href="http://viksrirangam.github.io/atom.xml" rel="self"/>
+  <link href="http://viksrirangam.github.io"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://srirangamv.github.io/blog</id>
+  <id>http://viksrirangam.github.io/blog</id>
   <author>
     <name>Vikram Srirangam</name>
     <email>vikram.srirangam@outlook.com</email>
@@ -17,9 +17,9 @@ layout: feed
   {% for post in site.posts %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://srirangamv.github.io/{{ post.url }}"/>
+    <link href="http://viksrirangam.github.io/{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://srirangamv.github.io/{{ post.url }}</id>
+    <id>http://viksrirangam.github.io/{{ post.url }}</id>
     <content type="html">{{ post.content | strip_html | truncatewords: 15 | xml_escape }}</content>
   </entry>
   {% endfor %}
