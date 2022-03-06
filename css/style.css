@@ -21,13 +21,14 @@
     --bg-color: var(--dark-bg);
     --code-bg: var(--dark-code-bg);
     --link-color: #07102b;
+    --intro-bg: #5FD5EC;
 }
 
 html,
 body {
     overflow: hidden;
-    font-family: 'Fira Code';
-    font-size: 16px;
+    font-family: 'Arial Unicode MS';
+    font-size: 14px;
     margin: 0px;
 }
 
@@ -137,8 +138,8 @@ footer span {
 
     .sidebar {
         display: none;
-        background-color: crimson;
-        border: 1px crimson outset;
+        background-color: var(--intro-bg);
+        border: 1px var(--intro-bg) outset;
     }
 
     .hamburger-checkbox {
@@ -193,13 +194,6 @@ footer span {
     display: none;
 }
 
-.style2 {
-    font-size: 24px;
-    color: #2DAEBF;
-    cursor: pointer;
-    /*text-shadow: 0px 1px 0px #0092b3, 0px 2px 0px #0087a6, 0px 3px 0px #008099, 0px 4px 0px #00758c, 0px 5px 0px #555, 0px 6px 0px #006a80, 0px 0px 0px #006073, 0px 8px 7px #005566;*/
-}
-
 .userprofile {            
     border-radius: 50%;
     width: 64px;
@@ -233,7 +227,6 @@ p.cmd, p.output {
 
 a {
     color: var(--link-color);
-    text-decoration: none;
     font-weight: 600;
 }
 
@@ -246,10 +239,9 @@ ol > li > a {
 }
 
 .titlebg {
-    height: 250px;
+    height: 100px;
     margin-inline-end: 40px;
-    background-size: cover;
-    background-position: center;
+    color: var(--intro-bg);
     margin-block-end: 0px;
 }
 

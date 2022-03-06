@@ -6,7 +6,7 @@ description: Vikram's technical blog, writes on C#, Javascript, Asp.Net, MVC and
 
 {% assign latestpost = site.posts.first %}
 
-<h2 class="titlebg" style="background-image: url('https://fakeimg.pl/1200x250/02669d/fff/?text={{ latestpost.title }}&font=lobster');"></h2>
+<h2 class="titlebg">{{ latestpost.title }}</h2>
 <h5><i class="icon fi-calendar"></i>&nbsp;{{ latestpost.date | date_to_string }}</h5>
 
 <div class="post">
