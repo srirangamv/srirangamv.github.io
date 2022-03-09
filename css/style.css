@@ -203,16 +203,25 @@ footer span {
 p.cmd, p.output {
     background-color: black;
     color: white;
-    border-top: solid 20px rgb(227, 227, 227);
     font-size: 12px;
     max-width: 650px;
 }
 
-p.cmd::before , p.output::before {
+.cmd::before {
   content: "terminal";
+  color: #ccc;
+  font-weight: bold;
   height: 20px;
   border: solid 1px #000;
 }
+
+.output::before {
+    content: "terminal";
+    color: #ccc;
+    font-weight: bold;
+    height: 20px;
+    border: solid 1px #000;
+  }
 
 .social {
     font-size: xx-large;
