@@ -1,4 +1,4 @@
-.highlight  { background-color: var(--code-bg); margin-left: 0px;}
+.highlight  { margin-left: 0px;}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
@@ -60,7 +60,10 @@
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
+figure > pre {
+  border: dotted 1px #ccc;
+}
 .highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;} 
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
 .lineno::selection {background-color: transparent;} /* Other major browsers */
-.highlight pre { background-color: var(--code-bg)!important; padding: 0.5rem; overflow-x: auto; }
+.highlight pre { font-family: 'Arial Unicode MS'!important; background-color: var(--code-bg)!important; padding: 0.5rem; overflow-x: auto; }

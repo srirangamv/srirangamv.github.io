@@ -208,6 +208,12 @@ p.cmd, p.output {
     max-width: 650px;
 }
 
+p.cmd::before , p.output::before {
+  content: "terminal";
+  height: 20px;
+  border: solid 1px #000;
+}
+
 .social {
     font-size: xx-large;
     text-decoration: none;
@@ -234,14 +240,18 @@ ol > li > a {
     text-decoration: underline!important;
 }
 
+header > a {
+    font-size: 18px;
+    text-decoration: none!important;
+}
+
 .postslist > li > p, .post > p {
     margin-inline-end: 40px;
 }
 
 .titlebg {
-    height: 100px;
     margin-inline-end: 40px;
-    color: var(--intro-bg);
+    color: crimson;
     margin-block-end: 0px;
 }
 
