@@ -22,6 +22,7 @@
     --code-bg: var(--dark-code-bg);
     --link-color: #07102b;
     --intro-bg: #5FD5EC;
+    --high-color: crimson;
 }
 
 html,
@@ -138,8 +139,8 @@ footer span {
 
     .sidebar {
         display: none;
-        background-color: var(--intro-bg);
-        border: 1px var(--intro-bg) outset;
+        background-color: var(--high-color);
+        border: 1px var(--high-color) outset;
     }
 
     .hamburger-checkbox {
@@ -179,8 +180,8 @@ footer span {
 
     .hamburger-checkbox:checked~.sidebar {
         display: inline-block;
-        width: 75%;
-        height: 100%;
+        width: 50%;
+        height: 100vh;
         /* padding-top: 6.5em; */
         position: absolute;
         z-index: 100;
