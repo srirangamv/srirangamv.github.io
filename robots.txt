@@ -1,6 +1,12 @@
-Sitemap: https://viksrirangam.github.io/sitemap.xml
 User-agent: *
+Allow: /
+Allow: /blog
+Allow: /blog/*$
 Disallow: /images/
 Disallow: /css/
 Disallow: /_layouts/
 Disallow: /_posts/
+Sitemap: https://viksrirangam.github.io/sitemap.xml
+
+User-agent: Googlebot 
+Disallow: /images/
