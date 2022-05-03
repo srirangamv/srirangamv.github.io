@@ -7,7 +7,7 @@ tags: "c#,.net,.net core,dotnet cli,threading,tasks,concurrency,channels,code,te
 date: 2022-05-03
 ---
 
-<p>Here is a sample code for channel communication between different tasks. Channels are introduced in .Net Core 3 and we can think channels is a thread safe queue so that concurrent processes coordinate and communicate themselves. In this example 2 tasks produces messages to a channel and third task reads them as available from the channel and prints to console. Combined with cancellation token this 3 tasks will stop communicating after a minute.</p>
+<p>Here is a sample code for channel communication between different tasks. Channels are introduced in .Net Core 3 and we can think channels is a thread safe queue so that concurrent processes coordinate and communicate themselves. In this example 2 tasks produces messages to a channel and third task reads them as available from the channel and prints to console. Combined with cancellation token these 3 tasks will stop communicating after a minute.</p>
 
 {% highlight csharp %}
 using System.Threading.Channels;
