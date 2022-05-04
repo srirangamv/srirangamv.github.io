@@ -61,7 +61,7 @@ var filesToCache = [
   'https://viksrirangam.github.io/images/FluxDemo.png',
   'https://viksrirangam.github.io/images/VueJsDemo.png',
   'https://viksrirangam.github.io/images/PythonBanner.jpg',
-  'https://viksrirangam.github.io/images/LkdIn.png',
+  'https://viksrirangam.github.io/images/Lnkdn.jpeg',
   'https://viksrirangam.github.io/images/Enable71_Two.png',
   'https://viksrirangam.github.io/images/Enable71_Three.png',
   'https://viksrirangam.github.io/images/ES6Enums.png',
