@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Basic SSE in Go lang"
-name: "2022-05-04-go-channels-demo"
-description: "basic multi threaded, server side event endpoint implementation with go."
+title: "Multi threaded, server side events server in Go"
+name: "2022-05-04-go-channels"
+description: "basic multi threaded, server side events endpoint implementation with go."
 tags: "go,multi-threading,coroutines,concurrency,channels,green threads,http server,server side events,code,technical article,blog,post"
 date: 2022-05-04
 ---
