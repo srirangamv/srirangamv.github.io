@@ -124,12 +124,13 @@ func joiner(od <-chan int, ev <-chan int) <-chan int {
 }
 
 func main() {
-	p := producer()
+	p :=    producer()
 	o, e := splitter(p)
-	oo := squarer(o)
-	ev := cuber(e)
-	s := joiner(oo, ev)
-	sum := summer(s)
+	oo :=   squarer(o)
+	ev :=   cuber(e)
+	s :=    joiner(oo, ev)
+	sum :=  summer(s)
+	
 	fmt.Println(sum)
 }
 
